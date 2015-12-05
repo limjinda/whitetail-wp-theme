@@ -1,0 +1,24 @@
+/*!
+Theme Name: WhiteTail
+Theme URI: http://www.jindatheme.com
+Author: JindaTheme
+Author URI: http://www.jindatheme.com
+Description: a simple and minimal gallery WordPress theme from JindaTheme
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: Green, JindaTheme, WhiteTail
+Text Domain: jindatheme
+*/
+
+@import 'bourbon/bourbon';
+@import 'varieble';
+@import 'global';
+@import 'fonts';
+@import 'icon';
+
+@import 'grid';
+
+@import 'header';
+@import 'main';
+@import 'footer';
