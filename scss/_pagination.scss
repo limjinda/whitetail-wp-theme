@@ -1,0 +1,15 @@
+.page-pagination-block{
+	padding: 30px 0 15px;
+	a {
+		color: $coal;
+		font-size: 14px;
+		&:hover{
+			color: $black;
+			text-decoration: none;
+		}
+	}
+	.icon{
+		position: relative;
+		top: 1px;
+	}
+}

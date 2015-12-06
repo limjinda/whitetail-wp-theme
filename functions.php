@@ -1,5 +1,9 @@
 <?php 
 
+/**
+ * THEME SETUP
+ */
+
 function jinda_setup(){
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support( 'title-tag' );
@@ -13,10 +17,23 @@ function jinda_setup(){
 }
 add_action('after_setup_theme', 'jinda_setup');
 
+/**
+ * EXCERPT
+ */
+
 function custom_excerpt_length( $length ) {
 	return 10;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+function new_excerpt_more( $more ) {
+	return '..';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
+/**
+ * THUMBNAIL
+ */
 
 function get_thumbnail_url( $id, $size ){
 	$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($id), $size );

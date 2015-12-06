@@ -54,11 +54,11 @@
 				top: 30px;
 				min-width: auto;
 				background-color: $coal;
-				box-shadow: 0 4px 15px -4px rgba(0,0,0,0.1);
+				@include shadow(1);
 				@include transition(all .2s linear);
 				z-index: 2;
 				&:hover{
-					box-shadow: 0 8px 30px -2px rgba(0,0,0,0.3);
+					@include shadow(2);
 					@include transition(all .2s linear);
 				}
 				> li{

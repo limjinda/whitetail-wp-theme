@@ -1,0 +1,33 @@
+{
+  "name": "trmix",
+  "homepage": "http://typerendering.com",
+  "authors": [
+    "Bram Stein <b.l.stein@gmail.com> (http://www.bramstein.com)"
+  ],
+  "main": "dist/trmix.min.js",
+  "keywords": [
+    "type",
+    "typography",
+    "rendering",
+    "antialiasing"
+  ],
+  "license": "BSD",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test",
+    "vendor",
+    "website"
+  ],
+  "version": "1.1.0",
+  "_release": "1.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.1.0",
+    "commit": "5ea0003e239e8cc49bdb3932b6f7f9ae5b438f86"
+  },
+  "_source": "git://github.com/bramstein/trmix.git",
+  "_target": "~1.1.0",
+  "_originalSource": "trmix",
+  "_direct": true
+}
