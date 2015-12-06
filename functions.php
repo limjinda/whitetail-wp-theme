@@ -5,6 +5,10 @@
  */
 
 function jinda_setup(){
+	
+	/**
+	 * ADD THEME SUPPORT
+	 */
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support( 'title-tag' );
 	add_theme_support( 'post-thumbnails' );
@@ -14,6 +18,11 @@ function jinda_setup(){
 	add_theme_support( 'post-formats', array(
 		'image', 'video', 'quote',
 	) );
+	
+	/**
+	 * REGISTER NAV MENU
+	 */
+	register_nav_menu( 'top', 'Top navigation' );
 }
 add_action('after_setup_theme', 'jinda_setup');
 

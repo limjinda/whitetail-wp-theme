@@ -20,23 +20,11 @@
 				<div class="clearfix">
 					<div class="col col-12">
 						<?php echo is_home() ? "<h1 class='site-title'>Jir4yu.me</h1>" : "<h2 class='site-title'>Jir4yu.me</h2>" ?>
+						<p class="site-tagline"><?php echo bloginfo('description'); ?></p>
 						<nav class="site-navigation">
-							<ul class="list-reset">
-								<li><a href="#">Homepage</a></li>
-								<li><a href="#">Read Me</a></li>
-								<li>
-									<a href="#">Categories</a>
-									<ul>
-										<li><a href="#">Life</a></li>
-										<li><a href="#">Recommended</a></li>
-										<li><a href="#">Web development</a></li>
-										<li><a href="#">Gadgets</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Resume</a></li>
-								<li><a href="#">รับเขียนเว็บไซต์</a></li>
-								<li><a href="#">Search</a></li>
-							</ul>
+							<?php  
+								wp_nav_menu(array('theme_location' => 'top', 'container' => false, 'menu_class' => 'list-reset', 'items_wrap' => '<ul class="%2$s">%3$s</ul>'));
+							?>
 						</nav>
 					</div>
 				</div>
@@ -50,7 +38,11 @@
 						<div class="col col-4 px1">
 							<div class="grid-content-block">
 								<figure>
+								<?php if (has_post_thumbnail()): ?>
 									<a href="<?php the_permalink(); ?>" title="<?php the_title() ?>"><img src="<?php echo get_thumbnail_url($post->ID, 'full') ?>" alt="<?php echo get_the_title() ?>" title="<?php echo get_the_title(); ?>"></a>
+								<?php else: ?>
+									<a href="<?php the_permalink(); ?>" title="<?php the_title() ?>"><img src="http://www.placehold.it/600x400" title="<?php echo get_the_title(); ?>"></a>
+								<?php endif ?>
 								</figure>
 								<h3 class="grid-title"><a href="<?php the_permalink(); ?>" title="<?php the_title() ?>"><?php the_title(); ?></a></h3>
 								<p class="grid-text"><?php echo get_the_excerpt(); ?></p>
@@ -98,6 +90,14 @@
 				</div>
 			</div>
 		</footer>
+	</div>
+
+	<div id="search-container" class="search-bar">
+		<form action="/">
+			<input type="text" placeholder="ฉันกำลังมองหา.." class="w-tb" />
+			<a href="javascript:closeSearch()" class="close-search"><span class="icon-cross"></span></a>
+			<input type="submit" value="ค้นหา" class="w-btn">
+		</form>
 	</div>
 
   <script src="<?php echo get_template_directory_uri(); ?>/lib/jquery-1.11.2.min.js"></script>
