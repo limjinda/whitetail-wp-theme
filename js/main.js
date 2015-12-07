@@ -31,4 +31,15 @@ jQuery(document).ready(function() {
 	jQuery('.site-navigation > ul').append('<li class="menu-item" id="search-icon"><a href="javascript:getSearchBox()"><span class="icon-search"></span></a></li>');
 	jQuery('.site-navigation > ul').append( jQuery('#search-container') );
 
+	/**
+	 * NAV MENU - MOBILE HACK
+	 * VERSION 1.0
+	 */
+	
+	jQuery('.site-navigation > ul').find('li.menu-item-has-children').on('click', function(e){
+		e.preventDefault();
+		$(this).find('span').toggleClass('icon-arrow-down').toggleClass('icon-arrow-up');
+		$(this).find('ul').first().toggle();
+	})
+
 })

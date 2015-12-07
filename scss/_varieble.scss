@@ -1,6 +1,16 @@
 $black: #333333;
 $white: #FFFFFF;
+$soft-white: #f8f8f8;
 $coal: #787878;
 $light: #cccccc;
 $link: #45a0bf;
 $link-active: darken(#45a0bf, 15%);
+
+/**
+ * MEDIA QUERIES
+ */
+
+$sm: 'screen and (min-width: 40em)';
+$md: 'screen and (min-width: 52em)';
+$lg: 'screen and (min-width: 64em)';
+$xlg: 'screen and (min-width: 75em)';

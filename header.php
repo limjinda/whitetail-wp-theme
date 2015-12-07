@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bower_components/basscss/css/basscss.min.css">
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
   <script src="<?php echo get_template_directory_uri(); ?>/lib/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+  <!-- livereload -->
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+  <!-- livereload -->
 </head>
 <body <?php body_class(); ?>>
 
@@ -23,7 +26,7 @@
 						<p class="site-tagline"><?php echo bloginfo('description'); ?></p>
 						<nav class="site-navigation">
 							<?php  
-								wp_nav_menu(array('theme_location' => 'top', 'container' => false, 'menu_class' => 'list-reset', 'items_wrap' => '<ul class="%2$s">%3$s</ul>'));
+								wp_nav_menu(array('theme_location' => 'top', 'container' => false, 'menu_class' => 'list-reset clearfix', 'items_wrap' => '<ul class="%2$s">%3$s</ul>'));
 							?>
 						</nav>
 					</div>
