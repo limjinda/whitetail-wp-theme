@@ -1,0 +1,27 @@
+.preloader-block{
+	// display: none;
+	position: fixed;
+	background-color: #FFF;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	.preloader-content{
+		top: 50%;
+		left: 50%;
+		position: absolute;
+		margin-top: -54px;
+		margin-left: -57px;
+	}
+	.preload-icon{
+		width: 64px;
+		height: 64px;
+		display: block;
+		margin: 0 auto 10px;
+	}
+	.preload-text{
+		font-size: 12px;
+		text-align: center;
+		color: $light;
+	}
+}

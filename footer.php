@@ -1,7 +1,7 @@
 		<footer class="footer">
 			<div class="container">
 				<div class="clearfix mxn2">
-					<div class="sm-col px2 center">
+					<div class="sm-col sm-col-12 px2 center">
 						<ul class="list-reset social-list">
 							<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/icons/facebook.png" class="social-image" alt="Facebook"></a></li>
 							<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/icons/twitter.png" class="social-image" alt="Twitter"></a></li>
@@ -29,8 +29,16 @@
 		</form>
 	</div>
 
+	<div class="preloader-block">
+		<div class="preloader-content">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/loading.gif" class="preload-icon" alt="loading, please wait.." />
+			<p class="preload-text">loading, please wait..</p>
+		</div>
+	</div>
+
   <script src="<?php echo get_template_directory_uri(); ?>/lib/jquery-1.11.2.min.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/bower_components/trmix/dist/trmix.min.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/bower_components/matchHeight/jquery.matchHeight-min.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
 </body>
 </html>

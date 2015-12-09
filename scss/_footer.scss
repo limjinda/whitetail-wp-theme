@@ -20,7 +20,9 @@ footer.footer{
 			display: block;
 			img{
 				max-width: 28px;
-				// max-width: 32px;
+				@media #{$sm}{
+					max-width: 32px;
+				}
 				height: auto;
 				opacity: 0.6;
 				&:hover{
@@ -35,6 +37,9 @@ footer.footer{
 	margin: 5px 0;
 	font-size: 12px;
 	line-height: 1.6;
+	@media #{$sm}{
+		font-size: 14px;
+	}
 }
 
 .credit-text{
@@ -42,4 +47,7 @@ footer.footer{
 	font-size: 10px;
 	color: $coal;
 	line-height: 1.6;
+	@media #{$sm}{
+		font-size: 12px;
+	}
 }

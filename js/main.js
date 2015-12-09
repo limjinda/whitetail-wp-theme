@@ -38,8 +38,21 @@ jQuery(document).ready(function() {
 	
 	jQuery('.site-navigation > ul').find('li.menu-item-has-children').on('click', function(e){
 		e.preventDefault();
-		$(this).find('span').toggleClass('icon-arrow-down').toggleClass('icon-arrow-up');
-		$(this).find('ul').first().toggle();
+		jQuery(this).find('span').toggleClass('icon-arrow-down').toggleClass('icon-arrow-up');
+		jQuery(this).find('ul').first().toggle();
 	})
 
+	/**
+	 * ADD MATCHHEIGHT TO GRID VIEW
+	 * VERSION 1.0
+	 */
+	jQuery('.grid-content-block').matchHeight();
+})
+
+jQuery(window).load(function(){
+	/**
+	 * PRELOADING LAYOUT
+	 * VERSION 1.0
+	 */
+	jQuery('.preloader-block').fadeOut();
 })
