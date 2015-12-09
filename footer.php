@@ -1,7 +1,7 @@
 		<footer class="footer">
 			<div class="container">
-				<div class="clearfix">
-					<div class="col col-12 center">
+				<div class="clearfix mxn2">
+					<div class="sm-col px2 center">
 						<ul class="list-reset social-list">
 							<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/icons/facebook.png" class="social-image" alt="Facebook"></a></li>
 							<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/icons/twitter.png" class="social-image" alt="Twitter"></a></li>

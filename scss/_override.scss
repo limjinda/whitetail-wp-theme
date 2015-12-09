@@ -1,0 +1,8 @@
+.mxn2{
+	margin-left: 0;
+	margin-right: 0;
+	@media #{$sm}{
+		margin-left: -1rem;
+		margin-right: -1rem;
+	}
+}

@@ -14,11 +14,13 @@ footer.footer{
 	margin-bottom: 10px;
 	li{
 		display: inline-block;
-		margin: 0 3px;
+		margin: 0 2px;
+		// margin: 0 3px;
 		a {
 			display: block;
 			img{
-				max-width: 32px;
+				max-width: 28px;
+				// max-width: 32px;
 				height: auto;
 				opacity: 0.6;
 				&:hover{
@@ -32,10 +34,12 @@ footer.footer{
 .footer-text{
 	margin: 5px 0;
 	font-size: 12px;
+	line-height: 1.6;
 }
 
 .credit-text{
 	margin: 5px 0;
 	font-size: 10px;
 	color: $coal;
+	line-height: 1.6;
 }
