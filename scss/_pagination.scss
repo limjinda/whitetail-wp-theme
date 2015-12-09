@@ -25,3 +25,42 @@
 		color: $coal;
 	}
 }
+
+.single-pagination{
+	// padding: 30px 0 15px;
+	.left{
+		position: fixed;
+		top: 50%;
+		margin-top: -31px;
+		left: 0;
+	}
+	.right{
+		position: fixed;
+		top: 50%;
+		right: 0;
+		margin-top: -31px;
+		text-align: right;
+	}
+	.post-pagination-icon{
+		padding: 15px;
+		font-size: 32px;
+		background-color: $soft-white;
+
+	}
+	strong{
+		display: none;
+		position: relative;
+		top: -7px;
+		font-size: 18px;
+		font-family: 'mn_paethai';
+		a {
+			padding: 15px;
+			background-color: darken($soft-white, 5%);
+			color: $link;
+			&:hover{
+				color: $black;
+				text-decoration: none;
+			}
+		}
+	}
+}

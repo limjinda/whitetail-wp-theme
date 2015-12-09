@@ -35,14 +35,21 @@ jQuery(document).ready(function() {
 	 * NAV MENU - MOBILE HACK
 	 * VERSION 1.0
 	 */
-
 	if (jQuery(window).width() <= 1024) {
 		jQuery('.site-navigation > ul').find('li.menu-item-has-children').on('click', function(e) {
 			e.preventDefault();
 			jQuery(this).find('span').toggleClass('icon-arrow-down').toggleClass('icon-arrow-up');
 			jQuery(this).find('ul').first().toggle();
 		})
-	};
+	}else{
+		jQuery('.site-navigation > ul').find('li.menu-item-has-children').first().on('mouseenter', function() {
+			jQuery(this).css('zIndex', 2);
+			jQuery('.overlay-background').fadeIn(400);
+		}).on('mouseleave', function(){
+			jQuery(this).css('zIndex', 'initial');
+			jQuery('.overlay-background').fadeOut(400);
+		})
+	}
 
 	/**
 	 * ADD MATCHHEIGHT TO GRID VIEW

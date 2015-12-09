@@ -36,7 +36,7 @@
 		</div>
 	</div>
 
-	<div class="frame"></div>
+	<div class="overlay-background"></div>
 
   <script src="<?php echo get_template_directory_uri(); ?>/lib/jquery-1.11.2.min.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/bower_components/trmix/dist/trmix.min.js"></script>

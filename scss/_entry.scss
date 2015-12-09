@@ -1,0 +1,35 @@
+.single{
+	.container{
+		max-width: 60em;
+	}
+}
+
+.entry-title{
+	text-align: center;
+	margin: 0 auto 30px;
+	line-height: 1.7;
+}
+
+.entry-content{
+	p{
+		font-family: 'mn_paethai';
+		line-height: 1.8;
+		font-size: 16px;
+	}
+	figure{
+		display: block;
+		margin: 15px auto;
+		padding: 0;
+		img{
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	figcaption{
+		font-family: 'mn_paethai';
+		border-left: 3px solid $light;
+		padding: 3px 5px 3px 10px;
+		font-size: 12px;
+		color: $coal;
+	}
+}

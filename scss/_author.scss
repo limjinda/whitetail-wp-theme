@@ -1,0 +1,29 @@
+.author-block{
+	margin: 50px auto 25px;
+	max-width: 500px;
+	background-color: darken($soft-white, 5%);
+	padding: 15px;
+	.author-image{
+		width: 80px;
+		height: 80px;
+		display: block;
+		border-radius: 50em;
+		float: left;
+	}
+	.author-content{
+		display: block;
+		margin: 5px 0 0 100px;
+		font-family: 'mn_paethai';
+		.author-title{
+			margin-top: 0;
+			font-size: 16px;
+			margin-bottom: 10px;
+		}
+		.author-bio{
+			color: $coal;
+			font-size: 12px;
+			line-height: 1.7;
+			margin-bottom: 0;
+		}
+	}
+}
