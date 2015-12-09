@@ -15,7 +15,9 @@ footer.footer{
 	li{
 		display: inline-block;
 		margin: 0 2px;
-		// margin: 0 3px;
+		@media #{$lg}{
+			margin: 0 3px;
+		}
 		a {
 			display: block;
 			img{
@@ -26,6 +28,9 @@ footer.footer{
 				@media #{$md}{
 					max-width: 28px;
 				}
+				@media #{$lg}{
+					max-width: 32px;
+				}	
 				height: auto;
 				opacity: 0.6;
 				&:hover{
@@ -46,6 +51,9 @@ footer.footer{
 	@media #{$md}{
 		font-size: 12px;
 	}
+	@media #{$lg}{
+		font-size: 14px;
+	}
 }
 
 .credit-text{
@@ -58,5 +66,8 @@ footer.footer{
 	}
 	@media #{$md}{
 		font-size: 10px;
+	}
+	@media #{$lg}{
+		font-size: 12px;
 	}
 }

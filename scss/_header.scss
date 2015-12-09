@@ -1,6 +1,8 @@
 .header{
 	padding: 25px 0 0;
-	// padding: 50px 0 5px;
+	@media #{$lg}{
+		padding: 50px 0 5px;
+	}
 }
 
 .site-title{
@@ -18,7 +20,9 @@
 	font-family: 'mn_paethai';
 	text-transform: uppercase;
 	margin: 15px auto 25px;
-	// margin: 15px auto 50px;
+	@media #{$lg}{	
+		margin: 15px auto 50px;
+	}
 }
 
 .site-navigation{
@@ -47,11 +51,6 @@
 				display: inline-block;
 				margin: 0;
 			}
-			&#search-icon{
-				// clear: both;
-				// width: 100%;
-				// float: none;
-			}
 			> a {
 				display: block;
 				padding: 10px;
@@ -62,11 +61,13 @@
 				color: $coal;
 				text-decoration: none;
 				letter-spacing: 0.3px;
-				// padding: 5px 15px;
-				// font-size: 16px;
 				@media #{$sm}{
 					font-size: 14px;
 					padding: 5px 10px;
+				}
+				@media #{$lg}{
+					padding: 5px 15px;
+					font-size: 16px;
 				}
 				&:hover{
 					color: $black;
@@ -79,11 +80,13 @@
 .site-navigation {
 	> ul{
 		> li{
-			// &:hover{
-			// 	> ul {
-			// 		display: block;
-			// 	}
-			// }
+			@media #{$lg}{
+				&:hover{
+					> ul {
+						display: block;
+					}
+				}
+			}
 			> ul{
 				display: none;
 				clear: both;
@@ -97,6 +100,7 @@
 				background-color: darken($soft-white, 5%);
 				box-sizing: border-box;
 				@include shadow(1);
+				@include transition(all .2s linear);
 
 				@media #{$sm}{
 					padding: 15px;
@@ -105,6 +109,13 @@
 					top: 30px;
 					width: auto;
 					text-align: left;
+				}
+
+				@media #{$lg}{
+					&:hover{
+						@include shadow(2);
+						@include transition(all .2s linear);
+					}
 				}
 
 				// display: block;
@@ -121,16 +132,10 @@
 				// display: none;
 				
 				// @include transition(all .2s linear);
-				// &:hover{
-					// @include shadow(2);
-					// @include transition(all .2s linear);
-				// }
 				> li{
-
 					float: left;
 					width: 50%;
 					display: block;
-
 					@media #{$sm}{
 						float: none;
 						width: auto;
@@ -145,8 +150,6 @@
 							}
 						}
 					}
-
-					
 					> a{
 						padding: 10px;
 						color: $coal;
@@ -155,15 +158,17 @@
 						letter-spacing: 0.5px;
 						text-transform: uppercase;
 						font-size: 10px;
-
 						@media #{$sm}{
 							font-size: 12px;
 							padding: 5px 0;
 						}
+						@media #{$lg}{
+							font-size: 12px;
+							padding: 5px 5px;
+						}
 						&:hover{
 							color: $black;
 							text-decoration: none;
-							// color: darken($white, 15%);
 						}
 					}
 				}

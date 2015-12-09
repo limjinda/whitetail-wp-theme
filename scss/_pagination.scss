@@ -1,6 +1,8 @@
 .page-pagination-block{
 	padding: 15px 0 10px;
-	// padding: 30px 0 15px;
+	@media #{$lg}{
+		padding: 30px 0 15px;
+	}
 	a {
 		font-family: 'mn_paethai';
 		color: $coal;

@@ -6,10 +6,10 @@ function getSearchBox() {
 	jQuery('#search-container').css('display', 'inline-block').find('.w-tb').focus();
 }
 
-function closeSearch(){
+function closeSearch() {
 	jQuery('#search-container').find('.w-tb').val('');
 	jQuery('#search-container').hide();
-	jQuery('#search-icon').show();
+	jQuery('#search-icon').css('display', 'inline-block');
 }
 
 jQuery(document).ready(function() {
@@ -29,18 +29,20 @@ jQuery(document).ready(function() {
 	 * VERSION 1.0
 	 */
 	jQuery('.site-navigation > ul').append('<li class="menu-item" id="search-icon"><a href="javascript:getSearchBox()"><span class="icon-search"></span></a></li>');
-	jQuery('.site-navigation > ul').append( jQuery('#search-container') );
+	jQuery('.site-navigation > ul').append(jQuery('#search-container'));
 
 	/**
 	 * NAV MENU - MOBILE HACK
 	 * VERSION 1.0
 	 */
-	
-	jQuery('.site-navigation > ul').find('li.menu-item-has-children').on('click', function(e){
-		e.preventDefault();
-		jQuery(this).find('span').toggleClass('icon-arrow-down').toggleClass('icon-arrow-up');
-		jQuery(this).find('ul').first().toggle();
-	})
+
+	if (jQuery(window).width() <= 1024) {
+		jQuery('.site-navigation > ul').find('li.menu-item-has-children').on('click', function(e) {
+			e.preventDefault();
+			jQuery(this).find('span').toggleClass('icon-arrow-down').toggleClass('icon-arrow-up');
+			jQuery(this).find('ul').first().toggle();
+		})
+	};
 
 	/**
 	 * ADD MATCHHEIGHT TO GRID VIEW
@@ -49,7 +51,7 @@ jQuery(document).ready(function() {
 	jQuery('.grid-content-block').matchHeight();
 })
 
-jQuery(window).load(function(){
+jQuery(window).load(function() {
 	/**
 	 * PRELOADING LAYOUT
 	 * VERSION 1.0

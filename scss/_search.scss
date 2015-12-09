@@ -9,6 +9,10 @@
 		position: absolute;
 		top: 5px;
 		right: 60px;
+		@media #{$lg}{
+			top: 7px;
+			right: 65px;
+		}
 		&:hover{
 			text-decoration: none;
 		}
