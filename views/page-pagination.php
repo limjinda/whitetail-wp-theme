@@ -1,7 +1,7 @@
 <!-- page pagination -->
 <div class="page-pagination-block">
 	<div class="clearfix mxn2">
-		<div class="col col-6 px2 right-align">
+		<div class="col col-6 px1 right-align">
 			<?php get_previous_posts_link() ? previous_posts_link("<span class='icon icon-arrow-left'></span> ดูเรื่องที่ใหม่กว่า") : "" ?>&nbsp;
 		</div>
 		<div class="col col-6 px2">

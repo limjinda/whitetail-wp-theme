@@ -23,6 +23,9 @@ footer.footer{
 				@media #{$sm}{
 					max-width: 32px;
 				}
+				@media #{$md}{
+					max-width: 28px;
+				}
 				height: auto;
 				opacity: 0.6;
 				&:hover{
@@ -40,6 +43,9 @@ footer.footer{
 	@media #{$sm}{
 		font-size: 14px;
 	}
+	@media #{$md}{
+		font-size: 12px;
+	}
 }
 
 .credit-text{
@@ -49,5 +55,8 @@ footer.footer{
 	line-height: 1.6;
 	@media #{$sm}{
 		font-size: 12px;
+	}
+	@media #{$md}{
+		font-size: 10px;
 	}
 }
