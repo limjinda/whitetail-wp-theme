@@ -1,8 +1,12 @@
 .mxn2{
 	margin-left: 0;
 	margin-right: 0;
-	// @media #{$lg}{
-	// margin-left: -1rem;
-	// margin-right: -1rem;
-	// }
+}
+
+body{
+	&.single{
+		main{
+			padding: 40px 0 50px;
+		}
+	}
 }

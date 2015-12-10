@@ -6,7 +6,7 @@
 
 .entry-title{
 	text-align: center;
-	margin: 0 auto 30px;
+	margin: 0 auto 15px;
 	line-height: 1.7;
 }
 
@@ -16,14 +16,14 @@
 		line-height: 1.8;
 		font-size: 16px;
 	}
+	img{
+		max-width: 100%;
+		height: auto;
+	}
 	figure{
 		display: block;
 		margin: 15px auto;
 		padding: 0;
-		img{
-			max-width: 100%;
-			height: auto;
-		}
 	}
 	figcaption{
 		font-family: 'mn_paethai';
