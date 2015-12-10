@@ -5,25 +5,59 @@
 }
 
 .entry-title{
+	font-size: 20px;
 	text-align: center;
 	margin: 0 auto 15px;
 	line-height: 1.7;
 }
 
 .entry-content{
-	p{
-		font-family: 'mn_paethai';
-		line-height: 1.8;
+	h1{
+		font-size: 20px;
+	}
+	h2{
+		font-size: 18px;
+	}
+	h3{
 		font-size: 16px;
+	}
+	p{
+		font-size: 14px;
+		font-family: 'mn_paethai';
+		line-height: 1.7;
+		// font-size: 16px;
+	}
+	blockquote{
+		padding: 20px;
+		margin: 0 auto 20px;
+		background-color: darken($soft-white, 5%);
+		p{
+			margin-bottom: 0;
+		}
+	}
+	a{
+		color: $link;
+		&:hover{
+			text-decoration: none;
+			color: $link-active;
+		}
 	}
 	img{
 		max-width: 100%;
 		height: auto;
 	}
 	figure{
+		max-width: 100%;
 		display: block;
 		margin: 15px auto;
 		padding: 0;
+		&.gallery-item{
+			float: left;
+			width: 33.33%;
+			padding: 5px;
+			box-sizing: border-box;
+			margin: auto;
+		}
 	}
 	figcaption{
 		font-family: 'mn_paethai';
@@ -31,5 +65,44 @@
 		padding: 3px 5px 3px 10px;
 		font-size: 12px;
 		color: $coal;
+	}
+	.gallery{
+		clear: both;
+		margin: 15px auto;
+		&::after,
+		&::before{
+			content: " ";
+			display: table;
+		}
+		&::after{
+			clear: both;
+		}
+	}
+	ul, ol{
+		padding: 0 0 0 15px;
+		margin-bottom: 1rem;
+		list-style-position: inside;
+		li{
+			font-size: 14px;
+			line-height: 1.5;
+			margin-bottom: 5px;
+			> ul, ol{
+				margin: 0.5rem 0;
+			}
+		}
+	}
+	table{
+		font-family: 'mn_paethai';
+		tbody{
+			td,th{
+				padding: .25rem 0.5rem;
+				border-bottom: 1px solid darken($soft-white, 5%);
+				font-size: 14px;
+				vertical-align: middle;
+				a {
+					font-size: 14px;
+				}
+			}
+		}
 	}
 }

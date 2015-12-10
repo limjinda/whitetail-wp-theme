@@ -56,6 +56,15 @@ jQuery(document).ready(function() {
 	 * VERSION 1.0
 	 */
 	jQuery('.grid-content-block').matchHeight();
+
+	/**
+	 * IF HAVE TABLE IN THAT PAGE
+	 * VERSION 1.0
+	 */
+	if ( jQuery('table').length > 0 ) {
+		jQuery('table').addClass('table-light');
+	};
+
 })
 
 jQuery(window).load(function() {
