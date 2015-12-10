@@ -45,6 +45,11 @@
 		display: inline-block;
 		background-color: $soft-white;
 		padding: 15px;
+		a{
+			&:hover{
+				text-decoration: none;
+			}
+		}
 		&:hover{
 			strong{
 				display: inline-block;
