@@ -41,25 +41,32 @@
 		margin-top: -31px;
 		text-align: right;
 	}
-	.post-pagination-icon{
-		padding: 15px;
-		font-size: 32px;
+	.pagination-content-block{
+		display: inline-block;
 		background-color: $soft-white;
-
-	}
-	strong{
-		display: none;
-		position: relative;
-		top: -7px;
-		font-size: 18px;
-		font-family: 'mn_paethai';
-		a {
-			padding: 15px;
-			background-color: darken($soft-white, 5%);
-			color: $link;
-			&:hover{
-				color: $black;
-				text-decoration: none;
+		padding: 15px;
+		&:hover{
+			strong{
+				display: inline-block;
+			}
+		}
+		.post-pagination-icon{
+			font-size: 32px;
+		}
+		strong{
+			display: none;
+			position: relative;
+			top: -5px;
+			font-size: 18px;
+			font-family: 'mn_paethai';
+			a {
+				padding: 15px;
+				// background-color: darken($soft-white, 5%);
+				color: $link;
+				&:hover{
+					color: $black;
+					text-decoration: none;
+				}
 			}
 		}
 	}

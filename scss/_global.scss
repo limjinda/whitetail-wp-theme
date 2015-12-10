@@ -1,5 +1,7 @@
 body{
-	border: 25px solid $soft-white;
+	@media #{$sm}{
+		border: 25px solid $soft-white;
+	}
 }
 
 .img-responsive{
