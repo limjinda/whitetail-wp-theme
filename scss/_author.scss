@@ -1,27 +1,51 @@
 .author-block{
 	margin: 25px auto;
-	// margin: 50px auto 25px;
 	max-width: 500px;
 	background-color: darken($soft-white, 5%);
 	padding: 15px;
+	@media #{$sm}{
+		margin: 50px auto 25px;
+		max-width: 450px;
+	}
+	@media #{$md}{
+		max-width: 500px;
+	}
 	.author-image{
 		display: block;
 		width: 80px;
 		height: 80px;
 		margin: 15px auto;
 		border-radius: 50em;
-		// float: left;
+		@media #{$sm}{
+			float: left;
+			margin: 0 auto;
+		}
+		@media #{$md}{
+			margin: 5px auto;
+		}
 	}
 	.author-content{
 		display: block;
 		margin: 15px auto 0 0;
 		font-family: 'mn_paethai';
-		// margin: 5px 0 0 100px;
+		@media #{$sm}{
+			margin: 5px 0 0 100px;
+		}
+		@media #{$md}{
+			margin: 5px 0 0 95px;
+		}
 		.author-title{
 			margin-top: 0;
 			font-size: 16px;
 			margin-bottom: 10px;
 			text-align: center;
+			@media #{$sm}{
+				text-align: left;
+				font-size: 18px;
+			}
+			@media #{$md}{
+				font-size: 20px;
+			}
 		}
 		.author-bio{
 			text-align: center;
@@ -29,7 +53,13 @@
 			font-size: 12px;
 			line-height: 1.7;
 			margin-bottom: 15px;
-			// margin-bottom: 0;
+			@media #{$sm}{
+				margin-bottom: 0;
+				text-align: left;
+			}
+			@media #{$md}{
+				font-size: 14px;
+			}
 		}
 	}
 }

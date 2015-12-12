@@ -1,0 +1,53 @@
+body.single-format-quote{
+	.entry-title{
+		font-size: 14px;
+	}
+	.entry-content{
+		text-align: center;
+		blockquote{
+			background-color: transparent;
+			p{
+				font-size: 24px;
+				line-height: 1.6;
+				color: $coal;
+			}
+		}
+	}
+}
+
+body.single-format-gallery{
+	.entry-content{
+		figure.gallery-item{
+			float: left;
+			width: 50%;
+			margin: 0px auto;
+			@media #{$sm}{
+				width: 25%;
+			}
+			@media #{$md}{
+				width: 20%;
+			}
+			@media #{$lg}{
+				width: 12.5%;
+			}
+			img{
+				margin: 1px auto;
+				display: block;
+				@media #{$sm}{
+					margin: 3px auto;
+				}
+				@media #{$md}{
+					margin: 2px auto;
+				}
+				@media #{$lg}{
+					margin: 0 auto;
+					padding: 2px;
+					box-sizing: border-box;
+				}
+			}
+		}
+		figcaption{
+			display: none;
+		}
+	}
+}

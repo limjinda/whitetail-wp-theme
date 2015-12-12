@@ -65,6 +65,18 @@ jQuery(document).ready(function() {
 		jQuery('table').addClass('table-light');
 	};
 
+	/**
+	 * ADD HOLDER TO IFRAME, EMBED and object
+	 * TO MAKE THAT RESPONSIVE LAYOUT
+	 * VERSION 1.0
+	 */
+	
+	if ( jQuery('iframe').length > 0) {
+		jQuery('iframe').each(function(){
+			jQuery(this).wrap("<div class='responsive-unit'></div>");
+		})
+	};
+
 })
 
 jQuery(window).load(function() {
