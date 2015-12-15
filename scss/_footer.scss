@@ -48,8 +48,12 @@ footer.footer{
 	font-family: 'mn_paethai';
 	@media #{$sm}{
 		font-size: 14px;
+		max-width: 450px;
+		line-height: 1.65;
+		margin: 5px auto;
 	}
 	@media #{$md}{
+		max-width: auto;
 		font-size: 12px;
 	}
 	@media #{$lg}{
