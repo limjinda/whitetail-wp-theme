@@ -12,7 +12,7 @@
 							<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/icons/500px.png" class="social-image" alt="500px"></a></li>
 						</ul>
 						<p class="footer-text">
-							All posts in <?php echo get_bloginfo('name'); ?> was written by <a href="https://plus.google.com/114178088498011147130?rel=author" target="_blank" title="Jirayu Limjinda">Jirayu Limjinda</a> under <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" title="Creative Commons" target="_blank">CC BY-NC-ND 4.0</a>
+							บทความทั้งหมดใน <?php echo get_bloginfo('name'); ?> ถูกเขียนขึ้นโดย <a href="https://plus.google.com/114178088498011147130?rel=author" target="_blank" title="Jirayu Limjinda">Jirayu Limjinda</a> ภายใต้สัญญา <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" title="Creative Commons" target="_blank">CC BY-NC-ND 4.0</a>
 						</p>
 						<p class="credit-text"><a href="#" target="_blank" title="WhiteTail WordPress Theme">WhiteTail</a> is an opensource WordPress Theme by <a href="http://www.jindatheme.com" target="_blank" title="JindaTheme">JindaTheme</a></p>
 					</div>

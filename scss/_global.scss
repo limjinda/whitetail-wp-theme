@@ -28,12 +28,26 @@ body{
 	height: 30px !important;
 	outline: 0 !important;
 	margin: 0;
+	resize: none;
 	@media #{$lg}{
 		font-size: 14px;
 	}
 	&:focus{
 		border: 1px solid $coal;
 	}
+}
+
+.w-label{
+	font-size: 14px;
+	display: block;
+	margin: 20px 0 5px;
+}
+
+.w-textarea{
+	@extend .w-tb;
+	max-width: 100%;
+	box-sizing: border-box;
+	height: auto !important;
 }
 
 .w-btn{
@@ -82,4 +96,8 @@ body{
   	width: 100%;
   	height: 100%;
   }
+}
+
+.required{
+	color: $red;
 }

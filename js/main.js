@@ -41,11 +41,11 @@ jQuery(document).ready(function() {
 			jQuery(this).find('span').toggleClass('icon-arrow-down').toggleClass('icon-arrow-up');
 			jQuery(this).find('ul').first().toggle();
 		})
-	}else{
+	} else {
 		jQuery('.site-navigation > ul').find('li.menu-item-has-children').first().on('mouseenter', function() {
 			jQuery(this).css('zIndex', 2);
 			jQuery('.overlay-background').fadeIn(400);
-		}).on('mouseleave', function(){
+		}).on('mouseleave', function() {
 			jQuery(this).css('zIndex', 'initial');
 			jQuery('.overlay-background').fadeOut(400);
 		})
@@ -61,7 +61,7 @@ jQuery(document).ready(function() {
 	 * IF HAVE TABLE IN THAT PAGE
 	 * VERSION 1.0
 	 */
-	if ( jQuery('table').length > 0 ) {
+	if (jQuery('table').length > 0) {
 		jQuery('table').addClass('table-light');
 	};
 
@@ -70,11 +70,21 @@ jQuery(document).ready(function() {
 	 * TO MAKE THAT RESPONSIVE LAYOUT
 	 * VERSION 1.0
 	 */
-	
-	if ( jQuery('iframe').length > 0) {
-		jQuery('iframe').each(function(){
+
+	if (jQuery('iframe').length > 0) {
+		jQuery('iframe').each(function() {
 			jQuery(this).wrap("<div class='responsive-unit'></div>");
 		})
+	};
+
+	/**
+	 * WARP FORM-SUBMIT(IN COMMENT-FORM)
+	 * IN CLEARFIX MXN2
+	 */
+
+	if (jQuery('.comment-form').length > 0) {
+		jQuery('.form-submit').wrap("<div class='clearifx mxn2'></div>");
+		jQuery('.form-submit').addClass('px1 comment-submit-block');
 	};
 
 })

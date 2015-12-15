@@ -4,7 +4,7 @@
 	background-color: darken($soft-white, 5%);
 	padding: 15px;
 	@media #{$sm}{
-		margin: 50px auto 25px;
+		margin: 15px auto 25px;
 		max-width: 450px;
 	}
 	@media #{$md}{

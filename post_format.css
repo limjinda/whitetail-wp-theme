@@ -1,46 +1,28 @@
 /*
-Error: Undefined variable: "$coal".
-        on line 12 of scss/post_format.scss
+Error: Undefined variable: "$sm".
+        on line 4 of scss/post_format.scss
 
-7: 		blockquote{
-8: 			background-color: transparent;
-9: 			p{
-10: 				font-size: 24px;
-11: 				line-height: 1.6;
-12: 				color: $coal;
-13: 			}
-14: 		}
-15: 	}
-16: }
-17: 
+1: body.single-format-quote{
+2: 	.entry-title{
+3: 		font-size: 14px;
+4: 		@media #{$sm}{
+5: 			font-size: 20px;
+6: 			margin-bottom: 0;
+7: 		}
+8: 		@media #{$md}{
+9: 			margin: 30px auto 0;
 
 Backtrace:
-scss/post_format.scss:12
+scss/post_format.scss:4
 /Users/jir4yu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Users/jir4yu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/script/tree/node.rb:50:in `perform'
-/Users/jir4yu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:395:in `visit_prop'
-/Users/jir4yu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/jir4yu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Users/jir4yu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/stack.rb:79:in `block in with_base'
-/Users/jir4yu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/stack.rb:115:in `with_frame'
-/Users/jir4yu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/stack.rb:79:in `with_base'
-/Users/jir4yu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Users/jir4yu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:431:in `block (2 levels) in visit_rule'
-/Users/jir4yu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:431:in `map'
-/Users/jir4yu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:431:in `block in visit_rule'
-/Users/jir4yu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Users/jir4yu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:429:in `visit_rule'
-/Users/jir4yu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/jir4yu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Users/jir4yu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/stack.rb:79:in `block in with_base'
-/Users/jir4yu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/stack.rb:115:in `with_frame'
-/Users/jir4yu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/stack.rb:79:in `with_base'
-/Users/jir4yu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Users/jir4yu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:431:in `block (2 levels) in visit_rule'
-/Users/jir4yu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:431:in `map'
-/Users/jir4yu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:431:in `block in visit_rule'
-/Users/jir4yu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Users/jir4yu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:429:in `visit_rule'
+/Users/jir4yu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/script/tree/interpolation.rb:100:in `_perform'
+/Users/jir4yu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/jir4yu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:537:in `block in run_interp_no_strip'
+/Users/jir4yu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:535:in `map'
+/Users/jir4yu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:535:in `run_interp_no_strip'
+/Users/jir4yu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:542:in `run_interp'
+/Users/jir4yu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:510:in `visit_media'
 /Users/jir4yu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Users/jir4yu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 /Users/jir4yu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/stack.rb:79:in `block in with_base'
@@ -100,4 +82,4 @@ scss/post_format.scss:12
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$coal\".\A         on line 12 of scss/post_format.scss\A \A 7: 		blockquote{\A 8: 			background-color: transparent;\A 9: 			p{\A 10: 				font-size: 24px;\A 11: 				line-height: 1.6;\A 12: 				color: $coal;\A 13: 			}\A 14: 		}\A 15: 	}\A 16: }\A 17: "; }
+  content: "Error: Undefined variable: \"$sm\".\A         on line 4 of scss/post_format.scss\A \A 1: body.single-format-quote{\A 2: 	.entry-title{\A 3: 		font-size: 14px;\A 4: 		@media #{$sm}{\A 5: 			font-size: 20px;\A 6: 			margin-bottom: 0;\A 7: 		}\A 8: 		@media #{$md}{\A 9: 			margin: 30px auto 0;"; }

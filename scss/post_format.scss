@@ -1,6 +1,13 @@
 body.single-format-quote{
 	.entry-title{
 		font-size: 14px;
+		@media #{$sm}{
+			font-size: 20px;
+			margin-bottom: 0;
+		}
+		@media #{$md}{
+			margin: 30px auto 0;
+		}
 	}
 	.entry-content{
 		text-align: center;
@@ -10,6 +17,18 @@ body.single-format-quote{
 				font-size: 24px;
 				line-height: 1.6;
 				color: $coal;
+				@media #{$sm}{
+					max-width: 500px;
+					margin: auto;
+					font-size: 32px;
+				}
+				@media #{$md}{
+					font-size: 36px;
+					line-height: 1.65;
+				}
+				@media #{$lg}{
+					max-width: 720px;
+				}
 			}
 		}
 	}

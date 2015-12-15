@@ -36,6 +36,7 @@
 		}
 		@media #{$md}{
 			padding: 0 0 0 15px;
+			text-align: left;
 		}
 		@media #{$lg}{
 			position: fixed;
@@ -54,6 +55,7 @@
 		}
 		@media #{$md}{
 			padding: 0 15px 0 0;
+			text-align: right;
 		}
 		@media #{$lg}{
 			width: auto;
@@ -113,6 +115,7 @@
 			a {
 				padding: 15px;
 				color: $link;
+				word-break: break-word;
 				@media #{$md}{
 					padding: 0 10px;
 				}
@@ -125,6 +128,25 @@
 					text-decoration: none;
 				}
 			}
+		}
+	}
+}
+
+.nav-links{
+	font-family: 'mn_paethai';
+	font-size: 12px;
+	margin: 20px auto 5px;
+	@media #{$sm}{
+		font-size: 14px;
+		margin: 40px auto 10px;
+	}
+	display: block;
+	clear: both;
+	a {
+		color: $link;
+		&:hover{
+			color: $link-active;
+			text-decoration: none;
 		}
 	}
 }
