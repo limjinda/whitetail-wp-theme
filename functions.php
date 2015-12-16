@@ -22,6 +22,7 @@ function jinda_setup(){
 		'image', 'video', 'quote',
 	) );
 
+	set_post_thumbnail_size( 600, 400, array('center', 'center') );
 	add_image_size( 'grid-thumbnail', 600, 400, array('center', 'center') );
 	
 	/**

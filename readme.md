@@ -9,3 +9,4 @@ Pre-release version 0.9
 * Complete your site details (General and Social tab)
 * Point to `Settings > Reading` to set **Blog pages show at most** (recommended = 9)
 * Re-generate your old images (via [Regenerate Thumbnails](https://wordpress.org/plugins/regenerate-thumbnails/) or sth)
+* Enjoy!
