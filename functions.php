@@ -21,6 +21,8 @@ function jinda_setup(){
 	add_theme_support( 'post-formats', array(
 		'image', 'video', 'quote',
 	) );
+
+	add_image_size( 'grid-thumbnail', 600, 400, array('center', 'center') );
 	
 	/**
 	 * REGISTER NAV MENU
