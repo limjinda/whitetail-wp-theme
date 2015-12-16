@@ -61,8 +61,8 @@ function jinda_admin_enqueue($hook){
 	wp_enqueue_style('jquery_ionicons_css', THEME_URI . '/bower_components/ionicons/css/ionicons.min.css');
 	wp_enqueue_style('bootstrap_css', THEME_URI . '/bower_components/bootstrap/dist/css/bootstrap.min.css');
 	wp_enqueue_style('scroll_css', THEME_URI . '/lib/jquery.mCustomScrollbar.min.css');
-	wp_enqueue_style('code_mirror_css', THEME_URI . '/bower_components/CodeMirror/lib/codemirror.css');
-	wp_enqueue_style('code_mirror_monokai', THEME_URI . '/bower_components/CodeMirror/theme/monokai.css');
+	wp_enqueue_style('code_mirror_css', THEME_URI . '/bower_components/codemirror/lib/codemirror.css');
+	wp_enqueue_style('code_mirror_monokai', THEME_URI . '/bower_components/codemirror/theme/monokai.css');
 	wp_enqueue_style('jindatheme_admin_css', THEME_URI . '/jindatheme/options-ui.css');
 	if(function_exists( 'wp_enqueue_media' )){
 		wp_enqueue_media();
@@ -75,10 +75,10 @@ function jinda_admin_enqueue($hook){
 	wp_enqueue_script('jquery_form_script', THEME_URI . '/lib/jquery.form.min.js');
 	wp_enqueue_script('jquery_icheck_script', THEME_URI . '/bower_components/iCheck/icheck.min.js');
 	wp_enqueue_script('jquery_scroll_script', THEME_URI . '/lib/jquery.mCustomScrollbar.min.js');
-	wp_enqueue_script('jquery_codemirror_script', THEME_URI . '/bower_components/CodeMirror/lib/codemirror.js');
-	wp_enqueue_script('jquery_codemirror_xml', THEME_URI . '/bower_components/CodeMirror/mode/xml/xml.js');
-	wp_enqueue_script('jquery_codemirror_css', THEME_URI . '/bower_components/CodeMirror/mode/css/css.js');
-	wp_enqueue_script('jquery_codemirror_javascript', THEME_URI . '/bower_components/CodeMirror/mode/javascript/javascript.js');
+	wp_enqueue_script('jquery_codemirror_script', THEME_URI . '/bower_components/codemirror/lib/codemirror.js');
+	wp_enqueue_script('jquery_codemirror_xml', THEME_URI . '/bower_components/codemirror/mode/xml/xml.js');
+	wp_enqueue_script('jquery_codemirror_css', THEME_URI . '/bower_components/codemirror/mode/css/css.js');
+	wp_enqueue_script('jquery_codemirror_javascript', THEME_URI . '/bower_components/codemirror/mode/javascript/javascript.js');
 	wp_enqueue_script('jindatheme_admin_script', THEME_URI . '/jindatheme/options-ui.js');
 }
 add_action('admin_enqueue_scripts', 'jinda_admin_enqueue');
