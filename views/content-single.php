@@ -1,6 +1,6 @@
 <div class="clearfix mxn2">
 	<?php while ( have_posts() ) : the_post() ?>
-		<article <?php post_class('sm-col sm-col-12 px1' ); ?>>
+		<article <?php post_class('sm-col sm-col-12 px2' ); ?>>
 			<h1 class="entry-title"><?php the_title(); ?></h1>
 			<div class="entry-content">
 				<?php the_content() ?>

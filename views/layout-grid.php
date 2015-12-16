@@ -1,4 +1,4 @@
-<div class="sm-col sm-col-6 md-col-4 px1">
+<div class="sm-col sm-col-6 md-col-4 px2">
 	<div class="grid-content-block">
 		<figure>
 			<?php if (has_post_thumbnail()): ?>

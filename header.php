@@ -20,8 +20,8 @@
 	<div class="wrapper">
 		<header class="header">
 			<div class="container">
-				<div class="clearfix">
-					<div class="col col-12">
+				<div class="clearfix mxn2">
+					<div class="col col-12 px2">
 						<?php echo is_home() ? "<h1 class='site-title'>Jir4yu.me</h1>" : "<h2 class='site-title'>Jir4yu.me</h2>" ?>
 						<p class="site-tagline"><?php echo bloginfo('description'); ?></p>
 						<nav class="site-navigation">

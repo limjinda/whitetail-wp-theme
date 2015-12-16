@@ -29,7 +29,7 @@
 	font-family: 'mn_paethai';
 	position: relative;
 	> ul {
-		padding: 0px 30px;
+		padding: 5px 20px;
 		box-sizing: border-box;
 		background-color: $soft-white;
 		margin: 0;
@@ -55,12 +55,10 @@
 				display: block;
 				padding: 10px;
 				font-size: 12px;
-				letter-spacing: 0.5px;
-
 				text-transform: uppercase;
 				color: $coal;
 				text-decoration: none;
-				letter-spacing: 0.3px;
+				letter-spacing: 0px;
 				@media #{$sm}{
 					font-size: 14px;
 					padding: 5px 10px;

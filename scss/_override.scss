@@ -5,8 +5,16 @@
 
 body{
 	&.single{
-		main{
+		main.main{
 			padding: 40px 0 20px;
+		}
+	}
+	&.error404{
+		main.main {
+			padding: 40px 0 20px;
+			@media #{$sm}{
+				padding: 100px 0;
+			}
 		}
 	}
 }

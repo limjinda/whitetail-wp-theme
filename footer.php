@@ -22,10 +22,10 @@
 	</div>
 
 	<div id="search-container" class="search-bar">
-		<form action="/">
-			<input type="text" placeholder="ฉันกำลังมองหา.." class="w-tb" />
+		<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
+			<input type="search" placeholder="ฉันกำลังมองหา.." class="search-field w-tb" value="<?php echo get_search_query() ?>" name="s" />
 			<a href="javascript:closeSearch()" class="close-search"><span class="icon-cross"></span></a>
-			<input type="submit" value="ค้นหา" class="w-btn">
+			<input type="submit" value="ค้นหา" class="search-submit w-btn">
 		</form>
 	</div>
 

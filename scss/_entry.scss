@@ -33,6 +33,11 @@
 }
 
 .archive-title{
+	span{
+		position: relative;
+		margin-right: 5px;
+		top: 3px;
+	}
 	&.empty{
 		max-width: 90%;
 		text-align: center;
@@ -47,7 +52,15 @@
 .archive-description{
 	max-width: 80%;
 	margin: 0 auto 30px;
+	font-size: 12px;
+	color: $coal;
+	text-align: center;
+	line-height: 1.6;
+	@media #{$sm}{
+		font-size: 14px;
+	}
 	@media #{$md}{
+		text-align: left;
 		max-width: 100%;
 	}
 	p{

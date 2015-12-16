@@ -1,0 +1,37 @@
+.not-found-icon{
+	font-size: 64px;
+	margin: 25px auto;
+	display: block;
+	text-align: center;
+	@media #{$md}{
+		font-size: 72px;
+	}
+	@media #{$lg}{
+		margin: 25px auto 50px;
+	}
+}
+
+.not-found-title{
+	font-size: 20px;
+	text-align: center;
+	line-height: 1.6;
+}
+
+.not-found-text{
+	font-size: 12px;
+	text-align: center;
+	color: $coal;
+	max-width: 80%;
+	margin: 5px auto 15px;
+	@media #{$md}{
+		max-width: 100%;
+		margin: 10px auto;
+	}
+	a{
+		color: $link;
+		&:hover{
+			color: $link-active;
+			text-decoration: none;
+		}
+	}
+}
