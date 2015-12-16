@@ -1,0 +1,14 @@
+article.page{
+	.entry-title{
+		margin-bottom: 5px;
+	}
+	.entry-meta{
+		margin: 5px auto 10px;
+		@media #{$sm}{
+			margin: 5px auto 20px;
+		}
+		@media #{$md}{
+			margin: 5px auto 25px;
+		}
+	}
+}

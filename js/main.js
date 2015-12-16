@@ -44,10 +44,10 @@ jQuery(document).ready(function() {
 	} else {
 		jQuery('.site-navigation > ul').find('li.menu-item-has-children').first().on('mouseenter', function() {
 			jQuery(this).css('zIndex', 2);
-			jQuery('.overlay-background').fadeIn(400);
+			jQuery('.overlay-background').fadeIn(200);
 		}).on('mouseleave', function() {
 			jQuery(this).css('zIndex', 'initial');
-			jQuery('.overlay-background').fadeOut(400);
+			jQuery('.overlay-background').fadeOut(200);
 		})
 	}
 
