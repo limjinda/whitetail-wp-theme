@@ -4,7 +4,8 @@
 	}
 }
 
-.entry-title{
+.entry-title,
+.archive-title{
 	font-size: 20px;
 	text-align: center;
 	margin: 0 auto 15px;
@@ -15,6 +16,50 @@
 	}
 	@media #{$md}{
 		font-size: 32px;
+	}
+}
+
+.archive-content{
+	@media #{$sm}{
+		padding: 50px 0;
+	}
+}
+
+.archive-icon-empty{
+	margin: 25px auto;
+	display: block;
+	text-align: center;
+	font-size: 64px;
+}
+
+.archive-title{
+	&.empty{
+		max-width: 90%;
+		text-align: center;
+	}
+	@media #{$md}{
+		max-width: auto;
+		text-align: left;
+		margin-bottom: 5px;
+	}
+}
+
+.archive-description{
+	max-width: 80%;
+	margin: 0 auto 30px;
+	@media #{$md}{
+		max-width: 100%;
+	}
+	p{
+		text-align: center;
+		font-size: 12px;
+		color: $coal;
+		margin-bottom: 30px;
+		line-height: 1.6;
+		@media #{$md}{
+			text-align: left;
+			font-size: 14px;
+		}
 	}
 }
 

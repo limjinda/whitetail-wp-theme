@@ -6,7 +6,7 @@
 					<?php get_template_part('views/layout', 'grid') ?>
 				<?php endwhile; else: ?>
 				<!-- no post found -->
-			<?php endif; ?>
+				<?php endif; ?>
 		</div>
 		<?php get_template_part('views/page','pagination'); ?>
 	</div>

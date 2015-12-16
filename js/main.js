@@ -37,7 +37,6 @@ jQuery(document).ready(function() {
 	 */
 	if (jQuery(window).width() <= 1024) {
 		jQuery('.site-navigation > ul').find('li.menu-item-has-children').on('click', function(e) {
-			e.preventDefault();
 			jQuery(this).find('span').toggleClass('icon-arrow-down').toggleClass('icon-arrow-up');
 			jQuery(this).find('ul').first().toggle();
 		})
