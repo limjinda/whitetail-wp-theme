@@ -53,7 +53,7 @@ footer.footer{
 		margin: 5px auto;
 	}
 	@media #{$md}{
-		max-width: auto;
+		max-width: initial;
 		font-size: 12px;
 	}
 	@media #{$lg}{

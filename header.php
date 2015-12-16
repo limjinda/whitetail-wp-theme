@@ -5,15 +5,14 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title><?php wp_title(); ?></title>
-  <meta name="description" content="">
+  <title><?php wp_title('|', true, 'right'); ?></title>
+  <meta name="description" content="<?php echo get_option('jinda_opt_site_description') ?>">
+  <meta name="keywords" content="<?php echo get_option('jinda_opt_site_keywords') ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bower_components/basscss/css/basscss.min.css">
-  <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
-  <script src="<?php echo get_template_directory_uri(); ?>/lib/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-  <!-- livereload -->
-  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-  <!-- livereload -->
+  <link rel="profile" href="http://gmpg.org/xfn/11" />
+  <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+  <?php wp_head(); ?>
+  <?php echo get_option('jinda_opt_company_js') ?>
 </head>
 <body <?php body_class(); ?>>
 
