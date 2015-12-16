@@ -4,8 +4,8 @@
 	<div class="container">
 		<div class="clearfix mxn2">
 			<?php if ( have_posts() ): ?>
-				<div class="sm-col sm-col-12 px1">
-					<h1 class="archive-title"><?php the_archive_title(''); ?></h1>
+				<div class="sm-col sm-col-12 px2">
+					<h1 class="archive-title"><span class="icon-flag"></span> <?php the_archive_title(''); ?></h1>
 					<?php the_archive_description('<div class="archive-description">', '</div>') ?>
 				</div>
 				<?php while( have_posts() ) : the_post(); ?>
