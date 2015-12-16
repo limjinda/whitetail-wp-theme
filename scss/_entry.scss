@@ -107,6 +107,9 @@
 		@media #{$md}{
 			font-size: 24px;
 		}
+		@media #{$lg}{
+			margin: 40px auto 20px;
+		}
 	}
 	p{
 		font-size: 14px;
