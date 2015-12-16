@@ -58,7 +58,7 @@ function jinda_admin_enqueue($hook){
 		return;
 	}
 	wp_enqueue_style('jquery_icheck_css', THEME_URI . '/bower_components/iCheck/skins/flat/orange.css');
-	wp_enqueue_style('jquery_ionicons_css', THEME_URI . '/bower_components/ionicons/css/ionicons.min.css');
+	wp_enqueue_style('jquery_ionicons_css', THEME_URI . '/bower_components/Ionicons/css/ionicons.min.css');
 	wp_enqueue_style('bootstrap_css', THEME_URI . '/bower_components/bootstrap/dist/css/bootstrap.min.css');
 	wp_enqueue_style('scroll_css', THEME_URI . '/lib/jquery.mCustomScrollbar.min.css');
 	wp_enqueue_style('code_mirror_css', THEME_URI . '/bower_components/codemirror/lib/codemirror.css');
