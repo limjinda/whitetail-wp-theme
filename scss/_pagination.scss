@@ -144,6 +144,15 @@
 	clear: both;
 	a {
 		color: $link;
+		span{
+			position: relative;
+			top: 1px;
+			color: $link;
+			&:hover{
+				color: $link-active;
+				text-decoration: none;
+			}
+		}
 		&:hover{
 			color: $link-active;
 			text-decoration: none;

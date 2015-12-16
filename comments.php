@@ -22,7 +22,7 @@
 	  'label_submit'      => 'ส่งความเห็น',
 	  'format'            => 'xhtml',
 
-	  'comment_field' =>  '<div class="sm-col sm-col-12 px1"><label for="comment" class="w-label">' . 'ระบุความคิดเห็น ' . ( $req ? ' <span class="required">*</span>' : '' ) . '</label><textarea id="comment" class="w-textarea" name="comment" cols="45" rows="8" aria-required="true">' .
+	  'comment_field' =>  '<div class="sm-col sm-col-12 px1"><label for="comment" class="w-label">' . '<span class="icon-speech-bubble"></span> ระบุความคิดเห็น ' . ( $req ? ' <span class="required">*</span>' : '' ) . '</label><textarea id="comment" class="w-textarea" name="comment" cols="45" rows="8" aria-required="true">' .
 	    '</textarea></div></div>',
 
 	  'must_log_in' => '<p class="must-log-in">' .
@@ -60,7 +60,7 @@ if ( post_password_required() ) {
 				<div class="nav-links clearfix mxn2">
 
 						<div class="col col-6">
-							<?php if ( $prev_link = get_previous_comments_link( __( 'ความเห็นย้อนหลัง', 'twentyfifteen' ) ) ) : ?>
+							<?php if ( $prev_link = get_previous_comments_link('<span class="icon-arrow-left"></span> ความเห็นย้อนหลัง') ) : ?>
 								<?php printf( '<div class="nav-previous">%s</div>', $prev_link ); ?>
 							<?php else: ?>
 								&nbsp;
@@ -68,7 +68,7 @@ if ( post_password_required() ) {
 						</div>
 
 						<div class="col col-6">
-							<?php if ( $next_link = get_next_comments_link( __( 'ความเห็นถัดไป', 'twentyfifteen' ) ) ) : ?>
+							<?php if ( $next_link = get_next_comments_link('ความเห็นถัดไป <span class="icon-arrow-right"></span>') ) : ?>
 								<?php printf( '<div class="nav-next right-align">%s</div>', $next_link ); ?>
 							<?php else: ?>
 								&nbsp;
