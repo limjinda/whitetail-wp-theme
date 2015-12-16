@@ -1,8 +1,11 @@
 .comments-area{
 	margin: auto;
 	@media #{$sm}{
-		max-width: 500px;
+		max-width: 530px;
 		margin: auto;
+	}
+	@media #{$md}{
+		padding: 15px;
 	}
 	.comment-reply-title,
 	.comments-title{
@@ -12,6 +15,9 @@
 		@media #{$sm}{
 			font-size: 20px;
 			margin: 50px auto 15px;
+		}
+		@media #{$lg}{
+			margin: 50px auto 25px;
 		}
 	}
 	.w-tb{
@@ -40,8 +46,24 @@ ul.comment-list {
 	li{
 		display: block;
 		margin-bottom: 10px;
-		border: 2px solid $soft-white;
+		border: 2px solid darken($soft-white, 5%);
 		padding: 15px;
+		&.pingback{
+			font-size: 12px;
+			border: 2px solid transparent;
+			padding: 0;
+			margin-bottom: 10px;
+			line-height: 1.6;
+			pointer-events: none;
+			cursor: default;
+			a {
+				color: $coal;
+				&:hover{
+					color: $black;
+					text-decoration: none;
+				}
+			}
+		}
 		img.avatar{
 			float: left;
 			margin: 0 5px 0 0;
@@ -83,7 +105,7 @@ ul.comment-list {
 			font-size: 10px;
 			text-align: right;
 			display: block;
-			color: $link;
+			color: $coal;
 			clear: both;
 			&:hover{
 				color: $link-active;
@@ -166,4 +188,12 @@ ul.comment-list {
 			color: $red;
 		}
 	}
+}
+
+.no-comments{
+	text-align: center;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-family: 'mn_paethai';
+	color: $coal;
 }

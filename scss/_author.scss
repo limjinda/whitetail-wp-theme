@@ -10,6 +10,9 @@
 	@media #{$md}{
 		max-width: 500px;
 	}
+	@media #{$lg}{
+		margin: 15px auto 0;
+	}
 	.author-image{
 		display: block;
 		width: 80px;
