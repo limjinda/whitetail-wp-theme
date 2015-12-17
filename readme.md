@@ -14,6 +14,6 @@ Currently in beta testing, version 1.0
 
 ### What we use?
 * BaseCSS
-* Paethai font (for testing only)
+* Paethai font (only for testing)
 * Trmix
 * matchHeight
