@@ -21,7 +21,7 @@
 				<div class="clearfix mxn2">
 					<div class="col col-12 px2">
 						<?php echo is_home() ? "<h1 class='site-title'>Jir4yu.me</h1>" : "<h2 class='site-title'>Jir4yu.me</h2>" ?>
-						<p class="site-tagline"><?php echo bloginfo('description'); ?></p>
+						<h2 class="site-tagline"><?php echo bloginfo('description'); ?></h2>
 						<nav class="site-navigation">
 							<?php  
 								wp_nav_menu(array('theme_location' => 'top', 'container' => false, 'menu_class' => 'list-reset clearfix', 'items_wrap' => '<ul class="%2$s">%3$s</ul>'));
