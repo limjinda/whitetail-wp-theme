@@ -5,7 +5,6 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title><?php wp_title( '|', true, 'right' ); ?></title>
   <meta name="description" content="<?php echo get_option('jinda_opt_site_description') ?>">
   <meta name="keywords" content="<?php echo get_option('jinda_opt_site_keywords') ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
