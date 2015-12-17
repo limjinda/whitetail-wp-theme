@@ -1,5 +1,5 @@
 ## WhiteTail, WordPress Theme
-Pre-release version 0.9
+Currently in beta testing, version 1.0
 
 ![WhiteTail](http://img.ihere.org/uploads/040c091068.png)
 
@@ -11,3 +11,9 @@ Pre-release version 0.9
 * Re-generate your old images (via [Regenerate Thumbnails](https://wordpress.org/plugins/regenerate-thumbnails/) or sth)
 * Setting up your main navigation
 * Enjoy!
+
+### What we use?
+* BaseCSS
+* Paethai font (for testing only)
+* Trmix
+* matchHeight
