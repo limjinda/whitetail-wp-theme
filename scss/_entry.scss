@@ -101,8 +101,11 @@
 	}
 	h3{
 		font-size: 16px;
+		line-height: 1.5;
+		margin: 20px auto 10px;
 		@media #{$sm}{
 			font-size: 20px;
+
 		}
 		@media #{$md}{
 			font-size: 24px;

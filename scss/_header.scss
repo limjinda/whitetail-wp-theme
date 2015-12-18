@@ -20,6 +20,8 @@
 	font-family: 'mn_paethai';
 	text-transform: uppercase;
 	margin: 15px auto 25px;
+	line-height: 1.6;
+	font-weight: normal;
 	@media #{$lg}{	
 		margin: 15px auto 50px;
 	}
