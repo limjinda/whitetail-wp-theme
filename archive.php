@@ -2,7 +2,7 @@
 
 <main class="main">
 	<div class="container">
-		<div class="clearfix mxn1">
+		<div class="clearfix mxn2">
 			<?php if ( have_posts() ): ?>
 				<div class="sm-col sm-col-12 px2">
 					<h1 class="archive-title"><span class="icon-flag"></span> <?php the_archive_title(''); ?></h1>
