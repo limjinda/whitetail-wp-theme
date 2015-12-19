@@ -1,4 +1,4 @@
-<div class="clearfix mxn2">
+<div class="clearfix mxn1">
 	<?php while ( have_posts() ) : the_post() ?>
 		<article <?php post_class('sm-col sm-col-12 px2' ); ?>>
 			<h1 class="entry-title"><?php the_title(); ?></h1>
