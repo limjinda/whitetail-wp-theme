@@ -47,6 +47,11 @@
 		> li {
 			float: left;
 			width: 50%;
+			&.current_page_item{
+				@media #{$sm}{
+					background-color: #ebebeb;
+				}
+			}
 			@media #{$sm}{
 				position: relative;
 				float: none;
