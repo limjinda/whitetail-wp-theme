@@ -2,11 +2,11 @@
 
 	$fields =  array(
 		'author' =>
-		'<div class="clearfix mxn2"><div class="sm-col sm-col-6 px1"><label class="w-label" for="author">' . 'ชื่อของคุณ' . ( $req ? ' <span class="required">*</span>' : '' ) . '</label>' .
+		'<div class="clearfix mxn1"><div class="sm-col sm-col-6 px2"><label class="w-label" for="author">' . 'ชื่อของคุณ' . ( $req ? ' <span class="required">*</span>' : '' ) . '</label>' .
 		'<input class="w-tb" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
 		'" size="30"' . $aria_req . ' /></div>',
 		'email' =>
-		'<div class="sm-col sm-col-6 px1"><label class="w-label" for="email">' . 'ระบุอีเมล์' . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' .
+		'<div class="sm-col sm-col-6 px2"><label class="w-label" for="email">' . 'ระบุอีเมล์' . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' .
 		'<input class="w-tb" id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
 		'" size="30"' . $aria_req . ' /></div>',
 	);
@@ -22,7 +22,7 @@
 	  'label_submit'      => 'ส่งความเห็น',
 	  'format'            => 'xhtml',
 
-	  'comment_field' =>  '<div class="sm-col sm-col-12 px1"><label for="comment" class="w-label">' . '<span class="icon-speech-bubble"></span> ระบุความคิดเห็น ' . ( $req ? ' <span class="required">*</span>' : '' ) . '</label><textarea id="comment" class="w-textarea" name="comment" cols="45" rows="8" aria-required="true">' .
+	  'comment_field' =>  '<div class="sm-col sm-col-12 px2"><label for="comment" class="w-label">' . '<span class="icon-speech-bubble"></span> ระบุความคิดเห็น ' . ( $req ? ' <span class="required">*</span>' : '' ) . '</label><textarea id="comment" class="w-textarea" name="comment" cols="45" rows="8" aria-required="true">' .
 	    '</textarea></div></div>',
 
 	  'must_log_in' => '<p class="must-log-in">' .
@@ -57,9 +57,9 @@ if ( post_password_required() ) {
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
 			<nav class="navigation comment-navigation" role="navigation">
 				<!-- <h2 class="screen-reader-text"><?php _e( 'Comment navigation', 'twentyfifteen' ); ?></h2> -->
-				<div class="nav-links clearfix mxn2">
+				<div class="nav-links clearfix mxn1">
 
-						<div class="col col-6">
+						<div class="sm-col sm-col-6 px2">
 							<?php if ( $prev_link = get_previous_comments_link('<span class="icon-arrow-left"></span> ความเห็นย้อนหลัง') ) : ?>
 								<?php printf( '<div class="nav-previous">%s</div>', $prev_link ); ?>
 							<?php else: ?>
@@ -67,7 +67,7 @@ if ( post_password_required() ) {
 							<?php endif; ?>
 						</div>
 
-						<div class="col col-6">
+						<div class="sm-col sm-col-6 px2">
 							<?php if ( $next_link = get_next_comments_link('ความเห็นถัดไป <span class="icon-arrow-right"></span>') ) : ?>
 								<?php printf( '<div class="nav-next right-align">%s</div>', $next_link ); ?>
 							<?php else: ?>
