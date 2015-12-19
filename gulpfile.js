@@ -38,7 +38,7 @@ gulp.task('gifs', function() {
 gulp.task('client-css', function() {
 	return gulp.src(['./bower_components/basscss/css/basscss.css', './style.css'])
 		.pipe(concat('style.css', {
-			newLine: ';'
+			// newLine: ';'
 		}))
 		.pipe(minifyCss({
 			keepSpecialComments: 0

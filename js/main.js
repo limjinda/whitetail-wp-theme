@@ -83,7 +83,7 @@ jQuery(document).ready(function() {
 
 	if (jQuery('.comment-form').length > 0) {
 		jQuery('.form-submit').wrap("<div class='clearifx mxn2'></div>");
-		jQuery('.form-submit').addClass('px1 comment-submit-block');
+		jQuery('.form-submit').addClass('comment-submit-block');
 	};
 
 })

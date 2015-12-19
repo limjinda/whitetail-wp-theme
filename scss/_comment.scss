@@ -23,6 +23,11 @@
 	.w-tb{
 		margin: 5px auto 0;
 		width: 100%;
+		&.first{
+			@media #{$sm}{
+				width: 98%;
+			}
+		}
 	}
 	.comment-submit-block{
 		margin: 15px 0 0;

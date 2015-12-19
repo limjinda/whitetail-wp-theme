@@ -3,7 +3,7 @@
 	$fields =  array(
 		'author' =>
 		'<div class="clearfix"><div class="sm-col sm-col-6"><label class="w-label" for="author">' . 'ชื่อของคุณ' . ( $req ? ' <span class="required">*</span>' : '' ) . '</label>' .
-		'<input class="w-tb" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
+		'<input class="w-tb first" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
 		'" size="30"' . $aria_req . ' /></div>',
 		'email' =>
 		'<div class="sm-col sm-col-6"><label class="w-label" for="email">' . 'ระบุอีเมล์' . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' .
