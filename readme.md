@@ -1,5 +1,5 @@
 ## WhiteTail, WordPress Theme
-Currently in beta testing, version 1.0
+Currently in beta testing, version 1.4
 
 ![WhiteTail](http://img.ihere.org/uploads/040c091068.png)
 
@@ -17,3 +17,4 @@ Currently in beta testing, version 1.0
 * Paethai font (only for testing)
 * Trmix
 * matchHeight
+* Gulp
