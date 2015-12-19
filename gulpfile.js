@@ -24,7 +24,7 @@ var banner = ['/*!',
 gulp.task('pngs', function() {
 	return gulp.src('./img/**/*.png')
 		.pipe(imagemin())
-		.pipe(gulp.dest('./img/icons/'));
+		.pipe(gulp.dest('./img/'));
 })
 
 gulp.task('gifs', function() {
