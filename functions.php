@@ -39,9 +39,9 @@ add_action('after_setup_theme', 'jinda_setup');
 function jinda_scripts(){
 	// wp_enqueue_style('basecss', THEME_URI.'/bower_components/basscss/css/basscss.min.css');
 
-	wp_enqueue_style('whitetail-core-css', get_stylesheet_uri() );
+	wp_enqueue_style('whitetail-core', get_stylesheet_uri() );
 	wp_deregister_script('jquery');
-	wp_enqueue_script('whitetail-core-js', THEME_URI.'/js/lib/client.min.js' );
+	wp_enqueue_script('whitetail-core-js', THEME_URI.'/js/lib/client.min.js', array(), '1.4', true );
 
 	// wp_register_script('jquery', THEME_URI.'/lib/jquery-1.11.2.min.js', array(), '1.11.2', true );
 	// wp_enqueue_script('jquery');
