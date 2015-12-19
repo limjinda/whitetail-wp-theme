@@ -39,6 +39,7 @@
 		text-align: center;
 		width: 100%;
 		display: block;
+		box-sizing: border-box;
 		@media #{$sm}{
 			padding: 0;
 			background-color: transparent;
