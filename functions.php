@@ -130,6 +130,49 @@ add_filter( 'get_the_archive_title', function ($title) {
 });
 
 /**
+ * ADD CUSTOM TINYMCE BUTTON
+ * VESION 1.5
+ **/
+
+add_action( 'init', 'jinda_editor_button' );
+add_editor_style('css/editor-style.css');
+function jinda_editor_button(){
+  add_filter( "mce_external_plugins", "jinda_add_buttons" );
+  add_filter( 'mce_buttons', 'jinda_register_buttons' );
+}
+
+function jinda_add_buttons( $plugin_array ) {
+  $plugin_array['jinda_buttons'] = get_template_directory_uri() . '/custom-button.js';
+  return $plugin_array;
+}
+function jinda_register_buttons( $buttons ) {
+  array_push( $buttons, 'dropcap', 'vdoyoutube', 'vdovimeo', 'responsivebtn' ); 
+  return $buttons;
+}
+
+/**
+ * THEME SHORTCODE
+ * VESION 1.5
+ **/
+
+add_shortcode( 'youtube', 'youtube_shortcode' );
+function youtube_shortcode($atts, $content = null){
+  // $new_link = substr(strstr($content, "="), 1);
+  return '<div class="responsive-unit"><iframe src="//www.youtube.com/embed/'. $content .'" frameborder="0"></iframe></div>';
+}
+
+add_shortcode( 'vimeo', 'vimeo_shortcode' );
+function vimeo_shortcode($atts, $content = null){
+  // $content = substr(strstr($content, "com/"), 4);
+  return '<div class="responsive-unit"><iframe src="//player.vimeo.com/video/'. $content .'?title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>';
+}
+
+add_shortcode( 'responsive', 'responsive_shortcode' );
+function responsive_shortcode($atts, $content = null){
+  return '<div class="responsive-unit">'.$content.'</div>';
+}
+
+/**
  * CUSTOM TITLE TAG
  */
 // function theme_name_wp_title( $title, $sep ) {

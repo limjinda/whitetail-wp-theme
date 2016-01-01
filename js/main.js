@@ -22,7 +22,7 @@ jQuery(document).ready(function() {
 		var parent = list.parents('li').find('a').first();
 		var arrow = ' <span class="icon-arrow-down"></span>';
 		parent.html(parent.text() + arrow);
-	})
+	});
 
 	/**
 	 * APPEND SEARCH TO NAV
@@ -39,7 +39,7 @@ jQuery(document).ready(function() {
 		jQuery('.site-navigation > ul').find('li.menu-item-has-children').on('click', function(e) {
 			jQuery(this).find('span').toggleClass('icon-arrow-down').toggleClass('icon-arrow-up');
 			jQuery(this).find('ul').first().toggle();
-		})
+		});
 	} else {
 		jQuery('.site-navigation > ul').find('li.menu-item-has-children').first().on('mouseenter', function() {
 			jQuery(this).css('zIndex', 2);
@@ -47,7 +47,7 @@ jQuery(document).ready(function() {
 		}).on('mouseleave', function() {
 			jQuery(this).css('zIndex', 'initial');
 			jQuery('.overlay-background').fadeOut(200);
-		})
+		});
 	}
 
 	/**
@@ -62,7 +62,7 @@ jQuery(document).ready(function() {
 	 */
 	if (jQuery('table').length > 0) {
 		jQuery('table').addClass('table-light');
-	};
+	}
 
 	/**
 	 * ADD HOLDER TO IFRAME, EMBED and object
@@ -73,8 +73,8 @@ jQuery(document).ready(function() {
 	if (jQuery('iframe').length > 0) {
 		jQuery('iframe').each(function() {
 			jQuery(this).wrap("<div class='responsive-unit'></div>");
-		})
-	};
+		});
+	}
 
 	/**
 	 * WARP FORM-SUBMIT(IN COMMENT-FORM)
@@ -84,9 +84,8 @@ jQuery(document).ready(function() {
 	if (jQuery('.comment-form').length > 0) {
 		jQuery('.form-submit').wrap("<div class='clearifx mxn2'></div>");
 		jQuery('.form-submit').addClass('comment-submit-block');
-	};
-
-})
+	}
+});
 
 jQuery(window).load(function() {
 	/**
@@ -94,4 +93,4 @@ jQuery(window).load(function() {
 	 * VERSION 1.0
 	 */
 	jQuery('.preloader-block').fadeOut();
-})
+});
