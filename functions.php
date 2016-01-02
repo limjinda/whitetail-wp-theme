@@ -158,18 +158,18 @@ function jinda_register_buttons( $buttons ) {
 add_shortcode( 'youtube', 'youtube_shortcode' );
 function youtube_shortcode($atts, $content = null){
   $new_link = substr(strstr($content, "="), 1);
-  return '<div class="responsive-unit"><iframe src="//www.youtube.com/embed/'. $new_link .'" frameborder="0"></iframe></div>';
+  return '<iframe src="//www.youtube.com/embed/'. $new_link .'" frameborder="0"></iframe>';
 }
 
 add_shortcode( 'vimeo', 'vimeo_shortcode' );
 function vimeo_shortcode($atts, $content = null){
   $new_link = substr(strstr($content, "com/"), 4);
-  return '<div class="responsive-unit"><iframe src="//player.vimeo.com/video/'. $new_link .'?title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>';
+  return '<iframe src="//player.vimeo.com/video/'. $new_link .'?title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
 }
 
 add_shortcode( 'responsive', 'responsive_shortcode' );
 function responsive_shortcode($atts, $content = null){
-  return '<div class="responsive-unit">'.$content.'</div>';
+  return $content;
 }
 
 /**

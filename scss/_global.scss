@@ -104,3 +104,10 @@ body{
 .required{
 	color: $red;
 }
+
+.dropcap {
+  float: left;
+  padding-right: 15px;
+  font-size: 5em;
+  line-height: 0.8em;
+}
