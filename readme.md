@@ -1,5 +1,5 @@
 ## WhiteTail, WordPress Theme
-Currently in beta testing, version 1.4
+Currently in beta testing, version 1.5
 
 ![WhiteTail](http://img.ihere.org/uploads/040c091068.png)
 
