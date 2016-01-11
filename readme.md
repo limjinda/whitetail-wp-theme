@@ -1,7 +1,7 @@
 ## WhiteTail, WordPress Theme
 Currently in beta testing, version 1.5
 
-![WhiteTail](http://img.ihere.org/uploads/040c091068.png)
+![WhiteTail](https://raw.github.com/JindaTheme/WhiteTail/master/screenshot.png)
 
 ### Getting Started
 * Login to your WordPress dashboard
