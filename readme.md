@@ -1,7 +1,9 @@
 ## WhiteTail, WordPress Theme
-Currently in beta testing, version 1.5
+Ready to use, Version 1.6
 
 ![WhiteTail](https://raw.github.com/JindaTheme/WhiteTail/master/screenshot.png)
+
+**Theme details:** https://www.jir4yu.me/2016/whitetail-free-wordpress-theme/
 
 ### Getting Started
 * Login to your WordPress dashboard
@@ -14,7 +16,6 @@ Currently in beta testing, version 1.5
 
 ### What we use?
 * BaseCSS
-* Paethai font (only for testing)
 * Trmix
 * matchHeight
 * Gulp

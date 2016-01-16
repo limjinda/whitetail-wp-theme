@@ -116,11 +116,12 @@
 	}
 	p{
 		font-size: 14px;
-		font-family: 'mn_paethai';
+		font-family: 'NeueFrutigerW31Trad';
 		line-height: 1.7;
 		word-wrap: break-word;
 		@media #{$sm}{
-			font-size: 16px;
+			letter-spacing: -0.1px;
+			font-size: 18px;
 		}
 	}
 	blockquote{
@@ -170,7 +171,7 @@
 		}
 	}
 	figcaption{
-		font-family: 'mn_paethai';
+		font-family: 'NeueFrutigerW31Trad';
 		border-left: 3px solid $light;
 		padding: 3px 5px 3px 10px;
 		font-size: 12px;
@@ -205,7 +206,7 @@
 		}
 	}
 	table{
-		font-family: 'mn_paethai';
+		font-family: 'NeueFrutigerW31Trad';
 		tbody{
 			td,th{
 				padding: .25rem 0.5rem;
@@ -303,7 +304,7 @@
 }
 
 .entry-meta{
-	font-family: 'mn_paethai';
+	font-family: 'NeueFrutigerW31Trad';
 	font-size: 10px;
 	line-height: 1.6;
 	text-align: center;

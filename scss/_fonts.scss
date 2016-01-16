@@ -1,56 +1,22 @@
 @font-face {
-  font-family: 'muli';
-  src: url('fonts/muli/muli.eot');
-  src: url('fonts/muli/muli.eot?#iefix') format('embedded-opentype'),
-  url('fonts/muli/muli.woff2') format('woff2'),
-  url('fonts/muli/muli.woff') format('woff'),
-  url('fonts/muli/muli.ttf') format('truetype');
+  font-family: 'NeueFrutigerW31Trad';
+  src: url('fonts/neuefrutiger/NeueFrutigerW31Trad-Rg.eot');
+  src: url('fonts/neuefrutiger/NeueFrutigerW31Trad-Rg.eot?#iefix') format('embedded-opentype'),
+  url('fonts/neuefrutiger/NeueFrutigerW31Trad-Rg.woff') format('woff'),
+  url('fonts/neuefrutiger/NeueFrutigerW31Trad-Rg.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'muli';
-  src: url('fonts/muli/muli-bold.eot');
-  src: url('fonts/muli/muli-bold.eot?#iefix') format('embedded-opentype'),
-  url('fonts/muli/muli-bold.woff2') format('woff2'),
-  url('fonts/muli/muli-bold.woff') format('woff'),
-  url('fonts/muli/muli-bold.ttf') format('truetype');
+  font-family: 'NeueFrutigerW31Trad';
+  src: url('fonts/neuefrutiger/NeueFrutigerW31Trad-Bold.eot');
+  src: url('fonts/neuefrutiger/NeueFrutigerW31Trad-Bold.eot?#iefix') format('embedded-opentype'),
+  url('fonts/neuefrutiger/NeueFrutigerW31Trad-Bold.woff') format('woff'),
+  url('fonts/neuefrutiger/NeueFrutigerW31Trad-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
-
-/**
- * PAETHAI FONT
- */
-
-@font-face {
- font-family: 'mn_paethai';
- src: url('fonts/paethai/mn_paethai_med_v3.2.eot');
- src: url('fonts/paethai/mn_paethai_med_v3.2.eot?#iefix') format('embedded-opentype'),
- url('fonts/paethai/mn_paethai_med_v3.2.woff2') format('woff2'),
- url('fonts/paethai/mn_paethai_med_v3.2.woff') format('woff'),
- url('fonts/paethai/mn_paethai_med_v3.2.ttf') format('truetype'),
- url('fonts/paethai/mn_paethai_med_v3.2.svg#mn_paethai') format('svg');
- font-weight: normal;
- font-style: normal;
-}
-
-@font-face {
- font-family: 'mn_paethai';
- src: url('fonts/paethai/mn_paethai_bd_v3.2.eot');
- src: url('fonts/paethai/mn_paethai_bd_v3.2.eot?#iefix') format('embedded-opentype'),
- url('fonts/paethai/mn_paethai_bd_v3.2.woff2') format('woff2'),
- url('fonts/paethai/mn_paethai_bd_v3.2.woff') format('woff'),
- url('fonts/paethai/mn_paethai_bd_v3.2.ttf') format('truetype'),
- url('fonts/paethai/mn_paethai_bd_v3.2.svg#mn_paethai') format('svg');
- font-weight: bold;
- font-style: normal;
-}
-
-/**
- * SWITCH FONT HERE
- */
 
 *{
   color: $black;
@@ -58,5 +24,5 @@
 
 h1,h2,h3,h4,h5,h6, label, dt{
   font-weight: bold;
-  font-family: 'mn_paethai';
+  font-family: 'NeueFrutigerW31Trad';
 }
