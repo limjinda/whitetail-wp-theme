@@ -96,7 +96,7 @@
 			font-size: 24px;
 		}
 		@media #{$md}{
-			font-size: 28px;
+			font-size: 30px;
 		}
 	}
 	h3{
@@ -105,10 +105,9 @@
 		margin: 20px auto 10px;
 		@media #{$sm}{
 			font-size: 20px;
-
 		}
 		@media #{$md}{
-			font-size: 24px;
+			font-size: 26px;
 		}
 		@media #{$lg}{
 			margin: 40px auto 20px;
@@ -197,6 +196,7 @@
 			font-size: 14px;
 			line-height: 1.5;
 			margin-bottom: 5px;
+			font-family: 'NeueFrutigerW31Trad';
 			@media #{$sm}{
 				font-size: 16px;
 			}
