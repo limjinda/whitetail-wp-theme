@@ -110,13 +110,12 @@
 			font-size: 26px;
 		}
 		@media #{$lg}{
-			margin: 40px auto 20px;
+			margin: 40px auto 15px;
 		}
 	}
 	p{
 		font-size: 14px;
-		font-family: 'NeueFrutigerW31Trad';
-		line-height: 1.7;
+		line-height: 1.6;
 		word-wrap: break-word;
 		@media #{$sm}{
 			letter-spacing: -0.1px;
@@ -196,7 +195,6 @@
 			font-size: 14px;
 			line-height: 1.5;
 			margin-bottom: 5px;
-			font-family: 'NeueFrutigerW31Trad';
 			@media #{$sm}{
 				font-size: 16px;
 			}
@@ -206,7 +204,6 @@
 		}
 	}
 	table{
-		font-family: 'NeueFrutigerW31Trad';
 		tbody{
 			td,th{
 				padding: .25rem 0.5rem;
