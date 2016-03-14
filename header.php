@@ -30,10 +30,9 @@
   <meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri()?>/img/favicon/mstile-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <?php wp_head(); ?>
-  <?php echo get_option('jinda_opt_company_js') ?>
 </head>
 <body <?php body_class(); ?>>
-
+  <?php echo get_option('jinda_opt_company_js') ?>
 	<div class="wrapper">
 		<header class="header">
 			<div class="container">
