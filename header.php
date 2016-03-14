@@ -25,7 +25,7 @@
   <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri()?>/img/favicon/android-chrome-192x192.png" sizes="192x192">
   <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri()?>/img/favicon/favicon-16x16.png" sizes="16x16">
   <link rel="manifest" href="<?php echo get_template_directory_uri()?>/img/favicon/manifest.json">
-  <link rel="mask-icon" href="<?php echo get_template_directory_uri()?>/img/favicon/safari-pinned-tab.svg" color="#333333">
+  <link rel="mask-icon" href="<?php echo get_template_directory_uri()?>/img/favicon/safari-pinned-tab.svg">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri()?>/img/favicon/mstile-144x144.png">
   <meta name="theme-color" content="#ffffff">
