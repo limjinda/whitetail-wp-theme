@@ -1,19 +1,19 @@
 @font-face {
-  font-family: 'prasanmit';
-  src: url('fonts/prasanmit/tepc_cm-prasanmit.eot');
-  src: url('fonts/prasanmit/tepc_cm-prasanmit.eot?#iefix') format('embedded-opentype'),
-  url('fonts/prasanmit/tepc_cm-prasanmit.woff') format('woff'),
-  url('fonts/prasanmit/tepc_cm-prasanmit.ttf') format('truetype');
+  font-family: 'kaniga';
+  src: url('fonts/kaniga/tepc_kaniga.eot');
+  src: url('fonts/kaniga/tepc_kaniga.eot?#iefix') format('embedded-opentype'),
+  url('fonts/kaniga/tepc_kaniga.woff') format('woff'),
+  url('fonts/kaniga/tepc_kaniga.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'prasanmit';
-  src: url('fonts/prasanmit/tepc_cm-prasanmit_bol.eot');
-  src: url('fonts/prasanmit/tepc_cm-prasanmit_bol.eot?#iefix') format('embedded-opentype'),
-  url('fonts/prasanmit/tepc_cm-prasanmit_bol.woff') format('woff'),
-  url('fonts/prasanmit/tepc_cm-prasanmit_bol.ttf') format('truetype');
+  font-family: 'kaniga';
+  src: url('fonts/kaniga/tepc_kaniga_bol.eot');
+  src: url('fonts/kaniga/tepc_kaniga_bol.eot?#iefix') format('embedded-opentype'),
+  url('fonts/kaniga/tepc_kaniga_bol.woff') format('woff'),
+  url('fonts/kaniga/tepc_kaniga_bol.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
@@ -24,5 +24,5 @@
 
 h1,h2,h3,h4,h5,h6, label, dt{
   font-weight: bold;
-  font-family: 'prasanmit';
+  font-family: 'kaniga';
 }
