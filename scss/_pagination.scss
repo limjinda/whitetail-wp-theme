@@ -4,7 +4,7 @@
 		padding: 30px 0 15px;
 	}
 	a {
-		font-family: 'NeueFrutigerW31Trad';
+		font-family: 'prasanmit';
 		color: $coal;
 		font-size: 12px;
 		@media #{$sm}{
@@ -101,7 +101,7 @@
 		strong{
 			display: none;
 			position: relative;
-			font-family: 'NeueFrutigerW31Trad';
+			font-family: 'prasanmit';
 			@media #{$md}{
 				display: inline-block;
 				font-size: 14px;
@@ -133,7 +133,7 @@
 }
 
 .nav-links{
-	font-family: 'NeueFrutigerW31Trad';
+	font-family: 'prasanmit';
 	font-size: 12px;
 	margin: 20px auto 5px;
 	@media #{$sm}{
