@@ -21,7 +21,8 @@
 			color: $link;
 			line-height: 1.8;
 			font-size: 14px;
-			text-decoration: none;	
+			text-decoration: none;
+			font-weight: bold;
 			@include ellipsis(99%);
 			&:hover{
 				color: $link-active;
