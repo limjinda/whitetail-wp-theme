@@ -116,11 +116,10 @@
 	p{
 		font-size: 14px;
 		line-height: 1.6;
-		font-family: 'kaniga';
 		word-wrap: break-word;
 		@media #{$sm}{
-			font-size: 16px;
-			line-height: 1.8;
+			font-size: 14px;
+			line-height: 1.7;
 		}
 	}
 	blockquote{
