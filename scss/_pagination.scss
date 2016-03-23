@@ -4,7 +4,7 @@
 		padding: 30px 0 15px;
 	}
 	a {
-		font-family: 'kaniga';
+		font-family: 'smartpsk', arial;
 		color: $coal;
 		font-size: 12px;
 		@media #{$sm}{
@@ -101,7 +101,7 @@
 		strong{
 			display: none;
 			position: relative;
-			font-family: 'kaniga';
+			font-family: 'smartpsk', arial;
 			@media #{$md}{
 				display: inline-block;
 				font-size: 14px;
@@ -133,7 +133,7 @@
 }
 
 .nav-links{
-	font-family: 'kaniga';
+	font-family: 'smartpsk', arial;
 	font-size: 12px;
 	margin: 20px auto 5px;
 	@media #{$sm}{

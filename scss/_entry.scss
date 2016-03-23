@@ -127,7 +127,7 @@
 		margin: 20px auto;
 		background-color: darken($soft-white, 5%);
 		p{
-			font-family: 'kaniga';
+			font-family: 'smartpsk', arial;
 			margin-bottom: 0;
 		}
 	}
@@ -170,7 +170,7 @@
 		}
 	}
 	figcaption{
-		font-family: 'kaniga';
+		font-family: 'smartpsk', arial;
 		border-left: 3px solid $light;
 		padding: 3px 5px 3px 10px;
 		font-size: 12px;
@@ -302,7 +302,7 @@
 }
 
 .entry-meta{
-	font-family: 'kaniga';
+	font-family: 'smartpsk', arial;
 	font-size: 10px;
 	line-height: 1.6;
 	text-align: center;
