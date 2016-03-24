@@ -117,8 +117,9 @@
 		font-size: 14px;
 		line-height: 1.6;
 		word-wrap: break-word;
+		font-family: 'pridi', arial;
 		@media #{$sm}{
-			font-size: 14px;
+			font-size: 16px;
 			line-height: 1.7;
 		}
 	}
