@@ -93,7 +93,7 @@ add_action('admin_enqueue_scripts', 'jinda_admin_enqueue');
  */
 
 function custom_excerpt_length( $length ) {
-	return 10;
+	return 7;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 

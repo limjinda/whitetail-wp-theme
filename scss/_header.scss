@@ -17,7 +17,7 @@
 	color: $coal;
 	font-size: 16px;
 	letter-spacing: 0.5px;
-	font-family: 'smartpsk', arial;
+	font-family: 'pridi', arial;
 	text-transform: uppercase;
 	margin: 15px auto 25px;
 	line-height: 1.6;
@@ -28,7 +28,7 @@
 }
 
 .site-navigation{
-	font-family: 'smartpsk', arial;
+	font-family: 'pridi', arial;
 	position: relative;
 	> ul {
 		padding: 5px 20px;
@@ -67,7 +67,6 @@
 				color: $coal;
 				text-decoration: none;
 				letter-spacing: 0px;
-				font-weight: bold;
 				@media #{$sm}{
 					font-size: 14px;
 					padding: 5px 10px;
@@ -148,7 +147,6 @@
 						letter-spacing: 0.5px;
 						text-transform: uppercase;
 						font-size: 10px;
-						font-weight: bold;
 						@media #{$sm}{
 							font-size: 12px;
 							padding: 5px 0;

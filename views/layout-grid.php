@@ -8,6 +8,6 @@
 			<?php endif ?>
 		</figure>
 		<h3 class="grid-title"><a href="<?php the_permalink(); ?>" title="<?php the_title() ?>"><?php the_title(); ?></a></h3>
-		<p class="grid-text"><?php echo iconv_substr(get_the_excerpt(),0,175,"UTF-8").' '; ?></p>
+		<p class="grid-text"><?php echo iconv_substr(get_the_excerpt(),0,140,"UTF-8").' '; ?></p>
 	</div>
 </div>

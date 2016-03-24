@@ -1,10 +1,21 @@
 @font-face {
-  font-family: 'smartpsk';
-  src: url('fonts/smart/tepc_smartpsk_bol.eot');
-  src: url('fonts/smart/tepc_smartpsk_bol.eot?#iefix') format('embedded-opentype'),
-  url('fonts/smart/tepc_smartpsk_bol.woff2') format('woff2'),
-  url('fonts/smart/tepc_smartpsk_bol.woff') format('woff'),
-  url('fonts/smart/tepc_smartpsk_bol.ttf') format('truetype');
+  font-family: 'pridi';
+  src: url('fonts/pridi/pridi-400.eot');
+  src: url('fonts/pridi/pridi-400.eot?#iefix') format('embedded-opentype'),
+  url('fonts/pridi/pridi-400.woff2') format('woff2'),
+  url('fonts/pridi/pridi-400.woff') format('woff'),
+  url('fonts/pridi/pridi-400.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'pridi';
+  src: url('fonts/pridi/pridi-600.eot');
+  src: url('fonts/pridi/pridi-600.eot?#iefix') format('embedded-opentype'),
+  url('fonts/pridi/pridi-600.woff2') format('woff2'),
+  url('fonts/pridi/pridi-600.woff') format('woff'),
+  url('fonts/pridi/pridi-600.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
@@ -15,5 +26,5 @@
 
 h1,h2,h3,h4,h5,h6, label, dt{
   font-weight: bold;
-  font-family: 'smartpsk', arial;
+  font-family: 'pridi', arial;
 }
