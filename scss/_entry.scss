@@ -116,10 +116,11 @@
 	p{
 		font-size: 14px;
 		line-height: 1.6;
+		letter-spacing: 0.3px;
 		word-wrap: break-word;
-		font-family: 'pridi', arial;
+		font-family: 'pridi', sans-serif;
 		@media #{$sm}{
-			font-size: 16px;
+			font-size: 18px;
 			line-height: 1.7;
 		}
 	}
