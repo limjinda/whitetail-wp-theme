@@ -20,6 +20,21 @@
   font-style: normal;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'pridi';
+    src: url('fonts/pridi/pridi-400.svg#pridi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'pridi';
+    src: url('fonts/pridi/pridi-600.svg#pridi') format('svg');
+    font-weight: bold;
+    font-style: normal;
+  }
+} 
+
 *{
   color: $black;
 }
