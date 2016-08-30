@@ -48,7 +48,7 @@ gulp.task('client-css', function() {
 })
 
 gulp.task('client-js', function() {
-	return gulp.src(['./lib/modernizr-2.8.3-respond-1.4.2.min.js', './lib/jquery-1.11.2.min.js', './bower_components/trmix/dist/trmix.min.js', './bower_components/matchHeight/jquery.matchHeight-min.js', './js/main.js'])
+	return gulp.src(['./lib/modernizr-2.8.3-respond-1.4.2.min.js', './lib/jquery-1.11.2.min.js', './bower_components/trmix/dist/trmix.min.js', './bower_components/matchHeight/jquery.matchHeight-min.js', './bower_components/magnific-popup/dist/jquery.magnific-popup.js', './js/main.js'])
 		.pipe(concat('client.js', {
 			newLine: ';'
 		}))

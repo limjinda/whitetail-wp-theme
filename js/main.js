@@ -57,6 +57,21 @@ jQuery(document).ready(function() {
 	jQuery('.grid-content-block').matchHeight();
 
 	/**
+	 * ADD MAGNIFIC POPUP TO GALLERY
+	 * IF CONTENT HAV GALLERY SHORTCODE
+	 */
+	if (jQuery('.gallery').length > 0) {
+		$('.gallery').magnificPopup({
+			delegate: 'a',
+			type: 'image',
+			gallery: {
+				enabled: true,
+				navigateByImgClick: true
+			}
+		});
+	};
+
+	/**
 	 * IF HAVE TABLE IN THAT PAGE
 	 * VERSION 1.0
 	 */

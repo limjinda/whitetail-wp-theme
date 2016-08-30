@@ -171,6 +171,40 @@
 			float: right;
 			margin: 5px 0 5px 15px;
 		}
+		&.gallery-item{
+			width: 100%;
+			float: none;
+			box-sizing: border-box;
+			padding: 0;
+			display: block;
+			margin: 0 auto;
+			@media screen and (min-width: 420px){
+				width: 50%;
+				padding: 5px;
+				float: left;
+				margin: 0;
+			}
+			@media #{$sm}{
+				width: 33.33%;
+			}
+			a {
+				outline: 0 !important;
+				display: block;
+				&:hover{
+					img{
+						opacity: 0.8;
+					}
+				}
+			}
+			&:before,
+			&:after{
+				display: table;
+				content: " ";
+			}
+			&:after{
+				clear: both;
+			}
+		}
 	}
 	figcaption{
 		font-family: 'pridi', sans-serif;
