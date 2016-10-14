@@ -112,3 +112,10 @@ body{
   font-size: 5em;
   line-height: 0.8em;
 }
+
+*,
+body,
+img,
+img:hover{
+	@include filter(grayscale(1));
+}
