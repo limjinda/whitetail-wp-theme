@@ -113,9 +113,7 @@ body{
   line-height: 0.8em;
 }
 
-*,
-body,
-img,
-img:hover{
-	@include filter(grayscale(1));
+body {
+  filter: grayscale(100%);
+  filter: gray; /* IE10 */
 }

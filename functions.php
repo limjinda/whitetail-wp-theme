@@ -37,7 +37,7 @@ add_action('after_setup_theme', 'jinda_setup');
  */
 
 function jinda_scripts(){
-	wp_enqueue_style('whitetail-core', get_stylesheet_uri(), array(), '1.9.0' );
+	wp_enqueue_style('whitetail-core', get_stylesheet_uri(), array(), '1.9.1' );
 	wp_deregister_script('jquery');
 	wp_enqueue_script('whitetail-core-js', THEME_URI.'/js/lib/client.min.js', array(), '1.4', true );
 }
