@@ -118,9 +118,10 @@
 		line-height: 1.6;
 		letter-spacing: 0.3px;
 		word-wrap: break-word;
-		font-family: 'pridi', sans-serif;
+		font-weight: 300;
+		// font-family: 'pridi', sans-serif;
 		@media #{$sm}{
-			font-size: 18px;
+			font-size: 20px;
 			line-height: 1.7;
 		}
 	}
