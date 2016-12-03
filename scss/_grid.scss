@@ -1,5 +1,5 @@
 .grid-content-block{
-	margin-bottom: 25px;
+	margin-bottom: 40px;
 	figure{
 		display: block;
 		background-color: $white;
@@ -19,9 +19,9 @@
 	}
 	.grid-title{
 		margin: 10px 0 0px;
+		line-height: 1.2;
 		a{
 			color: $link;
-			line-height: 1;
 			font-size: 14px;
 			text-decoration: none;
 			font-weight: bold;

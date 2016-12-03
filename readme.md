@@ -1,5 +1,5 @@
 ## WhiteTail, WordPress Theme
-Ready to use, Version 2.0.0
+Ready to use, Version 2.0.1
 
 ![WhiteTail](https://raw.github.com/JindaTheme/WhiteTail/master/screenshot.png)
 
