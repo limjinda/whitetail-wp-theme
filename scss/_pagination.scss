@@ -4,7 +4,7 @@
 		padding: 30px 0 15px;
 	}
 	a {
-		font-family: 'pridi', sans-serif;
+		font-family: 'prompt', arial;
 		color: $coal;
 		font-size: 12px;
 		@media #{$sm}{
@@ -101,7 +101,7 @@
 		strong{
 			display: none;
 			position: relative;
-			font-family: 'pridi', sans-serif;
+			font-family: 'prompt', arial;
 			@media #{$md}{
 				display: inline-block;
 				font-size: 14px;
@@ -121,10 +121,9 @@
 				}
 				@media #{$lg}{
 					padding: 15px;
-					// background-color: darken($soft-white, 5%);
 				}
 				&:hover{
-					color: $black;
+					color: $link-active;
 					text-decoration: none;
 				}
 			}
@@ -133,7 +132,7 @@
 }
 
 .nav-links{
-	font-family: 'pridi', sans-serif;
+	font-family: 'prompt', arial;
 	font-size: 12px;
 	margin: 20px auto 5px;
 	@media #{$sm}{

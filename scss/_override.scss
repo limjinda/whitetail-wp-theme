@@ -6,12 +6,12 @@
 body{
 	&.single{
 		main.main{
-			padding: 40px 0 20px;
+			padding: 60px 0 60px;
 		}
 	}
 	&.error404{
 		main.main {
-			padding: 40px 0 20px;
+			padding: 60px 0 40px;
 			@media #{$sm}{
 				padding: 100px 0;
 			}

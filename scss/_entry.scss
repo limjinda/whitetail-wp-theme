@@ -9,7 +9,7 @@
 	font-size: 20px;
 	text-align: center;
 	margin: 0 auto 15px;
-	line-height: 1.7;
+	line-height: 1.5;
 	word-wrap: break-word;
 	@media #{$sm}{
 		font-size: 28px;
@@ -119,7 +119,6 @@
 		letter-spacing: 0.3px;
 		word-wrap: break-word;
 		font-weight: 300;
-		// font-family: 'pridi', sans-serif;
 		@media #{$sm}{
 			font-size: 20px;
 			line-height: 1.7;
@@ -130,7 +129,7 @@
 		margin: 20px auto;
 		background-color: darken($soft-white, 5%);
 		p{
-			font-family: 'pridi', sans-serif;
+			font-family: 'prompt', arial;
 			margin-bottom: 0;
 		}
 	}
@@ -208,7 +207,7 @@
 		}
 	}
 	figcaption{
-		font-family: 'pridi', sans-serif;
+		font-family: 'prompt', arial;
 		border-left: 3px solid $light;
 		padding: 3px 5px 3px 10px;
 		font-size: 12px;
@@ -231,7 +230,6 @@
 		margin-bottom: 1rem;
 		list-style-position: inside;
 		li{
-			font-family: 'pridi', sans-serif;
 			font-size: 14px;
 			line-height: 1.5;
 			margin-bottom: 5px;
@@ -341,7 +339,7 @@
 }
 
 .entry-meta{
-	font-family: 'pridi', sans-serif;
+	font-family: 'prompt', arial;
 	font-size: 10px;
 	line-height: 1.6;
 	text-align: center;
@@ -373,6 +371,6 @@
 
 .format-quote .entry-content {
 	p {
-		font-family: 'pridi', sans-serif;
+		font-family: 'prompt', arial;
 	}
 }

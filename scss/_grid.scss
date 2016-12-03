@@ -2,7 +2,7 @@
 	margin-bottom: 25px;
 	figure{
 		display: block;
-		background-color: $black;
+		background-color: $white;
 		padding: 0;
 		margin: 0;
 		max-width: 100%;
@@ -10,16 +10,18 @@
 		img{
 			display: block;
 			opacity: 1;
+			@include transition(all .2s linear);
 			&:hover{
-				opacity: 0.8;
+				@include transition(all .2s linear);
+				opacity: 0.9;
 			}
 		}
 	}
 	.grid-title{
-		margin: 20px 0 0px;
+		margin: 10px 0 0px;
 		a{
 			color: $link;
-			line-height: 1.8;
+			line-height: 1;
 			font-size: 14px;
 			text-decoration: none;
 			font-weight: bold;

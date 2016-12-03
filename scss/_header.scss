@@ -17,18 +17,18 @@
 	color: $coal;
 	font-size: 16px;
 	letter-spacing: 0.5px;
-	font-family: 'pridi', sans-serif;
+	font-family: 'prompt', arial;
 	text-transform: uppercase;
 	margin: 15px auto 25px;
 	line-height: 1.6;
-	font-weight: normal;
+	font-weight: bold;
 	@media #{$lg}{	
-		margin: 15px auto 50px;
+		margin: 15px auto 15px;
 	}
 }
 
 .site-navigation{
-	font-family: 'pridi', sans-serif;
+	font-family: 'prompt', arial;
 	position: relative;
 	> ul {
 		padding: 5px 20px;
