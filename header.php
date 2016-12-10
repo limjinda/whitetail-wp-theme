@@ -38,7 +38,7 @@
 			<div class="container">
 				<div class="clearfix mxn2">
 					<div class="sm-col sm-col-12 px2">
-						<?php echo is_home() ? "<h1 class='site-title'>".bloginfo('name')."</h1>" : "<h2 class='site-title'>".bloginfo('name')."</h2>" ?>
+						<?php echo is_home() ? "<h1 class='site-title'>".get_bloginfo('name')."</h1>" : "<h2 class='site-title'>".get_bloginfo('name')."</h2>" ?>
 						<h2 class="site-tagline"><?php echo bloginfo('description'); ?></h2>
 						<nav class="site-navigation">
 							<?php  
