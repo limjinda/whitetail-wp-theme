@@ -14,7 +14,7 @@
 	$form_args = array(
 	  'id_form'           => 'commentform',
 	  'id_submit'         => 'submit',
-	  'class_submit'      => 'submit w-btn',
+	  'class_submit'      => 'submit w-btn comment-submit-button',
 	  'name_submit'       => 'submit',
 	  'title_reply'       => __( 'แสดงความคิดเห็นของคุณที่นี่' ),
 	  'title_reply_to'    => __( 'ตอบกลับไปยัง %s' ),

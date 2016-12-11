@@ -98,10 +98,10 @@ jQuery(document).ready(function() {
 	 * IN CLEARFIX MXN2
 	 */
 
-	if (jQuery('.comment-form').length > 0) {
-		jQuery('.form-submit').wrap("<div class='clearifx mxn2'></div>");
-		jQuery('.form-submit').addClass('comment-submit-block');
-	}
+	// if (jQuery('.comment-form').length > 0) {
+		// jQuery('.form-submit').wrap("<div class='clearfix mxn2'></div>");
+		// jQuery('.form-submit').addClass('comment-submit-block');
+	// }
 });
 
 jQuery(window).load(function() {
