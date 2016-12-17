@@ -19,11 +19,11 @@
 	letter-spacing: 0.5px;
 	font-family: 'prompt', arial;
 	text-transform: uppercase;
-	margin: 15px auto 25px;
+	margin: 15px auto;
 	line-height: 1.6;
 	font-weight: bold;
 	@media #{$lg}{	
-		margin: 15px auto 15px;
+		margin: 15px auto 60px;
 	}
 }
 
