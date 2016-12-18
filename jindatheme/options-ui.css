@@ -1,2 +1,401 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700);h1,h2,h3,h4,h5,h6,p,span{font-family:'Lato', sans-serif;cursor:default}label{font-family:'Lato', sans-serif;cursor:pointer}#wpwrap{background:#fff url("img/green-background.jpg") no-repeat center center}#wpwrap #footer-left,#wpwrap #footer-upgrade{display:none}#adminmenu li.current a.menu-top{background:#568d3b}.form-horizontal .control-label{font-size:16px;font-weight:bold;color:#333333;text-align:left}.form-horizontal .form-control{border:1px solid #ddd;border-radius:2px;box-shadow:none}.form-horizontal .form-control:focus{border:1px solid #aaa;box-shadow:0 1px 2px rgba(0,0,0,0.125)}.form-horizontal textarea.form-control{padding:15px;line-height:1.7;resize:vertical;border-radius:2px}.mCSB_inside>.mCSB_container{margin-right:0}.mCSB_scrollTools{right:-8px}#save-result .alert{margin-top:30px}#save-result .alert.alert-success{background-color:#019875;border:1px solid #017f62;color:#FFFFFF}#save-result .alert .close{color:#FFFFFF;cursor:pointer}.jinda-opt-wrapper .container{max-width:940px;margin:30px auto 15px;background-color:#f1f1f1;overflow:hidden;border-left-color:transparent;position:relative;box-shadow:0 2px 4px rgba(0,0,0,0.2)}#jinda-opt-leftbar{padding-left:0;padding-right:0;background-color:#333333;min-height:720px;position:relative}#jinda-opt-leftbar .jinda-opt-logo{width:120px;height:120px;display:block;margin:45px auto}#jinda-opt-leftbar .jinda-opt-menu-list{margin:0;padding:0;list-style:none}#jinda-opt-leftbar .jinda-opt-menu-list>li{position:relative;display:block;margin:0}#jinda-opt-leftbar .jinda-opt-menu-list>li.active>a{background-color:#F1f1f1;color:#333333}#jinda-opt-leftbar .jinda-opt-menu-list>li>a{width:100%;display:block;padding:20px;padding-left:55px;background-color:#333333;color:#FFFFFF;text-decoration:none;text-transform:uppercase;font-size:14px;font-weight:bold}#jinda-opt-leftbar .jinda-opt-menu-list>li>a:focus,#jinda-opt-leftbar .jinda-opt-menu-list>li>a:active{outline:0 !important;box-shadow:none}#jinda-opt-leftbar .jinda-opt-leftbar-bottom{position:absolute;bottom:10px;left:0;right:0;margin:auto}#jinda-opt-leftbar .jinda-opt-leftbar-bottom p{font-size:11px;text-align:center;color:#888888}#jinda-opt-rightbar{position:relative;min-height:720px;padding-left:20px;padding-right:0px;max-height:720px;overflow:auto}#jinda-opt-rightbar .scroll-content{padding-right:20px}#jinda-opt-rightbar .form-group{margin-bottom:20px}#jinda-opt-rightbar .icheckbox_flat-orange{position:relative;top:-1px;margin-right:10px}#jinda-opt-rightbar .checkbox{margin-bottom:15px}#jinda-opt-rightbar .checkbox label,#jinda-opt-rightbar .radio label{padding-left:0;font-size:14px;font-weight:bold}.jinda-admin-icon{content:'';position:relative;top:-2px;font-style:normal;display:inline-block;vertical-align:middle;width:24px;height:24px;margin-right:5px}.icon-general{background:transparent url("img/icon-general.png") no-repeat;background-size:24px 24px}.icon-network{background:transparent url("img/icon-network.png") no-repeat;background-size:24px 24px}.icon-css{background:transparent url("img/icon-css.png") no-repeat;background-size:24px 24px}.icon-support{margin-right:8px;background:transparent url("img/icon-support.png") no-repeat;background-size:24px 24px}.jinda-opt-menu-list li.active .icon-general{background:transparent url("img/icon-general-active.png") no-repeat;background-size:24px 24px}.jinda-opt-menu-list li.active .icon-network{background:transparent url("img/icon-network-active.png") no-repeat;background-size:24px 24px}.jinda-opt-menu-list li.active .icon-css{background:transparent url("img/icon-css-active.png") no-repeat;background-size:24px 24px}.jinda-opt-menu-list li.active .icon-support{background:transparent url("img/icon-support-active.png") no-repeat;background-size:24px 24px}.jinda-section-header{margin:35px 0}.jinda-section-header h2{font-size:36px;font-weight:bold}.jinda-section-header .jinda-admin-icon{width:36px;height:36px;position:relative;top:-5px;margin-right:3px}.jinda-section-header .icon-general{background:transparent url("img/icon-general-active.png") no-repeat;background-size:36px 36px}.jinda-section-header .icon-network{background:transparent url("img/icon-network-active.png") no-repeat;background-size:36px 36px}.jinda-section-header .icon-css{background:transparent url("img/icon-css-active.png") no-repeat;background-size:36px 36px}.jinda-section-header .icon-support{background:transparent url("img/icon-support-active.png") no-repeat;background-size:36px 36px}.jinda-section-content{display:none}.jinda-section-content.active{display:block}#jinda-options-submit-button{outline:0;font-weight:bold;font-size:16px;padding:6px 20px;background-color:#D38A42;border:1px solid #cc7d2f;border-bottom-width:2px;color:#FFF}#theme_custom_javascript,#theme_custom_css,#theme_custom_html{resize:none;height:200px;font-family:"Lucida Console", Monaco, monospace;font-size:12px;letter-spacing:0;border-radius:0;color:#3a3a3a;background-color:#FFFFFF}.preload-block{display:none;position:absolute;top:0;left:0;right:0;bottom:0;width:100%;height:100%;z-index:9999}.preload-block .backdrop{background-color:#FFF;width:100%;height:100%;position:absolute;z-index:1}.preload-block>img{width:100px;height:100px;position:absolute;left:50%;top:50%;margin-left:-50px;margin-top:-50px;z-index:2}.jinda-file-upload-image{display:block;margin:10px 0 15px;max-width:255px;max-height:200px}.jinda-file-upload-text{border:1px solid #ddd;border-radius:2px;box-shadow:none;height:35px;padding:6px 12px;font-size:14px;height:1.42;width:60%;margin-right:5px;margin-bottom:5px}.jinda-file-upload-text:focus{border:1px solid #aaa !important;box-shadow:0 1px 2px rgba(0,0,0,0.125) !important}.help-text{font-size:10px;font-weight:normal;margin:10px 0 0;line-height:1.6;color:#777}.btn-black{color:#f1f1f1;background-color:#333;border-color:#000}.btn-black:hover,.btn-black:focus{background-color:#233;color:#f1f1f1}.section-header{margin:20px 0 25px;font-size:24px;line-height:1.7;font-weight:bold;padding-bottom:7px;border-bottom:2px solid #ddd}.section-header>i{margin-right:4px;font-size:32px;position:relative;top:1px}.jinda-control-label{margin-bottom:10px !important}ul#adminmenu a.wp-has-current-submenu:after,ul#adminmenu>li.current>a.current:after{border:0 !important}.jinda-ionic-icon{font-size:32px;line-height:32px;position:absolute;top:13px;left:15px;width:32px;height:32px;margin-right:3px}.jinda-ionic-icon:before{width:32px;height:32px}.CodeMirror{height:200px}.CodeMirror.cm-s-default{border:1px solid #ddd;border-radius:2px;box-shadow:none}.CodeMirror.CodeMirror-focused{border:1px solid #aaa;box-shadow:0 1px 2px rgba(0,0,0,0.125)}.CodeMirror-sizer{padding:10px}.option-copyrights-text{color:#eee;font-size:10px}.option-about-logo{margin:20px auto}.option-about-logo img{display:block;margin:auto;max-width:300px;height:auto}.jinda-body-title{font-size:32px;font-weight:bold;margin-bottom:10px}.jinda-body-tagline{font-weight:bold}.jinda-about-address{color:#888;margin-top:20px}.jinda-about-email{color:#888}.jinda-about-email>i{margin:0 3px}.option-about-content{margin-bottom:80px}
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+h1, h2, h3, h4, h5, h6, p, span {
+	font-family: 'Lato', sans-serif;
+	cursor: default
+}
+label {
+	font-family: 'Lato', sans-serif;
+	cursor: pointer
+}
+#wpwrap {
+	background: #fff url("img/green-background.jpg") no-repeat center center;
+	background-size: cover;
+}
+#wpwrap #footer-left, #wpwrap #footer-upgrade {
+	display: none
+}
+#adminmenu li.current a.menu-top {
+	background: #568d3b
+}
+.form-horizontal .control-label {
+	font-size: 16px;
+	font-weight: bold;
+	color: #333333;
+	text-align: left
+}
+.form-horizontal .form-control {
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	box-shadow: none
+}
+.form-horizontal .form-control:focus {
+	border: 1px solid #aaa;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.125)
+}
+.form-horizontal textarea.form-control {
+	padding: 15px;
+	line-height: 1.7;
+	resize: vertical;
+	border-radius: 2px
+}
+.mCSB_inside>.mCSB_container {
+	margin-right: 0
+}
+.mCSB_scrollTools {
+	right: -8px
+}
+#save-result .alert {
+	margin-top: 30px
+}
+#save-result .alert.alert-success {
+	background-color: #019875;
+	border: 1px solid #017f62;
+	color: #FFFFFF
+}
+#save-result .alert .close {
+	color: #FFFFFF;
+	cursor: pointer
+}
+.jinda-opt-wrapper .container {
+	max-width: 940px;
+	margin: 30px auto 15px;
+	background-color: #f1f1f1;
+	overflow: hidden;
+	border-left-color: transparent;
+	position: relative;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2)
+}
+#jinda-opt-leftbar {
+	padding-left: 0;
+	padding-right: 0;
+	background-color: #333333;
+	min-height: 720px;
+	position: relative
+}
+#jinda-opt-leftbar .jinda-opt-logo {
+	width: 120px;
+	height: 120px;
+	display: block;
+	margin: 45px auto
+}
+#jinda-opt-leftbar .jinda-opt-menu-list {
+	margin: 0;
+	padding: 0;
+	list-style: none
+}
+#jinda-opt-leftbar .jinda-opt-menu-list>li {
+	position: relative;
+	display: block;
+	margin: 0
+}
+#jinda-opt-leftbar .jinda-opt-menu-list>li.active>a {
+	background-color: #F1f1f1;
+	color: #333333
+}
+#jinda-opt-leftbar .jinda-opt-menu-list>li>a {
+	width: 100%;
+	display: block;
+	padding: 20px;
+	padding-left: 55px;
+	background-color: #333333;
+	color: #FFFFFF;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold
+}
+#jinda-opt-leftbar .jinda-opt-menu-list>li>a:focus, #jinda-opt-leftbar .jinda-opt-menu-list>li>a:active {
+	outline: 0 !important;
+	box-shadow: none
+}
+#jinda-opt-leftbar .jinda-opt-leftbar-bottom {
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	right: 0;
+	margin: auto
+}
+#jinda-opt-leftbar .jinda-opt-leftbar-bottom p {
+	font-size: 11px;
+	text-align: center;
+	color: #888888
+}
+#jinda-opt-rightbar {
+	position: relative;
+	min-height: 720px;
+	padding-left: 20px;
+	padding-right: 0px;
+	max-height: 720px;
+	overflow: auto
+}
+#jinda-opt-rightbar .scroll-content {
+	padding-right: 20px
+}
+#jinda-opt-rightbar .form-group {
+	margin-bottom: 20px
+}
+#jinda-opt-rightbar .icheckbox_flat-orange {
+	position: relative;
+	top: -1px;
+	margin-right: 10px
+}
+#jinda-opt-rightbar .checkbox {
+	margin-bottom: 15px
+}
+#jinda-opt-rightbar .checkbox label, #jinda-opt-rightbar .radio label {
+	padding-left: 0;
+	font-size: 14px;
+	font-weight: bold
+}
+.jinda-admin-icon {
+	content: '';
+	position: relative;
+	top: -2px;
+	font-style: normal;
+	display: inline-block;
+	vertical-align: middle;
+	width: 24px;
+	height: 24px;
+	margin-right: 5px
+}
+.icon-general {
+	background: transparent url("img/icon-general.png") no-repeat;
+	background-size: 24px 24px
+}
+.icon-network {
+	background: transparent url("img/icon-network.png") no-repeat;
+	background-size: 24px 24px
+}
+.icon-css {
+	background: transparent url("img/icon-css.png") no-repeat;
+	background-size: 24px 24px
+}
+.icon-support {
+	margin-right: 8px;
+	background: transparent url("img/icon-support.png") no-repeat;
+	background-size: 24px 24px
+}
+.jinda-opt-menu-list li.active .icon-general {
+	background: transparent url("img/icon-general-active.png") no-repeat;
+	background-size: 24px 24px
+}
+.jinda-opt-menu-list li.active .icon-network {
+	background: transparent url("img/icon-network-active.png") no-repeat;
+	background-size: 24px 24px
+}
+.jinda-opt-menu-list li.active .icon-css {
+	background: transparent url("img/icon-css-active.png") no-repeat;
+	background-size: 24px 24px
+}
+.jinda-opt-menu-list li.active .icon-support {
+	background: transparent url("img/icon-support-active.png") no-repeat;
+	background-size: 24px 24px
+}
+.jinda-section-header {
+	margin: 35px 0
+}
+.jinda-section-header h2 {
+	font-size: 36px;
+	font-weight: bold
+}
+.jinda-section-header .jinda-admin-icon {
+	width: 36px;
+	height: 36px;
+	position: relative;
+	top: -5px;
+	margin-right: 3px
+}
+.jinda-section-header .icon-general {
+	background: transparent url("img/icon-general-active.png") no-repeat;
+	background-size: 36px 36px
+}
+.jinda-section-header .icon-network {
+	background: transparent url("img/icon-network-active.png") no-repeat;
+	background-size: 36px 36px
+}
+.jinda-section-header .icon-css {
+	background: transparent url("img/icon-css-active.png") no-repeat;
+	background-size: 36px 36px
+}
+.jinda-section-header .icon-support {
+	background: transparent url("img/icon-support-active.png") no-repeat;
+	background-size: 36px 36px
+}
+.jinda-section-content {
+	display: none
+}
+.jinda-section-content.active {
+	display: block
+}
+#jinda-options-submit-button {
+	outline: 0;
+	font-weight: bold;
+	font-size: 16px;
+	padding: 6px 20px;
+	background-color: #D38A42;
+	border: 1px solid #cc7d2f;
+	border-bottom-width: 2px;
+	color: #FFF
+}
+#theme_custom_javascript, #theme_custom_css, #theme_custom_html {
+	resize: none;
+	height: 200px;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 12px;
+	letter-spacing: 0;
+	border-radius: 0;
+	color: #3a3a3a;
+	background-color: #FFFFFF
+}
+.preload-block {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999
+}
+.preload-block .backdrop {
+	background-color: #FFF;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1
+}
+.preload-block>img {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -50px;
+	margin-top: -50px;
+	z-index: 2
+}
+.jinda-file-upload-image {
+	display: block;
+	margin: 10px 0 15px;
+	max-width: 255px;
+	max-height: 200px
+}
+.jinda-file-upload-text {
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	box-shadow: none;
+	height: 35px;
+	padding: 6px 12px;
+	font-size: 14px;
+	height: 1.42;
+	width: 60%;
+	margin-right: 5px;
+	margin-bottom: 5px
+}
+.jinda-file-upload-text:focus {
+	border: 1px solid #aaa !important;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.125) !important
+}
+.help-text {
+	font-size: 10px;
+	font-weight: normal;
+	margin: 10px 0 0;
+	line-height: 1.6;
+	color: #777
+}
+.btn-black {
+	color: #f1f1f1;
+	background-color: #333;
+	border-color: #000
+}
+.btn-black:hover, .btn-black:focus {
+	background-color: #233;
+	color: #f1f1f1
+}
+.section-header {
+	margin: 20px 0 25px;
+	font-size: 24px;
+	line-height: 1.7;
+	font-weight: bold;
+	padding-bottom: 7px;
+	border-bottom: 2px solid #ddd
+}
+.section-header>i {
+	margin-right: 4px;
+	font-size: 32px;
+	position: relative;
+	top: 1px
+}
+.jinda-control-label {
+	margin-bottom: 10px !important
+}
+ul#adminmenu a.wp-has-current-submenu:after, ul#adminmenu>li.current>a.current:after {
+	border: 0 !important
+}
+.jinda-ionic-icon {
+	font-size: 32px;
+	line-height: 32px;
+	position: absolute;
+	top: 13px;
+	left: 15px;
+	width: 32px;
+	height: 32px;
+	margin-right: 3px
+}
+.jinda-ionic-icon:before {
+	width: 32px;
+	height: 32px
+}
+.CodeMirror {
+	height: 200px
+}
+.CodeMirror.cm-s-default {
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	box-shadow: none
+}
+.CodeMirror.CodeMirror-focused {
+	border: 1px solid #aaa;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.125)
+}
+.CodeMirror-sizer {
+	padding: 10px
+}
+.option-copyrights-text {
+	color: #eee;
+	font-size: 10px
+}
+.option-about-logo {
+	margin: 20px auto
+}
+.option-about-logo img {
+	display: block;
+	margin: auto;
+	max-width: 300px;
+	height: auto
+}
+.jinda-body-title {
+	font-size: 32px;
+	font-weight: bold;
+	margin-bottom: 10px
+}
+.jinda-body-tagline {
+	font-weight: bold
+}
+.jinda-about-address {
+	color: #888;
+	margin-top: 20px
+}
+.jinda-about-email {
+	color: #888
+}
+.jinda-about-email>i {
+	margin: 0 3px
+}
+.option-about-content {
+	margin-bottom: 80px
+}
+
 /*# sourceMappingURL=options-ui.css.map */

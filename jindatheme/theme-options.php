@@ -1,9 +1,14 @@
 <?php 
 function jindaAdmin_menu() {
-	add_menu_page('JindaMenu Theme Options', 'Jinda Option', 'manage_options', 'jindamenu-options', 'jinda_admin_options_callback', 'dashicons-chart-area', 1991);
+	add_theme_page('JindaMenu Theme Options', 'Jinda Options', 'manage_options', 'jindamenu-options', 'jinda_admin_options_callback');
+	// add_menu_page('JindaMenu Theme Options', 'Jinda Options', 'manage_options', 'jindamenu-options', 'jinda_admin_options_callback', 'dashicons-chart-area', 1991);
 	add_action('admin_init', 'register_jindaAdmin_settings');
 }
 add_action('admin_menu', 'jindaAdmin_menu');
+
+function register_option_menu(){
+	echo '<h3>See Jinda Options in sidebar menu</h3>';
+}
 
 function register_jindaAdmin_settings() {
 	/**

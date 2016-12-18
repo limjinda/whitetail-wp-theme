@@ -22,7 +22,6 @@ function jinda_setup(){
 		'image', 'video', 'quote',
 	) );
 
-	// set_post_thumbnail_size( 600, 450, array('center', 'center') );
 	add_image_size( 'grid', 600, 450, array('center', 'center') );
 	
 	/**
@@ -32,14 +31,22 @@ function jinda_setup(){
 }
 add_action('after_setup_theme', 'jinda_setup');
 
+function whitetail_content_width() {
+	$content_width = 960;
+	$GLOBALS['content_width'] = apply_filters( 'whitetail_content_width', $content_width );
+}
+add_action( 'after_setup_theme', 'whitetail_content_width', 0 );
+
 /**
  * ENQUEUE SCRIPTS & STYLES
  */
 
 function jinda_scripts(){
 	wp_enqueue_style('whitetail-core', get_stylesheet_uri(), array(), '1.9.1' );
-	wp_deregister_script('jquery');
-	wp_enqueue_script('whitetail-core-js', THEME_URI.'/js/lib/client.min.js', array(), '1.4', true );
+	wp_enqueue_script('whitetail-core-js', THEME_URI.'/js/lib/client.min.js', array('jquery'), '2.2.0', true );
+	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+		wp_enqueue_script( 'comment-reply' );
+	}
 }
 add_action( 'wp_enqueue_scripts', 'jinda_scripts' );
 
@@ -48,7 +55,8 @@ add_action( 'wp_enqueue_scripts', 'jinda_scripts' );
  * ADD BOOTSTRAP TO ADMIN DASHBOARD
  */
 function jinda_admin_enqueue($hook){
-	if ( 'toplevel_page_jindamenu-options' != $hook ) {
+	// if ( 'toplevel_page_jindamenu-options' != $hook ) {
+	if ( 'appearance_page_jindamenu-options' != $hook ) {
 		wp_enqueue_style('jindatheme_shortcode_css', THEME_URI . '/jindatheme/jinda-mce-button.css');
 		return;
 	}
@@ -161,34 +169,6 @@ add_shortcode( 'responsive', 'responsive_shortcode' );
 function responsive_shortcode($atts, $content = null){
   return $content;
 }
-
-/**
- * CUSTOM TITLE TAG
- */
-// function theme_name_wp_title( $title, $sep ) {
-// 	if ( is_feed() ) {
-// 		return $title;
-// 	}
-	
-// 	global $page, $paged;
-
-// 	// Add the blog name
-// 	$title .= get_bloginfo( 'name', 'display' );
-
-// 	// Add the blog description for the home/front page.
-// 	$site_description = get_bloginfo( 'description', 'display' );
-// 	if ( $site_description && ( is_home() || is_front_page() ) ) {
-// 		$title .= " $sep $site_description";
-// 	}
-
-// 	// Add a page number if necessary:
-// 	if ( ( $paged >= 2 || $page >= 2 ) && ! is_404() ) {
-// 		$title .= " $sep " . sprintf( __( 'Page %s', '_s' ), max( $paged, $page ) );
-// 	}
-
-// 	return $title;
-// }
-// add_filter( 'wp_title', 'theme_name_wp_title', 10, 2 );
 
 
 ?>

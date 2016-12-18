@@ -159,6 +159,7 @@ ul.comment-list {
 }
 
 .comment-respond{
+	clear: both;
 	a {
 		color: $link;
 		&:hover{

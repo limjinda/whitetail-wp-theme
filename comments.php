@@ -4,36 +4,37 @@
 		'author' =>
 		'<div class="clearfix"><div class="sm-col sm-col-6"><label class="w-label" for="author">' . 'ชื่อของคุณ' . ( $req ? ' <span class="required">*</span>' : '' ) . '</label>' .
 		'<input class="w-tb first" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
-		'" size="30"' . $aria_req . ' /></div>',
+		'" size="30" /></div>',
 		'email' =>
 		'<div class="sm-col sm-col-6"><label class="w-label" for="email">' . 'ระบุอีเมล์' . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' .
 		'<input class="w-tb" id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
-		'" size="30"' . $aria_req . ' /></div>',
+		'" size="30" /></div>',
 	);
 
 	$form_args = array(
 	  'id_form'           => 'commentform',
+	  'class_form'				=> 'clearfix mxn2',
 	  'id_submit'         => 'submit',
 	  'class_submit'      => 'submit w-btn comment-submit-button',
 	  'name_submit'       => 'submit',
-	  'title_reply'       => __( 'แสดงความคิดเห็นของคุณที่นี่' ),
-	  'title_reply_to'    => __( 'ตอบกลับไปยัง %s' ),
-	  'cancel_reply_link' => __( 'ยกเลิกการตอบ' ),
+	  'title_reply'       => __( 'แสดงความคิดเห็นของคุณที่นี่', 'jindatheme' ),
+	  'title_reply_to'    => __( 'ตอบกลับไปยัง %s', 'jindatheme' ),
+	  'cancel_reply_link' => __( 'ยกเลิกการตอบ', 'jindatheme' ),
 	  'label_submit'      => 'ส่งความเห็น',
 	  'format'            => 'xhtml',
 
 	  'comment_field' =>  '<div class="sm-col sm-col-12"><label for="comment" class="w-label">' . '<span class="icon-speech-bubble"></span> ระบุความคิดเห็น ' . ( $req ? ' <span class="required">*</span>' : '' ) . '</label><textarea id="comment" class="w-textarea" name="comment" cols="45" rows="8" aria-required="true">' .
-	    '</textarea></div></div>',
+	    '</textarea></div>',
 
 	  'must_log_in' => '<p class="must-log-in">' .
 	    sprintf(
-	      __( 'You must be <a href="%s">logged in</a> to post a comment.' ),
+	      __( 'You must be <a href="%s">logged in</a> to post a comment.', 'jindatheme' ),
 	      wp_login_url( apply_filters( 'the_permalink', get_permalink() ) )
 	    ) . '</p>',
 
 	  'logged_in_as' => '<p class="logged-in-as"> ' .
 	    sprintf(
-	    __( 'คุณเข้าใช้ในชื่อ <a href="%1$s">%2$s</a>. <a href="%3$s" class="logout-link" title="Log out of this account">ออกจากระบบ คลิกที่นี่</a>' ),
+	    __( 'คุณเข้าใช้ในชื่อ <a href="%1$s">%2$s</a>. <a href="%3$s" class="logout-link" title="Log out of this account">ออกจากระบบ คลิกที่นี่</a>', 'jindatheme' ),
 	      admin_url( 'profile.php' ),
 	      $user_identity,
 	      wp_logout_url( apply_filters( 'the_permalink', get_permalink( ) ) )
@@ -56,7 +57,6 @@ if ( post_password_required() ) {
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
 			<nav class="navigation comment-navigation" role="navigation">
-				<!-- <h2 class="screen-reader-text"><?php _e( 'Comment navigation', 'twentyfifteen' ); ?></h2> -->
 				<div class="nav-links clearfix">
 
 						<div class="sm-col sm-col-6">
@@ -95,7 +95,7 @@ if ( post_password_required() ) {
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 		if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
 	?>
-		<p class="no-comments"><?php _e( 'บทความนี้ไม่เปิดให้แสดงความคิดเห็น', 'twentyfifteen' ); ?></p>
+		<p class="no-comments"><?php _e( 'บทความนี้ไม่เปิดให้แสดงความคิดเห็น', 'jindatheme' ); ?></p>
 	<?php endif; ?>
 
 	<?php comment_form($form_args); ?>
