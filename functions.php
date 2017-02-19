@@ -44,6 +44,7 @@ add_action( 'after_setup_theme', 'whitetail_content_width', 0 );
 function jinda_scripts(){
 	wp_enqueue_style('whitetail-core', get_stylesheet_uri(), array(), '1.9.1' );
 	wp_enqueue_script('whitetail-core-js', THEME_URI.'/js/lib/client.min.js', array('jquery'), '2.2.0', true );
+	wp_enqueue_script('autotrack', THEME_URI.'/lib/autotrack.custom.js', array('jquery'), '2.2.2', true );
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
