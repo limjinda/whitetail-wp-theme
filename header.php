@@ -8,6 +8,7 @@
   <meta name="description" content="<?php echo get_option('jinda_opt_site_description') ?>">
   <meta name="keywords" content="<?php echo get_option('jinda_opt_site_keywords') ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta property="og:image" content="<?php echo get_option('jinda_opt_site_og_image') ?>" />
   <link rel="profile" href="http://gmpg.org/xfn/11" />
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
   <link rel="apple-touch-icon" sizes="57x57" href="<?php echo get_template_directory_uri()?>/img/favicon/apple-touch-icon-57x57.png">

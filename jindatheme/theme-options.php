@@ -17,6 +17,7 @@ function register_jindaAdmin_settings() {
 	 */
 	register_setting('jindaAdmin-general-group', 'jinda_opt_site_description' );
 	register_setting('jindaAdmin-general-group', 'jinda_opt_site_keywords' );
+	register_setting('jindaAdmin-general-group', 'jinda_opt_site_og_image' );
 	register_setting('jindaAdmin-general-group', 'jinda_opt_company_footer' );
 	register_setting('jindaAdmin-general-group', 'jinda_opt_company_js' );
 	/**

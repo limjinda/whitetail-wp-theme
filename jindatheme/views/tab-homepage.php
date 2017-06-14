@@ -16,6 +16,14 @@
 	</div>
 </div>
 
+<!-- Keywords -->
+<div class="form-group">
+	<label for="jinda_opt_site_og_image" class="control-label col-sm-4">[OG]Image URL</label>
+	<div class="col-sm-8">
+		<input type="text" class="form-control" name="jinda_opt_site_og_image" id="jinda_opt_site_og_image" value="<?php echo get_option('jinda_opt_site_og_image', '') ?>">
+	</div>
+</div>
+
 <!-- Footer Text -->
 <div class="form-group">
 	<label for="jinda_opt_company_footer" class="control-label col-sm-4">Footer Copyrights</label>
