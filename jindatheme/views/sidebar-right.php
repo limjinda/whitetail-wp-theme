@@ -1,6 +1,9 @@
 <div id="jinda-section-homepage-content" class="jinda-section-content active">
 	<?php require_once(THEME_DIR.'/jindatheme/views/tab-homepage.php'); ?>
 </div>
+<div id="jinda-section-single-content" class="jinda-section-content">
+	<?php require_once(THEME_DIR.'/jindatheme/views/tab-single.php') ?>
+</div>
 <div id="jinda-section-footer-content" class="jinda-section-content">
 	<?php require_once(THEME_DIR.'/jindatheme/views/tab-social.php'); ?>
 </div>

@@ -6,6 +6,32 @@ jQuery(document).ready(function() {
 
 	if (jQuery('.jinda-codemirror').length > 0) {
 
+		var adsLeft = CodeMirror.fromTextArea(document.getElementById('jinda_opt_ads_left'), {
+			mode : "html",
+			htmlMode: true,
+			indentUnit: 2,
+			tabSize: 2,
+			lineWrapping: true,
+		});
+
+		adsLeft.on('changes', function(){
+			var newValue = adsLeft.getValue();
+			jQuery('#jinda_opt_ads_left').empty().html(newValue);
+		});
+
+		var adsRight = CodeMirror.fromTextArea(document.getElementById('jinda_opt_ads_right'), {
+			mode : "html",
+			htmlMode: true,
+			indentUnit: 2,
+			tabSize: 2,
+			lineWrapping: true,
+		});
+
+		adsRight.on('changes', function(){
+			var newValue = adsRight.getValue();
+			jQuery('#jinda_opt_ads_right').empty().html(newValue);
+		});
+
 		var footerCodemirror = CodeMirror.fromTextArea(document.getElementById('jinda_opt_company_footer'), {
 			mode : "xml",
 			htmlMode: true,

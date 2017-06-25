@@ -38,6 +38,13 @@ function register_jindaAdmin_settings() {
 	register_setting('jindaAdmin-general-group', 'jinda_opt_github_url' );
 	register_setting('jindaAdmin-general-group', 'jinda_opt_enable_500px' );
 	register_setting('jindaAdmin-general-group', 'jinda_opt_500px_url' );
+	/**
+	 * CONTENT SETTINGS
+	 * VERSION 2.2.3
+	 */
+	register_setting('jindaAdmin-general-group', 'jinda_opt_enable_content_ads' );
+	register_setting('jindaAdmin-general-group', 'jinda_opt_ads_left' );
+	register_setting('jindaAdmin-general-group', 'jinda_opt_ads_right' );
 }
 
 function jinda_admin_options_callback() {

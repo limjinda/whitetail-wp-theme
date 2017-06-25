@@ -4,6 +4,17 @@
 			<h1 class="entry-title" itemprop="name"><?php the_title(); ?></h1>
 			<div class="entry-content" itemprop="articleBody">
 				<?php the_content() ?>
+				<?php if(get_option('jinda_opt_enable_content_ads')): ?>
+				<div class="clearfix mxn2">
+					<div class="sm-col sm-col-6 px2">
+						<?php echo get_option('jinda_opt_ads_left') ?>
+					</div>
+					<div class="sm-col sm-col-6 px2">
+						<?php echo get_option('jinda_opt_ads_right') ?>
+					</div>
+				</div>
+				<div class="row"></div>
+				<?php endif; ?>
 				<?php get_template_part('views/layout', 'meta'); ?>
 			</div>
 			<?php get_template_part('views/layout', 'author') ?>
