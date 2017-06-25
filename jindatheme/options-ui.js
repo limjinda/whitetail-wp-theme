@@ -74,6 +74,8 @@ jQuery(document).ready(function() {
 		/**
 		 * CODEMIRROR REFRESH
 		 */
+		adsLeft.refresh();
+		adsRight.refresh();
 		footerCodemirror.refresh();
 		jsCodemirror.refresh();
 	});
