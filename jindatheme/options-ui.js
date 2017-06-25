@@ -7,7 +7,7 @@ jQuery(document).ready(function() {
 	if (jQuery('.jinda-codemirror').length > 0) {
 
 		var adsLeft = CodeMirror.fromTextArea(document.getElementById('jinda_opt_ads_left'), {
-			mode : "html",
+			mode : "xml",
 			htmlMode: true,
 			indentUnit: 2,
 			tabSize: 2,
@@ -20,7 +20,7 @@ jQuery(document).ready(function() {
 		});
 
 		var adsRight = CodeMirror.fromTextArea(document.getElementById('jinda_opt_ads_right'), {
-			mode : "html",
+			mode : "xml",
 			htmlMode: true,
 			indentUnit: 2,
 			tabSize: 2,
@@ -58,7 +58,7 @@ jQuery(document).ready(function() {
 
 		jsCodemirror.on('changes', function(){
 			var newValue = jsCodemirror.getValue();
-			jQuery('#jinda_opt_company_footer').empty().html(newValue);
+			jQuery('#jinda_opt_company_js').empty().html(newValue);
 		});
 	}
 
