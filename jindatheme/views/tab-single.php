@@ -1,4 +1,4 @@
-<h3 class="section-header"><i class="ion-home"></i> Content Settings</h3>
+<h3 class="section-header"><i class="ion-compose"></i> Content Settings</h3>
 
 <!-- enable ads? -->
 <div class="form-group">
