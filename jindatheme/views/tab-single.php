@@ -12,18 +12,10 @@
 	</div>
 </div>
 
-<!-- Ads 435x100 -->
+<!-- Ads 1024x150 -->
 <div class="form-group">
-	<label for="jinda_opt_ads_left" class="control-label col-sm-4">Ads on Single(left)</label>
+	<label for="jinda_opt_ads_end_content" class="control-label col-sm-4">Ads on Single(End of Content)</label>
 	<div class="col-sm-8">
-		<textarea name="jinda_opt_ads_left" id="jinda_opt_ads_left" class="form-control jinda-codemirror" rows="10"><?php echo get_option('jinda_opt_ads_left'); ?></textarea>
-	</div>
-</div>
-
-<!-- Ads 435x100 -->
-<div class="form-group">
-	<label for="jinda_opt_ads_right" class="control-label col-sm-4">Ads on Single(right)</label>
-	<div class="col-sm-8">
-		<textarea name="jinda_opt_ads_right" id="jinda_opt_ads_right" class="form-control jinda-codemirror" rows="10"><?php echo get_option('jinda_opt_ads_right'); ?></textarea>
+		<textarea name="jinda_opt_ads_end_content" id="jinda_opt_ads_end_content" class="form-control jinda-codemirror" rows="10"><?php echo get_option('jinda_opt_ads_end_content'); ?></textarea>
 	</div>
 </div>
