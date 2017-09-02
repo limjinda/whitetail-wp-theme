@@ -6,17 +6,32 @@ jQuery(document).ready(function() {
 
 	if (jQuery('.jinda-codemirror').length > 0) {
 
-		var adsContent = CodeMirror.fromTextArea(document.getElementById('jinda_opt_ads_end_content'), {
+		var bannerLeftContent = CodeMirror.fromTextArea(document.getElementById('jinda_opt_ads_end_content_left'), {
 			mode : "xml",
 			htmlMode: true,
 			indentUnit: 2,
 			tabSize: 2,
 			lineWrapping: true,
+			theme: 'monokai'
 		});
 
-		adsContent.on('changes', function(){
-			var newValue = adsContent.getValue();
-			jQuery('#jinda_opt_ads_end_content').empty().html(newValue);
+		bannerLeftContent.on('changes', function(){
+			var newValue = bannerLeftContent.getValue();
+			jQuery('#jinda_opt_ads_end_content_left').empty().html(newValue);
+		});
+
+		var bannerRightContent = CodeMirror.fromTextArea(document.getElementById('jinda_opt_ads_end_content_right'), {
+			mode : "xml",
+			htmlMode: true,
+			indentUnit: 2,
+			tabSize: 2,
+			lineWrapping: true,
+			theme: 'monokai'
+		});
+
+		bannerRightContent.on('changes', function(){
+			var newValue = bannerRightContent.getValue();
+			jQuery('#jinda_opt_ads_end_content_right').empty().html(newValue);
 		});
 
 		var footerCodemirror = CodeMirror.fromTextArea(document.getElementById('jinda_opt_company_footer'), {
@@ -61,8 +76,8 @@ jQuery(document).ready(function() {
 		/**
 		 * CODEMIRROR REFRESH
 		 */
-		adsLeft.refresh();
-		adsRight.refresh();
+		bannerLeftContent.refresh();
+		bannerRightContent.refresh();
 		footerCodemirror.refresh();
 		jsCodemirror.refresh();
 	});

@@ -42,8 +42,10 @@ function register_jindaAdmin_settings() {
 	 * CONTENT SETTINGS
 	 * VERSION 2.2.3
 	 */
-	register_setting('jindaAdmin-general-group', 'jinda_opt_enable_content_ads' );
-	register_setting('jindaAdmin-general-group', 'jinda_opt_ads_end_content' );
+	register_setting('jindaAdmin-general-group', 'jinda_opt_enable_content_ads_left' );
+	register_setting('jindaAdmin-general-group', 'jinda_opt_ads_end_content_left' );
+	register_setting('jindaAdmin-general-group', 'jinda_opt_enable_content_ads_right' );
+	register_setting('jindaAdmin-general-group', 'jinda_opt_ads_end_content_right' );
 }
 
 function jinda_admin_options_callback() {
