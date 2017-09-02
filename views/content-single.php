@@ -5,17 +5,20 @@
 			<div class="entry-content" itemprop="articleBody">
 				<?php the_content() ?>
 				
-				<?php if(get_option('jinda_opt_enable_content_ads')): ?>
 				<div class="clearfix mxn2 entry-ads-block">
+					<?php if(get_option('jinda_opt_ads_end_content_left')): ?>
 					<div class="sm-col sm-col-6 px1">
 						<?php echo get_option('jinda_opt_ads_end_content_left') ?>
 					</div>
+					<?php endif; ?>
+					<?php if(get_option('jinda_opt_ads_end_content_right')): ?>
 					<div class="sm-col sm-col-6 px1">
 						<?php echo get_option('jinda_opt_ads_end_content_right') ?>
 					</div>
+					<?php endif; ?>
 				</div>
 				<div class="row"></div>
-				<?php endif; ?>
+				
 
 				<?php get_template_part('views/layout', 'meta'); ?>
 			</div>
