@@ -48,6 +48,11 @@
 	</div>
 
 	<div class="overlay-background"></div>
+
+	<!-- black ribbon for the king -->
+	<div class="black-ribbon">
+		<img src="<?php echo get_template_directory_uri() ?>/img/black-ribbon.png" alt="Black Ribbon" />
+	</div>
 	
 	<?php wp_footer() ?>
 </body>
