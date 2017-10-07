@@ -1,24 +1,39 @@
-var gulp = require('gulp'),
-  concat = require('gulp-concat'),
-  rename = require('gulp-rename'),
-  header = require('gulp-header'),
-  minifyCss = require('gulp-minify-css'),
-  imagemin = require('gulp-imagemin'),
-  uglify = require('gulp-uglify');
+var gulp      = require('gulp');
+var concat    = require('gulp-concat');
+var rename    = require('gulp-rename');
+var header    = require('gulp-header');
+var minifyCss = require('gulp-minify-css');
+var imagemin  = require('gulp-imagemin');
+var uglify    = require('gulp-uglify');
+var purify    = require('gulp-purifycss');
+
 var banner = ['/*!', 'Theme Name: whitetail', 'Theme URI: https://www.jir4yu.me/2016/whitetail-free-wordpress-theme/', 'Author: JindaTheme', 'Author URI: http://www.jindatheme.com', 'Description: a simple and minimal gallery WordPress theme from JindaTheme', 'Version: 1.0', 'License: GNU General Public License v2 or later', 'License URI: http://www.gnu.org/licenses/gpl-2.0.html', 'Tags: one-column, grid-layout, accessibility-ready, custom-menu, editor-style, featured-images, microformats, theme-options, threaded-comments, blog, photography, portfolio', 'Text Domain: jindatheme', '*/', ''].join('\n');
+
 gulp.task('pngs', function() {
   return gulp.src('./img/**/*.png').pipe(imagemin()).pipe(gulp.dest('./img/'));
 })
+
 gulp.task('gifs', function() {
   return gulp.src('./img/**/*.gif').pipe(imagemin({
     interlaced: true
   })).pipe(gulp.dest('./img/'));
 })
+
 gulp.task('client-css', function() {
   return gulp.src(['./bower_components/basscss/css/basscss.css', './style.css']).pipe(concat('style.css')).pipe(minifyCss({
     keepSpecialComments: 0
   })).pipe(header(banner)).pipe(gulp.dest('./'))
 })
+
+gulp.task('remove-unused-css', function(){
+  return gulp.src('./style.css')
+  .pipe(purify(['./**/*.php'], {
+    minify: true,
+    info: true
+  }))
+  .pipe(gulp.dest('./'));
+});
+
 gulp.task('client-js', function() {
   return gulp.src(['./lib/modernizr.js', './bower_components/trmix/dist/trmix.min.js', './bower_components/matchHeight/jquery.matchHeight-min.js', './bower_components/magnific-popup/dist/jquery.magnific-popup.js', './js/main.js']).pipe(concat('client.js', {
     newLine: ';'
@@ -26,4 +41,6 @@ gulp.task('client-js', function() {
     preserveComments: 'license'
   })).pipe(rename('client.min.js')).pipe(gulp.dest('./js/lib/'));
 });
+
 gulp.task('default', ['pngs', 'gifs', 'client-css', 'client-js']);
+gulp.task('dist', ['remove-unused-css']);

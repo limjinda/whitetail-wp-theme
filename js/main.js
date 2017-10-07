@@ -82,7 +82,7 @@ jQuery(document).ready(function() {
       jQuery(this).wrap("<div class='responsive-unit'></div>");
     });
   }
-  console.log("%cDeveloped and Maintained by JindaTheme :)", "font-size:24px; color: #e7a12e; font-weight: bold; font-family: Century Gothic, sans-serif;"), console.log("%cvisit us on http://www.jindatheme.com", "font-size:12px; color: #888888; font-family: Century Gothic, sans-serif;");
+  console.log("%cDeveloped and Maintained by JindaTheme :)", "font-size:14px; color: #e7a12e; font-weight: bold; font-family: Century Gothic, sans-serif;"), console.log("%cvisit us on http://www.jindatheme.com", "font-size:12px; color: #888888; font-family: Century Gothic, sans-serif;");
   /**
    * WARP FORM-SUBMIT(IN COMMENT-FORM)
    * IN CLEARFIX MXN2
