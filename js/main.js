@@ -47,11 +47,6 @@ jQuery(document).ready(function() {
     });
   }
   /**
-   * ADD MATCHHEIGHT TO GRID VIEW
-   * VERSION 1.0
-   */
-  jQuery('.grid-content-block').matchHeight();
-  /**
    * ADD MAGNIFIC POPUP TO GALLERY
    * IF CONTENT HAV GALLERY SHORTCODE
    */
@@ -83,14 +78,6 @@ jQuery(document).ready(function() {
     });
   }
   console.log("%cDeveloped and Maintained by JindaTheme :)", "font-size:14px; color: #e7a12e; font-weight: bold; font-family: Century Gothic, sans-serif;"), console.log("%cvisit us on http://www.jindatheme.com", "font-size:12px; color: #888888; font-family: Century Gothic, sans-serif;");
-  /**
-   * WARP FORM-SUBMIT(IN COMMENT-FORM)
-   * IN CLEARFIX MXN2
-   */
-  // if (jQuery('.comment-form').length > 0) {
-  // jQuery('.form-submit').wrap("<div class='clearfix mxn2'></div>");
-  // jQuery('.form-submit').addClass('comment-submit-block');
-  // }
 });
 jQuery(window).load(function() {
   /**
@@ -98,4 +85,11 @@ jQuery(window).load(function() {
    * VERSION 1.0
    */
   jQuery('.preloader-block').fadeOut();
+  /**
+   * ADD MATCHHEIGHT TO GRID VIEW
+   * VERSION 1.0
+   */
+  if (jQuery('.grid-content-block').length > 0) {
+    jQuery('.grid-content-block').matchHeight();
+  }
 });
