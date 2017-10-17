@@ -1,18 +1,18 @@
-.mxn2{
+.mxn2 {
 	margin-left: 0;
 	margin-right: 0;
 }
 
-body{
-	&.single{
-		main.main{
+body {
+	&.single {
+		main.main {
 			padding: 60px 0 60px;
 		}
 	}
-	&.error404{
+	&.error404 {
 		main.main {
 			padding: 60px 0 40px;
-			@media #{$sm}{
+			@media #{$sm} {
 				padding: 100px 0;
 			}
 		}
@@ -88,6 +88,12 @@ body{
 	max-width: 100%;
 }
 
-ol.comment-list li.bypostauthor{
+ol.comment-list li.bypostauthor {
 	border: 2px solid $link;
+}
+
+.btn-primary {
+	background-color: $link;
+	font-weight: normal;
+	font-family: 'prompt', arial;
 }
