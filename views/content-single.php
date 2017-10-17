@@ -3,9 +3,14 @@
 	<?php while ( have_posts() ) : the_post() ?>
 		<article itemscope itemtype="http://schema.org/BlogPosting" <?php post_class('sm-col sm-col-12 px2' ); ?>>
 			<h1 class="entry-title" itemprop="name"><?php the_title(); ?></h1>
+
+			<time class="entry-date">
+				<span class="time" itemprop="datePublished" itemprop="dateCreated"><?php the_time('j F, Y'); ?></span>
+			</time>
+
 			<div class="entry-content" itemprop="articleBody">
 				<?php the_content() ?>
-				
+
 				<?php if ( (get_option('jinda_opt_enable_content_ads_left') || get_option('jinda_opt_enable_content_ads_right')) && get_post_format() != "quote" ): ?>
 					<div class="clearfix mxn2 entry-ads-block">
 						<?php if(get_option('jinda_opt_enable_content_ads_left')): ?>

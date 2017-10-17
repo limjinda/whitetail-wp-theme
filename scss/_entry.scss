@@ -19,6 +19,15 @@
 	}
 }
 
+.entry-date {
+	text-align: center;
+	display: block;
+	margin: 0 auto 30px;
+	font-size: 16px;
+	font-family: 'prompt', arial;
+	color: $coal;
+}
+
 .archive-content {
 	@media #{$sm} {
 		padding: 50px 0;
@@ -357,13 +366,10 @@
 		position: relative;
 		top: 1px;
 	}
-	.entry-date,
 	.entry-categories,
 	.entry-tags {
 		color: $coal;
-		.time {
-			margin-right: 3px;
-		}
+		margin: 0 5px;
 		a {
 			color: $coal;
 			&:hover {
