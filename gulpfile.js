@@ -13,7 +13,7 @@ const runSequence = require('run-sequence');
 const autoprefixer = require('gulp-autoprefixer');
 const plumber = require('gulp-plumber');
 
-let banner = [
+const banner = [
 	'/*!',
 	'Theme Name: whitetail',
 	'Theme URI: https://www.jir4yu.me/2016/whitetail-free-wordpress-theme/',
