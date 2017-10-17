@@ -1,19 +1,18 @@
-const gulp = require('gulp');
-const concat = require('gulp-concat');
-const rename = require('gulp-rename');
-const header = require('gulp-header');
-const imagemin = require('gulp-imagemin');
-const uglify = require('gulp-uglify');
-const purify = require('gulp-purifycss');
-const livereload = require('gulp-livereload');
-const sass = require('gulp-sass');
-const cleanCSS = require('gulp-clean-css');
-const concatCSS = require('gulp-concat-css');
-const runSequence = require('run-sequence');
-const autoprefixer = require('gulp-autoprefixer');
-const plumber = require('gulp-plumber');
+let gulp = require('gulp');
+let concat = require('gulp-concat');
+let rename = require('gulp-rename');
+let header = require('gulp-header');
+let imagemin = require('gulp-imagemin');
+let uglify = require('gulp-uglify');
+let livereload = require('gulp-livereload');
+let sass = require('gulp-sass');
+let cleanCSS = require('gulp-clean-css');
+let concatCSS = require('gulp-concat-css');
+let runSequence = require('run-sequence');
+let autoprefixer = require('gulp-autoprefixer');
+let plumber = require('gulp-plumber');
 
-const banner = [
+let banner = [
 	'/*!',
 	'Theme Name: whitetail',
 	'Theme URI: https://www.jir4yu.me/2016/whitetail-free-wordpress-theme/',
@@ -47,33 +46,31 @@ gulp.task('gifs', () => {
 		.pipe(gulp.dest('./img/'));
 });
 
-gulp.task('sass', () => {
+gulp.task('scss', () => {
 	return gulp
 		.src(['./scss/**/*.scss'])
 		.pipe(plumber())
 		.pipe(sass().on('error', sass.logError))
-		.pipe(rename('style.css'))
-		.pipe(gulp.dest('./'));
-});
-
-gulp.task('makeCSS', () => {
-	return gulp
-		.src(['./bower_components/basscss/css/basscss.css', './style.css'])
-		.pipe(concatCSS('style.css'))
 		.pipe(
 			autoprefixer({
 				browsers: ['last 2 versions']
 			})
 		)
+		.pipe(rename('scss.css'))
+		.pipe(gulp.dest('./'));
+});
+
+gulp.task('makeCSS', () => {
+	return gulp
+		.src(['./bower_components/basscss/css/basscss.css', './scss.css'])
 		.pipe(
-			cleanCSS({
-				keepSpecialComments: 0
+			concatCSS('style.css', {
+				rebaseUrls: false
 			})
 		)
 		.pipe(
-			purify(['./**/*.php'], {
-				minify: true,
-				info: true
+			cleanCSS({
+				keepSpecialComments: 0
 			})
 		)
 		.pipe(header(banner))

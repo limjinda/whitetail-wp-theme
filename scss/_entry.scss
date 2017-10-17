@@ -1,76 +1,76 @@
-.single{
-	.container{
+.single {
+	.container {
 		max-width: 60em;
 	}
 }
 
 .entry-title,
-.archive-title{
+.archive-title {
 	font-size: 20px;
 	text-align: center;
 	margin: 0 auto 15px;
 	line-height: 1.5;
 	word-wrap: break-word;
-	@media #{$sm}{
+	@media #{$sm} {
 		font-size: 28px;
 	}
-	@media #{$md}{
+	@media #{$md} {
 		font-size: 32px;
 	}
 }
 
-.archive-content{
-	@media #{$sm}{
+.archive-content {
+	@media #{$sm} {
 		padding: 50px 0;
 	}
 }
 
-.archive-icon-empty{
+.archive-icon-empty {
 	margin: 25px auto;
 	display: block;
 	text-align: center;
 	font-size: 64px;
 }
 
-.archive-title{
+.archive-title {
 	margin: 0 auto 30px;
-	span{
+	span {
 		position: relative;
 		margin-right: 5px;
 		top: 3px;
 	}
-	&.empty{
+	&.empty {
 		max-width: 90%;
 		text-align: center;
 	}
-	@media #{$md}{
+	@media #{$md} {
 		max-width: auto;
 		text-align: left;
 		margin-bottom: 5px;
 	}
 }
 
-.archive-description{
+.archive-description {
 	max-width: 80%;
 	margin: 0 auto 30px;
 	font-size: 12px;
 	color: $coal;
 	text-align: center;
 	line-height: 1.6;
-	@media #{$sm}{
+	@media #{$sm} {
 		font-size: 14px;
 	}
-	@media #{$md}{
+	@media #{$md} {
 		text-align: left;
 		max-width: 100%;
 	}
-	p{
+	p {
 		text-align: center;
 		font-size: 12px;
 		color: $coal;
 		margin-bottom: 30px;
 		line-height: 1.6;
-		@media #{$md}{
+		@media #{$md} {
 			text-align: left;
 			font-size: 14px;
 		}
@@ -78,184 +78,187 @@
 }
 
 .entry-content,
-.comment-content{
-	@media #{$md}{
+.comment-content {
+	@media #{$md} {
 		padding: 0 15px;
 	}
-	h1{
+	h1 {
 		font-size: 20px;
-		@media #{$sm}{
+		@media #{$sm} {
 			font-size: 28px;
 		}
-		@media #{$md}{
+		@media #{$md} {
 			font-size: 32px;
 		}
 	}
-	h2{
+	h2 {
 		font-size: 18px;
-		@media #{$sm}{
+		@media #{$sm} {
 			font-size: 24px;
 		}
-		@media #{$md}{
+		@media #{$md} {
 			font-size: 30px;
 		}
 	}
-	h3{
+	h3 {
 		font-size: 16px;
 		line-height: 1.5;
 		margin: 20px auto 10px;
-		@media #{$sm}{
+		@media #{$sm} {
 			font-size: 20px;
 		}
-		@media #{$md}{
+		@media #{$md} {
 			font-size: 26px;
 		}
-		@media #{$lg}{
+		@media #{$lg} {
 			margin: 40px auto 15px;
 		}
 	}
-	p{
+	p {
 		font-size: 14px;
 		line-height: 1.6;
 		letter-spacing: 0.3px;
 		word-wrap: break-word;
 		font-weight: 300;
-		@media #{$sm}{
+		@media #{$sm} {
 			font-size: 20px;
 			line-height: 1.7;
 		}
 	}
-	blockquote{
+	blockquote {
 		padding: 20px;
 		margin: 20px auto;
 		background-color: darken($soft-white, 5%);
-		p{
+		p {
 			font-weight: bold;
 			font-family: 'prompt', arial;
 			margin-bottom: 0;
 		}
 	}
-	a{
+	a {
 		color: $link;
 		word-break: break-word;
-		&:hover{
+		&:hover {
 			text-decoration: none;
 			color: $link-active;
 		}
 	}
-	img{
+	img {
 		max-width: 100%;
 		height: auto;
-		&.aligncenter{
+		&.aligncenter {
 			display: block;
 			margin: auto;
 		}
-		&.alignleft{
+		&.alignleft {
 			margin: 5px 15px 5px 0;
 			float: left;
 		}
-		&.alignright{
+		&.alignright {
 			float: right;
 			margin: 5px 0 5px 15px;
 		}
 	}
-	figure{
+	figure {
 		width: 100%;
 		max-width: 100%;
 		display: block;
 		margin: 15px auto;
 		padding: 0;
-		&.alignleft{
+		&.alignleft {
 			margin: 5px 15px 5px 0;
 			float: left;
 		}
-		&.alignright{
+		&.alignright {
 			float: right;
 			margin: 5px 0 5px 15px;
 		}
-		&.gallery-item{
+		&.gallery-item {
 			width: 100%;
 			float: none;
 			box-sizing: border-box;
 			padding: 0;
 			display: block;
 			margin: 0 auto;
-			@media screen and (min-width: 420px){
+			@media screen and (min-width: 420px) {
 				width: 50%;
 				padding: 5px;
 				float: left;
 				margin: 0;
 			}
-			@media #{$sm}{
+			@media #{$sm} {
 				width: 33.33%;
 			}
 			a {
 				outline: 0 !important;
 				display: block;
-				&:hover{
-					img{
+				&:hover {
+					img {
 						opacity: 0.8;
 					}
 				}
 			}
 			&:before,
-			&:after{
+			&:after {
 				display: table;
-				content: " ";
+				content: ' ';
 			}
-			&:after{
+			&:after {
 				clear: both;
 			}
 		}
 	}
-	figcaption{
+	figcaption {
 		font-family: 'prompt', arial;
 		border-left: 3px solid $light;
 		padding: 3px 5px 3px 10px;
 		font-size: 12px;
 		color: $coal;
 	}
-	.gallery{
+	.gallery {
 		clear: both;
 		margin: 15px auto;
 		&::after,
-		&::before{
-			content: " ";
+		&::before {
+			content: ' ';
 			display: table;
 		}
-		&::after{
+		&::after {
 			clear: both;
 		}
 	}
-	ul, ol{
+	ul,
+	ol {
 		padding: 0 0 0 15px;
 		margin-bottom: 1rem;
 		list-style-position: inside;
-		li{
+		li {
 			font-size: 14px;
 			line-height: 1.5;
 			margin-bottom: 5px;
-			@media #{$sm}{
+			@media #{$sm} {
 				font-size: 16px;
 			}
-			> ul, ol{
+			> ul,
+			ol {
 				margin: 0.5rem 0;
 			}
 		}
 	}
-	table{
-		tbody{
-			td,th{
-				padding: .25rem 0.5rem;
+	table {
+		tbody {
+			td,
+			th {
+				padding: 0.25rem 0.5rem;
 				border-bottom: 1px solid darken($soft-white, 5%);
 				font-size: 14px;
 				vertical-align: middle;
-				@media #{$sm}{
+				@media #{$sm} {
 					font-size: 16px;
 				}
 				a {
 					font-size: 14px;
-					@media #{$sm}{
+					@media #{$sm} {
 						font-size: 16px;
 					}
 				}
@@ -263,45 +266,45 @@
 		}
 	}
 	iframe,
-	embed{
+	embed {
 		margin: 20px auto;
 		display: block;
 	}
-	dl{
+	dl {
 		font-size: 14px;
-		@media #{$sm}{
+		@media #{$sm} {
 			font-size: 16px;
 		}
-		dt{
+		dt {
 			font-weight: bold;
 			margin: 10px 0 5px;
 		}
-		dd{
+		dd {
 			margin-left: 10px;
 		}
 	}
-	address{
+	address {
 		font-style: normal;
 		font-size: 14px;
 		line-height: 1.3;
 		color: $coal;
 		margin-bottom: 15px;
-		@media #{$md}{
+		@media #{$md} {
 			font-size: 16px;
 			line-height: 1.4;
 		}
 	}
-	code{
+	code {
 		padding: 2px 4px;
 		background-color: #fbf9f9;
 		border-radius: 2px;
 		border: 1px solid darken(#fbf9f9, 5%);
 		border-bottom-width: 2px;
-		@media #{$md}{
+		@media #{$md} {
 			padding: 4px 6px;
 		}
 	}
-	pre{
+	pre {
 		background-color: $black;
 		tab-size: 2;
 		font-size: 14px;
@@ -309,44 +312,45 @@
 		padding: 10px 15px;
 		border-radius: 0;
 		overflow: auto;
+		white-space: pre-wrap;
 	}
-	form{
-		p{
+	form {
+		p {
 			text-align: center;
 		}
 	}
-	label > input[type="text"],
-	label > input[type="password"],
-	label > input[type="email"]{
+	label > input[type='text'],
+	label > input[type='password'],
+	label > input[type='email'] {
 		margin-left: 5px;
 		max-width: 130px;
-		@media #{$sm}{
+		@media #{$sm} {
 			max-width: initial;
 		}
 	}
-	input[type="text"],
-	input[type="password"],
-	input[type="email"]{
+	input[type='text'],
+	input[type='password'],
+	input[type='email'] {
 		@extend .w-tb;
 	}
-	input[type="submit"],
-	input[type="button"]{
+	input[type='submit'],
+	input[type='button'] {
 		@extend .w-btn;
 		position: relative;
 		top: 2px;
-		@media #{$lg}{
+		@media #{$lg} {
 			top: 4px;
 		}
 	}
 }
 
-.entry-meta{
+.entry-meta {
 	font-family: 'prompt', arial;
 	font-size: 10px;
 	line-height: 1.6;
 	text-align: center;
 	margin: 15px auto;
-	@media #{$sm}{
+	@media #{$sm} {
 		font-size: 12px;
 		margin: 50px auto 10px;
 	}
@@ -356,14 +360,14 @@
 	}
 	.entry-date,
 	.entry-categories,
-	.entry-tags{
+	.entry-tags {
 		color: $coal;
-		.time{
+		.time {
 			margin-right: 3px;
 		}
 		a {
 			color: $coal;
-			&:hover{
+			&:hover {
 				color: $black;
 				text-decoration: none;
 			}
@@ -377,6 +381,6 @@
 	}
 }
 
-.entry-ads-block{
+.entry-ads-block {
 	margin: 50px auto 0;
 }

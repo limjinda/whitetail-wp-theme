@@ -1,13 +1,40 @@
 {
-  "devDependencies": {
-    "gulp-autoprefixer": "^4.0.0",
-    "gulp-clean-css": "^3.9.0",
-    "gulp-concat-css": "^2.3.0",
-    "gulp-livereload": "^3.8.1",
-    "gulp-plumber": "^1.1.0",
-    "gulp-purifycss": "^0.2.0",
-    "gulp-sass": "^3.1.0",
-    "gulp-watch": "^4.3.11",
-    "run-sequence": "^2.2.0"
-  }
+	"name": "whitetail",
+	"version": "1.0.0",
+	"description": "Free clean and completely responsive WordPress theme",
+	"main": "index.php",
+	"directories": {
+		"lib": "lib"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"graceful-fs": "^4.1.11",
+		"gulp": "^3.8.5",
+		"gulp-autoprefixer": "^4.0.0",
+		"gulp-clean-css": "^3.9.0",
+		"gulp-concat-css": "^2.3.0",
+		"gulp-livereload": "^3.8.1",
+		"gulp-plumber": "^1.1.0",
+		"gulp-purifycss": "^0.2.0",
+		"gulp-sass": "^3.1.0",
+		"gulp-watch": "^4.3.11",
+		"run-sequence": "^2.2.0"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/JindaTheme/WhiteTail.git"
+	},
+	"keywords": [
+		"jindatheme",
+		"whitetail"
+	],
+	"author": "JindaTheme",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/JindaTheme/WhiteTail/issues"
+	},
+	"homepage": "https://github.com/JindaTheme/WhiteTail#readme"
 }
