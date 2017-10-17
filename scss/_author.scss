@@ -1,66 +1,66 @@
-.author-block{
+.author-block {
 	margin: 25px auto;
 	max-width: 500px;
 	background-color: darken($soft-white, 5%);
 	padding: 15px;
-	@media #{$sm}{
+	@media #{$sm} {
 		margin: 15px auto 25px;
 		max-width: 450px;
 	}
-	@media #{$md}{
+	@media #{$md} {
 		max-width: 500px;
 	}
-	@media #{$lg}{
+	@media #{$lg} {
 		margin: 15px auto 0;
 	}
-	.author-image{
+	.author-image {
 		display: block;
 		width: 80px;
 		height: 80px;
 		margin: 15px auto;
 		border-radius: 50em;
-		@media #{$sm}{
+		@media #{$sm} {
 			float: left;
 			margin: 0 auto;
 		}
-		@media #{$md}{
+		@media #{$md} {
 			margin: 5px auto;
 		}
 	}
-	.author-content{
+	.author-content {
 		display: block;
 		margin: 15px auto 0 0;
 		font-family: 'prompt', arial;
-		@media #{$sm}{
+		@media #{$sm} {
 			margin: 5px 0 0 100px;
 		}
-		@media #{$md}{
+		@media #{$md} {
 			margin: 5px 0 0 95px;
 		}
-		.author-title{
+		.author-title {
 			margin-top: 0;
 			font-size: 16px;
 			margin-bottom: 10px;
 			text-align: center;
-			@media #{$sm}{
+			@media #{$sm} {
 				text-align: left;
 				font-size: 18px;
 			}
-			@media #{$md}{
+			@media #{$md} {
 				font-size: 20px;
 			}
 		}
-		.author-bio{
+		.author-bio {
 			text-align: center;
 			color: $coal;
 			font-size: 12px;
 			line-height: 1.7;
 			margin-bottom: 15px;
-			@media #{$sm}{
+			@media #{$sm} {
 				margin-bottom: 0;
 				text-align: left;
 			}
-			@media #{$md}{
+			@media #{$md} {
 				font-size: 14px;
 			}
 		}

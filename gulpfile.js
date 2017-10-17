@@ -56,13 +56,13 @@ gulp.task('scss', () => {
 				browsers: ['last 2 versions']
 			})
 		)
-		.pipe(rename('scss.css'))
+		.pipe(rename('style.css'))
 		.pipe(gulp.dest('./'));
 });
 
 gulp.task('makeCSS', () => {
 	return gulp
-		.src(['./bower_components/basscss/css/basscss.css', './scss.css'])
+		.src(['./bower_components/basscss/css/basscss.css', './style.css'])
 		.pipe(
 			concatCSS('style.css', {
 				rebaseUrls: false
