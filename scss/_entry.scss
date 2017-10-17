@@ -53,9 +53,9 @@
 		text-align: center;
 	}
 	@media #{$md} {
-		max-width: auto;
+		max-width: 100%;
 		text-align: left;
-		margin-bottom: 5px;
+		margin-bottom: 24px;
 	}
 }
 

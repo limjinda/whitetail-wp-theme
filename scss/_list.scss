@@ -1,6 +1,18 @@
 .list-item-block {
+	@media #{$sm} {
+		margin: 32px auto;
+	}
+	@media #{$md} {
+		margin: 0 auto;
+	}
 	.list-item {
-		margin-bottom: 24px;
+		margin-bottom: 40px;
+		@media #{$sm} {
+			margin-bottom: 24px;
+		}
+		@media #{$md} {
+			margin-bottom: 32px;
+		}
 		figure {
 			margin: 0;
 			padding: 0;
@@ -19,19 +31,42 @@
 	}
 	.list-item-image {
 		display: block;
-		float: left;
+		margin-bottom: 24px;
+		@media #{$sm} {
+			float: left;
+			margin-bottom: 0;
+		}
 		img {
-			max-width: 260px;
+			max-width: 100%;
 			display: block;
+			@media #{$sm} {
+				max-width: 200px;
+			}
+			@media #{$md} {
+				max-width: 260px;
+			}
 		}
 	}
 	.list-item-content {
-		margin-left: 284px;
+		@media #{$sm} {
+			margin-left: 224px;
+		}
+		@media #{$md} {
+			margin-left: 284px;
+		}
 		._title {
-			font-size: 24px;
-			margin: 0;
+			font-size: 16px;
+			line-height: 1.5;
+			@media #{$sm} {
+				margin: 4px 0 8px;
+			}
+			@media #{$md} {
+				font-size: 20px;
+			}
+			@media #{$lg} {
+				font-size: 24px;
+			}
 			a {
-				margin: 8px 0 16px;
 				color: $link;
 				display: inline-block;
 				&:hover,
@@ -43,9 +78,27 @@
 			}
 		}
 		._text {
-			font-size: 16px;
+			font-size: 14px;
 			color: $black;
 			line-height: 1.6;
+			@media #{$sm} {
+				font-size: 12px;
+			}
+			@media #{$md} {
+				font-size: 16px;
+			}
+		}
+		._button {
+			@media #{$sm} {
+				font-size: 14px;
+				padding: 7px 14px;
+			}
+			@media #{$md} {
+				padding: 8px 15px;
+			}
+			@media #{$lg} {
+				font-size: 16px;
+			}
 		}
 	}
 }
