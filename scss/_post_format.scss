@@ -11,9 +11,13 @@ body.single-format-quote{
 	}
 	.entry-content{
 		text-align: center;
+		margin: 64px auto;
+		@media #{$lg}{
+			margin: 96px auto;
+		}
 		p{
-			font-size: 24px;
-			line-height: 1.6;
+			font-size: 20px;
+			line-height: 1.4;
 			color: $coal;
 			@media #{$sm}{
 				max-width: 500px;
