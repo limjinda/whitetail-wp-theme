@@ -1,25 +1,23 @@
-.img-responsive{
+.img-responsive {
 	max-width: 100%;
 	height: auto;
 }
 
-@mixin shadow($level){
-	@if $level == 1{
-		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);	
-	} @else if $level == 2{
-		box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+@mixin shadow($level) {
+	@if $level == 1 {
+		box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.05);
+	} @else if $level == 2 {
+		box-shadow: 0 4px 20px -4px rgba(0, 0, 0, 0.1);
 	} @else {
-		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-	}	
-}
-
-body{
-	@media #{$md}{
-		border: 25px solid $soft-white;
+		box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	}
 }
 
-.w-tb{
+body {
+	background-color: $soft-white;
+}
+
+.w-tb {
 	border: 1px solid $light;
 	box-shadow: none;
 	padding: 5px 20px 5px 10px !important;
@@ -30,21 +28,21 @@ body{
 	margin: 0;
 	resize: none;
 	box-sizing: border-box;
-	@media #{$lg}{
+	@media #{$lg} {
 		font-size: 14px;
 	}
-	&:focus{
+	&:focus {
 		border: 1px solid $coal;
 	}
 }
 
-.w-label{
+.w-label {
 	font-size: 14px;
 	display: block;
 	margin: 20px 0 5px;
 }
 
-.w-textarea{
+.w-textarea {
 	@extend .w-tb;
 	max-width: 100%;
 	box-sizing: border-box;
@@ -52,7 +50,7 @@ body{
 	-webkit-appearance: none;
 }
 
-.w-btn{
+.w-btn {
 	cursor: pointer;
 	background-color: $link;
 	color: $white;
@@ -64,18 +62,18 @@ body{
 	margin: 0;
 	position: relative;
 	top: 1px;
-	@media #{$lg}{
+	@media #{$lg} {
 		font-size: 14px;
 		top: 2px;
 	}
-	&:hover{
+	&:hover {
 		background-color: $link-active;
 	}
 }
 
-.overlay-background{
+.overlay-background {
 	display: none;
-	background-color: rgba(0,0,0,0.7);
+	background-color: rgba(0, 0, 0, 0.7);
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -85,35 +83,35 @@ body{
 }
 
 .responsive-unit {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  margin-bottom: 20px;
-  iframe,
-  object,
-  embed{
-  	margin: 0 !important;
-  	position: absolute;
-  	top: 0;
-  	left: 0;
-  	width: 100%;
-  	height: 100%;
-  }
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	margin-bottom: 20px;
+	iframe,
+	object,
+	embed {
+		margin: 0 !important;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
 }
 
-.required{
+.required {
 	color: $red;
 }
 
 .dropcap {
-  float: left;
-  padding-right: 15px;
-  font-size: 5em;
-  line-height: 0.8em;
+	float: left;
+	padding-right: 15px;
+	font-size: 5em;
+	line-height: 0.8em;
 }
 
-.black-ribbon{
+.black-ribbon {
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -122,7 +120,7 @@ body{
 		display: block;
 		width: 80px;
 		height: 80px;
-		@media #{$sm}{
+		@media #{$sm} {
 			width: 120px;
 			height: 120px;
 		}

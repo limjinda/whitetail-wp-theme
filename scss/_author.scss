@@ -1,7 +1,8 @@
 .author-block {
-	margin: 25px auto;
+	margin: 16px auto 0;
 	max-width: 500px;
-	background-color: darken($soft-white, 5%);
+	background-color: $soft-white;
+	border: 1px solid darken($soft-white, 5%);
 	padding: 15px;
 	@media #{$sm} {
 		margin: 15px auto 25px;

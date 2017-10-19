@@ -1,37 +1,37 @@
-.comments-area{
+.comments-area {
 	margin: auto;
-	@media #{$sm}{
+	@media #{$sm} {
 		max-width: 530px;
 		margin: auto;
 	}
-	@media #{$md}{
+	@media #{$md} {
 		padding: 15px;
 	}
 	.comment-reply-title,
-	.comments-title{
+	.comments-title {
 		text-align: center;
 		margin: 25px auto 15px;
 		font-size: 16px;
-		@media #{$sm}{
+		@media #{$sm} {
 			font-size: 20px;
 			margin: 50px auto 15px;
 		}
-		@media #{$lg}{
-			margin: 50px auto 25px;
+		@media #{$lg} {
+			margin: 32px auto 32px;
 		}
 	}
-	.w-tb{
+	.w-tb {
 		margin: 5px auto 0;
 		width: 100%;
-		&.first{
-			@media #{$sm}{
+		&.first {
+			@media #{$sm} {
 				width: 98%;
 			}
 		}
 	}
-	.comment-submit-block{
+	.comment-submit-block {
 		margin: 15px 0 0;
-		input.submit{
+		input.submit {
 			margin-top: 10px;
 			-webkit-appearance: none;
 		}
@@ -43,21 +43,21 @@ ul.comment-list {
 	max-width: 100%;
 	display: block;
 	overflow: hidden;
-	a{
+	a {
 		color: $link;
-		&:hover{
+		&:hover {
 			color: $link-active;
 			text-decoration: none;
 		}
 	}
 	padding: 0;
 	list-style: none;
-	li{
+	li {
 		display: block;
 		margin-bottom: 10px;
 		border: 2px solid darken($soft-white, 5%);
 		padding: 15px;
-		&.pingback{
+		&.pingback {
 			font-size: 12px;
 			border: 2px solid transparent;
 			padding: 0;
@@ -67,13 +67,13 @@ ul.comment-list {
 			cursor: default;
 			a {
 				color: $coal;
-				&:hover{
+				&:hover {
 					color: $black;
 					text-decoration: none;
 				}
 			}
 		}
-		img.avatar{
+		img.avatar {
 			float: left;
 			margin: 0 5px 0 0;
 			display: block;
@@ -81,42 +81,42 @@ ul.comment-list {
 		}
 		b.fn,
 		span.says,
-		.comment-metadata{
+		.comment-metadata {
 			vertical-align: top;
 			display: inline-block;
 			font-size: 12px;
 			margin: 0;
 			line-height: 1.5;
 		}
-		.comment-author{
+		.comment-author {
 			line-height: 1.4;
 		}
-		.comment-metadata{
+		.comment-metadata {
 			display: block;
 			line-height: 1.4;
 			margin-top: -3px;
 		}
-		.comment-meta{
+		.comment-meta {
 			margin-bottom: 10px;
 		}
-		.comment-content{
-			p{
+		.comment-content {
+			p {
 				line-height: 1.5;
 				font-size: 12px;
 				margin-bottom: 5px;
 				word-break: break-word;
-				@media #{$sm}{
+				@media #{$sm} {
 					font-size: 14px;
 				}
 			}
 		}
-		.comment-reply-link{
+		.comment-reply-link {
 			font-size: 10px;
 			text-align: right;
 			display: block;
 			color: $coal;
 			clear: both;
-			&:hover{
+			&:hover {
 				color: $link-active;
 				text-decoration: none;
 			}
@@ -126,48 +126,48 @@ ul.comment-list {
 
 ol.comment-list,
 ul.comment-list {
-	.children{
+	.children {
 		padding: 0;
 		display: block;
 		margin: 10px auto 0;
 		> li {
 			padding: 0;
 			border: 0;
-			article{
-				padding: 10px; 
+			article {
+				padding: 10px;
 				background-color: $soft-white;
 				border: 1px solid darken($soft-white, 5%);
 			}
 		}
 	}
-	.comment-awaiting-moderation{
+	.comment-awaiting-moderation {
 		display: block;
 		color: $red;
 		font-size: 12px;
 		margin-top: 5px;
 	}
-	.comment-edit-link{
+	.comment-edit-link {
 		font-size: 12px;
 		color: $red;
-		&:before{
+		&:before {
 			content: '(';
 		}
-		&:after{
+		&:after {
 			content: ')';
 		}
 	}
 }
 
-.comment-respond{
+.comment-respond {
 	clear: both;
 	a {
 		color: $link;
-		&:hover{
+		&:hover {
 			color: $link-active;
 			text-decoration: none;
 		}
 	}
-	small{
+	small {
 		> a {
 			display: block;
 			font-size: 12px;
@@ -177,8 +177,9 @@ ul.comment-list {
 	}
 }
 
-.comment-content{
-	ul, ol{
+.comment-content {
+	ul,
+	ol {
 		padding: 0;
 		margin: 10px auto;
 		li {
@@ -187,20 +188,20 @@ ul.comment-list {
 	}
 }
 
-.logged-in-as{
+.logged-in-as {
 	font-size: 12px;
 	text-align: center;
-	@media #{$sm}{
+	@media #{$sm} {
 		font-size: 14px;
 	}
 	a {
-		&.logout-link{
+		&.logout-link {
 			color: $red;
 		}
 	}
 }
 
-.no-comments{
+.no-comments {
 	text-align: center;
 	font-size: 14px;
 	text-transform: uppercase;
@@ -208,13 +209,13 @@ ul.comment-list {
 	color: $coal;
 }
 
-.comment-submit-button{
+.comment-submit-button {
 	display: inline-block;
 	margin: 10px 0 0;
 	padding: 5px 15px;
 	box-sizing: content-box;
 	font-size: 14px;
-	&:hover{
+	&:hover {
 		background-color: #94b655;
 	}
 }

@@ -1,37 +1,49 @@
-.header{
-	padding: 25px 0 0;
-	@media #{$lg}{
-		padding: 50px 0 5px;
+.header {
+	padding: 50px 0 5px;
+	@media #{$sm} {
+		padding: 100px 0 0;
 	}
 }
 
-.site-title{
+.site-title {
+	font-size: 24px;
+	margin: 0 0 10px;
 	text-align: center;
-	text-transform: uppercase;
-	margin: 30px 0 10px;
-	font-size: 32px;
+	@media #{$sm} {
+		font-size: 20px;
+		text-align: left;
+	}
+	@media #{$md} {
+		font-size: 24px;
+	}
 }
 
-.site-tagline{
-	text-align: center;
+.site-tagline {
 	color: $coal;
-	font-size: 16px;
+	font-size: 12px;
+	margin: 0;
 	letter-spacing: 0.5px;
-	font-family: 'prompt', arial;
-	text-transform: uppercase;
-	margin: 15px auto;
-	line-height: 1.6;
-	font-weight: bold;
-	@media #{$lg}{	
-		margin: 15px auto 60px;
+	text-align: center;
+	@media #{$sm} {
+		font-size: 10px;
+		text-align: left;
+	}
+	@media #{$md} {
+		font-size: 14px;
+	}
+	@media #{$xlg} {
+		font-size: 14px;
 	}
 }
 
-.site-navigation{
+.site-navigation {
 	font-family: 'prompt', arial;
 	position: relative;
+	margin: 32px 0 0;
+	@media #{$sm} {
+		margin: 8px 0 0;
+	}
 	> ul {
-		padding: 5px 20px;
 		box-sizing: border-box;
 		background-color: $soft-white;
 		margin: 0;
@@ -40,43 +52,49 @@
 		width: 100%;
 		display: block;
 		box-sizing: border-box;
-		@media #{$sm}{
+		@media #{$sm} {
 			padding: 0;
-			background-color: transparent;
+			margin: 0;
+			text-align: right;
 		}
 		> li {
-			float: left;
-			width: 50%;
-			&.current_page_item{
-				@media #{$sm}{
-					background-color: #ebebeb;
+			display: inline-block;
+			@media #{$sm} {
+				position: relative;
+				margin: 0;
+			}
+			&.current_page_item {
+				@media #{$sm} {
+					border: 1px solid $black;
+					border-radius: 4px;
 				}
 			}
-			@media #{$sm}{
-				position: relative;
-				float: none;
-				width: auto;
-				display: inline-block;
-				margin: 0;
+			&:last-of-type {
+				> a {
+					padding-right: 0;
+				}
 			}
 			> a {
 				display: block;
-				padding: 10px;
+				padding: 5px 10px;
 				font-size: 12px;
 				text-transform: uppercase;
-				color: $coal;
+				color: $black;
 				text-decoration: none;
 				font-weight: bold;
 				letter-spacing: 0px;
-				@media #{$sm}{
-					font-size: 14px;
+				@media #{$sm} {
+					font-size: 12px;
+					padding: 5px 7px;
+				}
+				@media #{$md} {
+					font-size: 16px;
 					padding: 5px 10px;
 				}
-				@media #{$lg}{
-					padding: 5px 15px;
-					font-size: 16px;
+				@media #{$xlg} {
+					padding: 5px 12px 3px;
 				}
-				&:hover{
+				&:hover {
 					color: $black;
 				}
 			}
@@ -85,16 +103,16 @@
 }
 
 .site-navigation {
-	> ul{
-		> li{
-			@media #{$lg}{
-				&:hover{
+	> ul {
+		> li {
+			@media #{$lg} {
+				&:hover {
 					> ul {
 						display: block;
 					}
 				}
 			}
-			> ul{
+			> ul {
 				display: none;
 				clear: both;
 				position: absolute;
@@ -104,11 +122,12 @@
 				z-index: 2;
 				list-style: none;
 				left: 0;
-				background-color: darken($soft-white, 5%);
+				background-color: $white;
+				border: 1px solid darken($soft-white, 5%);
 				box-sizing: border-box;
 				@include shadow(1);
-				@include transition(all .2s linear);
-				@media #{$sm}{
+				@include transition(all 0.2s linear);
+				@media #{$sm} {
 					padding: 15px;
 					position: absolute;
 					left: 10px;
@@ -116,31 +135,31 @@
 					width: auto;
 					text-align: left;
 				}
-				@media #{$lg}{
-					&:hover{
+				@media #{$lg} {
+					&:hover {
 						@include shadow(2);
-						@include transition(all .2s linear);
+						@include transition(all 0.2s linear);
 					}
 				}
-				> li{
+				> li {
 					float: left;
 					width: 50%;
 					display: block;
-					@media #{$sm}{
+					@media #{$sm} {
 						float: none;
 						width: auto;
-						&:first-child{
-							> a{
+						&:first-child {
+							> a {
 								padding-top: 0;
 							}
 						}
-						&:last-child{
-							> a{
+						&:last-child {
+							> a {
 								padding-bottom: 0;
 							}
 						}
 					}
-					> a{
+					> a {
 						padding: 10px;
 						color: $coal;
 						white-space: nowrap;
@@ -149,15 +168,15 @@
 						text-transform: uppercase;
 						font-size: 10px;
 						font-weight: bold;
-						@media #{$sm}{
+						@media #{$sm} {
 							font-size: 12px;
 							padding: 5px 0;
 						}
-						@media #{$lg}{
+						@media #{$lg} {
 							font-size: 12px;
 							padding: 5px 5px;
 						}
-						&:hover{
+						&:hover {
 							color: $black;
 							text-decoration: none;
 						}
@@ -169,11 +188,11 @@
 }
 
 .site-navigation {
-	> ul{
-		> li{
-			> ul{
-				>li{
-					> ul{
+	> ul {
+		> li {
+			> ul {
+				> li {
+					> ul {
 						display: none;
 					}
 				}

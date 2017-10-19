@@ -38,11 +38,13 @@
 		<header class="header">
 			<div class="container">
 				<div class="clearfix mxn2">
-					<div class="sm-col sm-col-12 px2">
+					<div class="sm-col sm-col-5 lg-col-4">
 						<?php echo is_home() ? "<h1 class='site-title'>".get_bloginfo('name')."</h1>" : "<h2 class='site-title'>".get_bloginfo('name')."</h2>" ?>
 						<h2 class="site-tagline"><?php echo bloginfo('description'); ?></h2>
+					</div>
+					<div class="sm-col sm-col-7 lg-col-8">
 						<nav class="site-navigation">
-							<?php  
+							<?php
 								wp_nav_menu(array('theme_location' => 'top', 'container' => false, 'menu_class' => 'list-reset clearfix', 'items_wrap' => '<ul class="%2$s">%3$s</ul>'));
 							?>
 						</nav>

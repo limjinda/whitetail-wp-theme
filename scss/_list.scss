@@ -1,17 +1,18 @@
 .list-item-block {
-	@media #{$sm} {
-		margin: 32px auto;
-	}
-	@media #{$md} {
-		margin: 0 auto;
+	.list-wrapper {
+		@media #{$sm} {
+			border: 1px solid darken($soft-white, 5%);
+			background-color: $white;
+			@include shadow(1);
+		}
 	}
 	.list-item {
 		margin-bottom: 40px;
 		@media #{$sm} {
-			margin-bottom: 24px;
+			margin-bottom: 16px;
 		}
 		@media #{$md} {
-			margin-bottom: 32px;
+			margin-bottom: 24px;
 		}
 		figure {
 			margin: 0;
@@ -40,19 +41,21 @@
 			max-width: 100%;
 			display: block;
 			@media #{$sm} {
-				max-width: 200px;
+				max-width: 240px;
 			}
 			@media #{$md} {
-				max-width: 260px;
+				max-width: 300px;
 			}
 		}
 	}
 	.list-item-content {
 		@media #{$sm} {
-			margin-left: 224px;
+			padding: 15px 15px 15px 0;
+			margin-left: 256px;
 		}
 		@media #{$md} {
-			margin-left: 284px;
+			padding: 24px 24px 24px 0;
+			margin-left: 324px;
 		}
 		._title {
 			font-size: 16px;
@@ -62,9 +65,6 @@
 			}
 			@media #{$md} {
 				font-size: 20px;
-			}
-			@media #{$lg} {
-				font-size: 24px;
 			}
 			a {
 				color: $link;
@@ -83,23 +83,31 @@
 			line-height: 1.6;
 			font-family: 'droid_sans', arial;
 			@media #{$sm} {
-				font-size: 12px;
+				margin: 0 0 5px;
 			}
 			@media #{$md} {
 				font-size: 16px;
+				margin: 0 0 16px;
 			}
 		}
 		._button {
 			@media #{$sm} {
-				font-size: 14px;
-				padding: 7px 14px;
+				background-color: transparent;
+				color: $link;
+				padding: 0;
+				font-family: 'droid_sans', arial;
+				display: inline-block;
+				font-size: 12px;
 			}
 			@media #{$md} {
 				padding: 8px 15px;
-			}
-			@media #{$lg} {
+				background-color: $link;
+				color: $white;
 				font-size: 16px;
 			}
+			// @media #{$lg} {
+			// 	font-size: 16px;
+			// }
 		}
 	}
 }

@@ -1,6 +1,6 @@
-.page-pagination-block{
+.page-pagination-block {
 	padding: 15px 0 10px;
-	@media #{$lg}{
+	@media #{$lg} {
 		padding: 30px 0 15px;
 	}
 	a {
@@ -8,38 +8,39 @@
 		color: $coal;
 		font-size: 12px;
 		font-weight: bold;
-		@media #{$sm}{
+		@media #{$sm} {
 			font-size: 16px;
 		}
-		&:hover{
+		&:hover {
 			color: $black;
 			text-decoration: none;
-			.icon{
+			.icon {
 				color: $black;
 				text-decoration: none;
 			}
 		}
 	}
-	.icon{
+	.icon {
 		position: relative;
 		top: 1px;
 		color: $coal;
 	}
 }
 
-.single-pagination{
-	.left{
+.single-pagination {
+	margin: 24px 0 0;
+	.left {
 		width: 40%;
 		text-align: right;
-		@media #{$sm}{
+		@media #{$sm} {
 			width: 50%;
 			padding-right: 20px;
 		}
-		@media #{$md}{
+		@media #{$md} {
 			padding: 0 0 0 15px;
 			text-align: left;
 		}
-		@media #{$lg}{
+		@media #{$lg} {
 			position: fixed;
 			width: auto;
 			top: 50%;
@@ -47,18 +48,18 @@
 			left: 0;
 		}
 	}
-	.right{
+	.right {
 		width: 40%;
 		text-align: left;
-		@media #{$sm}{
+		@media #{$sm} {
 			width: 50%;
 			padding-left: 20px;
 		}
-		@media #{$md}{
+		@media #{$md} {
 			padding: 0 15px 0 0;
 			text-align: right;
 		}
-		@media #{$lg}{
+		@media #{$lg} {
 			width: auto;
 			padding: 0;
 			position: fixed;
@@ -68,47 +69,49 @@
 			text-align: right;
 		}
 	}
-	.pagination-content-block{
+	.pagination-content-block {
 		display: inline-block;
-		@media #{$lg}{
+		@media #{$md} {
 			background-color: $soft-white;
+			padding: 10px;
+		}
+		@media #{$xlg} {
 			padding: 15px;
 		}
-		a{
-			&:hover{
+		a {
+			&:hover {
 				text-decoration: none;
 			}
 		}
-		@media #{$lg}{
-			&:hover{
-				strong{
+		@media #{$lg} {
+			&:hover {
+				strong {
 					display: inline-block;
 				}
 			}
 		}
-		.post-pagination-icon{
+		.post-pagination-icon {
 			font-size: 32px;
-			@media #{$sm}{
+			@media #{$sm} {
 				font-size: 48px;
 			}
-			@media #{$md}{
-				display: none;
+			@media #{$md} {
+				font-size: 20px;
 			}
-			@media #{$lg}{
-				display: inline-block;
+			@media #{$xlg} {
 				font-size: 32px;
 			}
 		}
-		strong{
+		strong {
 			display: none;
 			position: relative;
 			font-family: 'prompt', arial;
-			@media #{$md}{
+			@media #{$md} {
 				display: inline-block;
 				font-size: 14px;
 				top: -5px;
 			}
-			@media #{$lg}{
+			@media #{$lg} {
 				display: none;
 				font-size: 18px;
 				top: -7px;
@@ -117,13 +120,13 @@
 				padding: 15px;
 				color: $link;
 				word-break: break-word;
-				@media #{$md}{
+				@media #{$md} {
 					padding: 0 10px;
 				}
-				@media #{$lg}{
+				@media #{$lg} {
 					padding: 15px;
 				}
-				&:hover{
+				&:hover {
 					color: $link-active;
 					text-decoration: none;
 				}
@@ -132,11 +135,11 @@
 	}
 }
 
-.nav-links{
+.nav-links {
 	font-family: 'prompt', arial;
 	font-size: 12px;
 	margin: 20px auto 5px;
-	@media #{$sm}{
+	@media #{$sm} {
 		font-size: 14px;
 		margin: 40px auto 10px;
 	}
@@ -144,16 +147,16 @@
 	clear: both;
 	a {
 		color: $link;
-		span{
+		span {
 			position: relative;
 			top: 1px;
 			color: $link;
-			&:hover{
+			&:hover {
 				color: $link-active;
 				text-decoration: none;
 			}
 		}
-		&:hover{
+		&:hover {
 			color: $link-active;
 			text-decoration: none;
 		}

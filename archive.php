@@ -2,10 +2,8 @@
 
 <main class="main">
 	<div class="container">
-		<div class="clearfix mxn2 px2">
+		<div class="clearfix mxn2">
 			<?php if ( have_posts() ): ?>
-				<h1 class="archive-title"><span class="icon-flag"></span> <?php the_archive_title(''); ?></h1>
-				<?php the_archive_description('<div class="archive-description">', '</div>') ?>
 				<div class="list-item-block">
 					<?php while( have_posts() ) : the_post(); ?>
 						<?php get_template_part('views/layout', 'list') ?>

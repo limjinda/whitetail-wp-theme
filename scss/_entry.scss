@@ -4,11 +4,23 @@
 	}
 }
 
+.entry-wrapper {
+	padding: 24px 16px;
+	background-color: $white;
+	@include shadow(1);
+	@media #{$md} {
+		padding: 32px;
+	}
+	@media #{$xlg} {
+		padding: 40px;
+		@include shadow(2);
+	}
+}
+
 .entry-title,
 .archive-title {
 	font-size: 20px;
-	text-align: center;
-	margin: 0 auto 15px;
+	margin: 0 0 8px;
 	line-height: 1.5;
 	word-wrap: break-word;
 	@media #{$sm} {
@@ -17,15 +29,24 @@
 	@media #{$md} {
 		font-size: 32px;
 	}
+	@media #{$xlg} {
+		text-align: center;
+	}
 }
 
 .entry-date {
-	text-align: center;
+	font-size: 12px;
 	display: block;
 	margin: 0 auto 30px;
-	font-size: 16px;
 	font-family: 'prompt', arial;
 	color: $coal;
+	@media #{$md} {
+		font-size: 16px;
+	}
+	@media #{$xlg} {
+		text-align: center;
+		margin: 0 auto 40px;
+	}
 }
 
 .archive-content {
@@ -42,7 +63,7 @@
 }
 
 .archive-title {
-	margin: 0 auto 30px;
+	margin: 0 auto 8px;
 	span {
 		position: relative;
 		margin-right: 5px;
@@ -52,10 +73,10 @@
 		max-width: 90%;
 		text-align: center;
 	}
-	@media #{$md} {
+	@media #{$xlg} {
 		max-width: 100%;
 		text-align: left;
-		margin-bottom: 24px;
+		margin-bottom: 8px;
 	}
 }
 
@@ -88,9 +109,6 @@
 
 .entry-content,
 .comment-content {
-	@media #{$md} {
-		padding: 0 15px;
-	}
 	h1 {
 		font-size: 20px;
 		@media #{$sm} {
@@ -124,7 +142,7 @@
 		}
 	}
 	p {
-		font-size: 14px;
+		font-size: 16px;
 		line-height: 1.6;
 		letter-spacing: 0.3px;
 		word-wrap: break-word;
