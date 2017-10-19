@@ -16,9 +16,28 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'droid_sans';
+	src: url('fonts/droid_sans/droidsans.eot');
+	src: url('fonts/droid_sans/droidsans.eot?#iefix') format('embedded-opentype'),
+		url('fonts/droid_sans/droidsans.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'droid_sans';
+	src: url('fonts/droid_sans/droidsans-bold.eot');
+	src: url('fonts/droid_sans/droidsans-bold.eot?#iefix')
+			format('embedded-opentype'),
+		url('fonts/droid_sans/droidsans-bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
 body {
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-		Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+		Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', 'Droid Sans', sans-serif;
 	color: $black;
 }
 

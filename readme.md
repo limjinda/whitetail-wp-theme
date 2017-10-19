@@ -19,3 +19,9 @@ Ready to use, Version 3.0.0
 * Trmix
 * matchHeight
 * Gulp
+
+
+### TODO
+
+* JS lint
+* Use CI
