@@ -1,4 +1,4 @@
-<?php 
+<?php
 	$defaults_page_link = array(
 		'before'           => '<p>' . __( 'Pages:', 'jindatheme' ),
 		'after'            => '</p>',
@@ -11,16 +11,16 @@
 		'pagelink'         => '%',
 		'echo'             => 1
 	);
-	get_header(); 
+	get_header();
 ?>
 
 <main class="main">
 	<div class="container">
-		<div class="clearfix mxn2">
+		<div class="clearfix mxn2 px2">
 			<?php while( have_posts() ) : the_post(); ?>
 				<?php get_template_part('views/content', 'page'); ?>
 				<?php get_template_part('views/layout', 'comment' ); ?>
-				<?php wp_link_pages( $defaults_page_link ); ?> 
+				<?php wp_link_pages( $defaults_page_link ); ?>
 			<?php endwhile; ?>
 		</div>
 	</div>

@@ -37,7 +37,7 @@
 	<div class="wrapper">
 		<header class="header">
 			<div class="container">
-				<div class="clearfix mxn2">
+				<div class="clearfix mxn2 px2">
 					<div class="sm-col sm-col-5 lg-col-4">
 						<?php echo is_home() ? "<h1 class='site-title'>".get_bloginfo('name')."</h1>" : "<h2 class='site-title'>".get_bloginfo('name')."</h2>" ?>
 						<h2 class="site-tagline"><?php echo bloginfo('description'); ?></h2>

@@ -1,75 +1,89 @@
-body.single-format-quote{
-	.entry-title{
+body.single-format-quote {
+	.entry-title {
+		text-align: center;
 		font-size: 14px;
-		@media #{$sm}{
+		@media #{$sm} {
 			font-size: 20px;
 			margin-bottom: 0;
 		}
-		@media #{$md}{
+		@media #{$md} {
 			margin: 30px auto;
 		}
 	}
-	.entry-content{
+	.entry-content {
 		text-align: center;
-		margin: 64px auto;
-		@media #{$lg}{
-			margin: 96px auto;
-		}
-		p{
+		// margin: 64px auto;
+		// @media #{$lg}{
+		// 	margin: 96px auto;
+		// }
+		p {
 			font-size: 20px;
 			line-height: 1.4;
 			color: $coal;
-			@media #{$sm}{
+			@media #{$sm} {
 				max-width: 500px;
 				margin: auto;
 				font-size: 32px;
 			}
-			@media #{$md}{
+			@media #{$md} {
 				font-size: 36px;
 				line-height: 1.65;
 			}
-			@media #{$lg}{
+			@media #{$lg} {
 				max-width: 720px;
 			}
 		}
-		blockquote{
+		blockquote {
 			background-color: transparent;
+		}
+	}
+	.entry-meta {
+		margin: 60px auto 0;
+		@media #{$md} {
+			margin: 100px auto 0;
+		}
+	}
+	.entry-date {
+		text-align: center;
+		margin: 0 auto 60px;
+		@media #{$md} {
+			margin: 0 auto 100px;
 		}
 	}
 }
 
-body.single-format-gallery{
-	.entry-content{
-		figure.gallery-item{
+body.single-format-gallery {
+	.entry-content {
+		figure.gallery-item {
 			float: left;
 			width: 50%;
 			margin: 0px auto;
-			@media #{$sm}{
+			@media #{$sm} {
 				width: 25%;
 			}
-			@media #{$md}{
+			@media #{$md} {
 				width: 20%;
 			}
-			@media #{$lg}{
+			@media #{$lg} {
 				width: 12.5%;
 			}
-			img{
+			img {
 				margin: 1px auto;
 				display: block;
-				@media #{$sm}{
+				@media #{$sm} {
 					margin: 3px auto;
 				}
-				@media #{$md}{
+				@media #{$md} {
 					margin: 2px auto;
 				}
-				@media #{$lg}{
+				@media #{$lg} {
 					margin: 0 auto;
 					padding: 2px;
 					box-sizing: border-box;
 				}
 			}
 		}
-		figcaption{
+		figcaption {
 			display: none;
 		}
 	}

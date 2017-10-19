@@ -1,4 +1,4 @@
-<div class="clearfix mxn2">
+<div class="clearfix mxn2 px2">
 
 	<?php while ( have_posts() ) : the_post() ?>
 		<article itemscope itemtype="http://schema.org/BlogPosting" <?php post_class('sm-col sm-col-12 px2 entry-wrapper' ); ?>>
