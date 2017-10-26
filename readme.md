@@ -1,5 +1,5 @@
 ## WhiteTail, WordPress Theme
-Ready to use, Version 3.1.1
+Ready to use, Version 3.1.2
 
 ![WhiteTail](screenshot.png)
 
