@@ -21,16 +21,14 @@
 		"run-sequence": "^2.2.0"
 	},
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "gulp"
 	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/JindaTheme/WhiteTail.git"
 	},
-	"keywords": [
-		"jindatheme",
-		"whitetail"
-	],
+	"keywords": ["jindatheme", "whitetail"],
 	"author": "JindaTheme",
 	"license": "MIT",
 	"bugs": {
