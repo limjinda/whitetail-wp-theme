@@ -1,5 +1,5 @@
 ## WhiteTail, WordPress Theme
-Ready to use, Version 3.1.2
+Ready to use, Version 3.2.0
 
 ![WhiteTail](screenshot.png)
 
@@ -23,5 +23,4 @@ Ready to use, Version 3.1.2
 
 ### TODO
 
-* JS lint
-* Use CI
+* PWA - still waiting service worker is works on Safari

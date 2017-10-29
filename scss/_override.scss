@@ -97,3 +97,12 @@ ol.comment-list li.bypostauthor {
 	font-weight: normal;
 	font-family: 'prompt', arial;
 }
+
+
+.comment-content input[type='button'],
+.comment-content input[type='submit'],
+.entry-content input[type='button'],
+.entry-content input[type='submit'],
+.w-btn {
+	@include appearance(none);
+}
