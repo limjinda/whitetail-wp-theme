@@ -1,2 +1,4 @@
 language: node_js
+before_script:
+  - npm install -g eslint eslint-config-standard eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-plugin-standard
 script: eslint js/main.js
