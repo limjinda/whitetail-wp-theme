@@ -1,4 +1,4 @@
-## WhiteTail, WordPress Theme
+## WhiteTail, WordPress Theme [![Build Status](https://travis-ci.org/JindaTheme/WhiteTail.svg?branch=master)](https://travis-ci.org/JindaTheme/WhiteTail)
 Ready to use, Version 3.2.0
 
 ![WhiteTail](screenshot.png)
