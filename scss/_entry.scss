@@ -263,8 +263,9 @@
 			font-size: 14px;
 			line-height: 1.5;
 			margin-bottom: 5px;
+			font-family: 'droid_sans', arial;
 			@media #{$sm} {
-				font-size: 16px;
+				font-size: 20px;
 			}
 			> ul,
 			ol {

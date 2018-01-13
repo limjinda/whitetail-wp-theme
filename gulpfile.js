@@ -94,7 +94,9 @@ gulp.task('javascript', () => {
 		)
 		.pipe(
 			uglify({
-				preserveComments: 'license'
+				output: {
+					comments: 'some'
+				}
 			})
 		)
 		.pipe(rename('client.min.js'))
