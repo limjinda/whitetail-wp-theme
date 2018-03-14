@@ -45,7 +45,6 @@ ul.comment-list {
 	overflow: hidden;
 	padding: 0;
 	list-style: none;
-	background-color: $white;
 	a {
 		color: $link;
 		&:hover {
@@ -58,6 +57,7 @@ ul.comment-list {
 		margin-bottom: 10px;
 		border: 2px solid darken($soft-white, 5%);
 		padding: 15px;
+		background-color: $white;
 		&.pingback {
 			font-size: 12px;
 			border: 2px solid transparent;
