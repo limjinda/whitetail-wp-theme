@@ -43,6 +43,9 @@ ul.comment-list {
 	max-width: 100%;
 	display: block;
 	overflow: hidden;
+	padding: 0;
+	list-style: none;
+	background-color: $white;
 	a {
 		color: $link;
 		&:hover {
@@ -50,8 +53,6 @@ ul.comment-list {
 			text-decoration: none;
 		}
 	}
-	padding: 0;
-	list-style: none;
 	li {
 		display: block;
 		margin-bottom: 10px;
@@ -130,6 +131,7 @@ ul.comment-list {
 		padding: 0;
 		display: block;
 		margin: 10px auto 0;
+		background-color: $soft-white;
 		> li {
 			padding: 0;
 			border: 0;
