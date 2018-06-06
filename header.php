@@ -32,9 +32,21 @@
   <meta name="theme-color" content="#ffffff">
   <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
+<body <?php body_class('night-theme'); ?>>
   <?php echo get_option('jinda_opt_company_js') ?>
 	<div class="wrapper">
+
+    <!-- theme switch -->
+    <div class="theme-switch-block">
+      <a href="javascript:void(0)" id="day_time">
+        <img src="<?php echo get_template_directory_uri() ?>/img/day.png" alt="Day time" />
+      </a>
+      <a href="javascript:void(0)" id="night_time">
+        <img src="<?php echo get_template_directory_uri() ?>/img/night.png" alt="Day time" />
+      </a>
+    </div>
+    <!-- theme switch -->
+
 		<header class="header">
 			<div class="container">
 				<div class="clearfix mxn2 px2">

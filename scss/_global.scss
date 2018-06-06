@@ -110,3 +110,36 @@ body {
 	font-size: 5em;
 	line-height: 0.8em;
 }
+
+.theme-switch-block {
+	position: fixed;
+	bottom: 40px;
+	right: 0;
+	a {
+		padding: 16px 12px 10px;
+		border-radius: 4px 0 0 4px;
+		display: block;
+		font-family: 'prompt', arial;
+		font-weight: bold;
+		font-size: 14px;
+		&:hover {
+			text-decoration: none;
+		}
+		img {
+			display: inline-block;
+			width: 32px;
+			height: 32px;
+			vertical-align: middle;
+			position: relative;
+			top: -4px;
+		}
+		&#day_time{
+			background-color: #f8ecc9;
+			color: $black;
+		}
+		&#night_time {
+			background-color: $dark-bg;
+			color: $white;
+		}
+	}
+}
