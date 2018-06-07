@@ -1,11 +1,11 @@
 .preloader-block{
-	// display: none;
 	position: fixed;
 	background-color: #FFF;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
+	z-index: 10;
 	.preloader-content{
 		top: 50%;
 		left: 50%;

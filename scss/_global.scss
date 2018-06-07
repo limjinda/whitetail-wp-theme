@@ -113,11 +113,13 @@ body {
 
 .theme-switch-block {
 	position: fixed;
-	bottom: 40px;
+	top: 60px;
+	// top: 40px;
 	right: 0;
+	z-index: 1;
 	a {
-		padding: 16px 12px 10px;
-		border-radius: 4px 0 0 4px;
+		padding: 12px 8px 6px;
+		// padding: 16px 12px 10px;
 		display: block;
 		font-family: 'prompt', arial;
 		font-weight: bold;
@@ -127,8 +129,10 @@ body {
 		}
 		img {
 			display: inline-block;
-			width: 32px;
-			height: 32px;
+			width: 24px;
+			height: 24px;
+			// width: 32px;
+			// height: 32px;
 			vertical-align: middle;
 			position: relative;
 			top: -4px;
@@ -136,10 +140,12 @@ body {
 		&#day_time{
 			background-color: #f8ecc9;
 			color: $black;
+			box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 		}
 		&#night_time {
 			background-color: $dark-bg;
 			color: $white;
+			box-shadow: 0 1px 2px rgba(0,0,0,0.1);
 		}
 	}
 }

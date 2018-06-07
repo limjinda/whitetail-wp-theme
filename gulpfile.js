@@ -85,6 +85,7 @@ gulp.task('javascript', () => {
 			'./bower_components/trmix/dist/trmix.min.js',
 			'./bower_components/matchHeight/jquery.matchHeight-min.js',
 			'./bower_components/magnific-popup/dist/jquery.magnific-popup.js',
+			'./bower_components/localforage/dist/localforage.js',
 			'./js/main.js'
 		])
 		.pipe(

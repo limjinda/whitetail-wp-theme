@@ -19,7 +19,47 @@ function closeSearch() {
   jQuery('#search-container').hide();
   jQuery('#search-icon').css('display', 'inline-block');
 }
+
+function goDarkTheme() {
+  jQuery('body').addClass('night-theme');
+  jQuery('#night_time').hide();
+  jQuery('#day_time').show();
+}
+
+function goLightTheme() {
+  jQuery('body').removeClass('night-theme');
+  jQuery('#night_time').show();
+  jQuery('#day_time').hide();  
+}
+
 jQuery(document).ready(function() {
+  /**
+   * get theme settings from localforage
+   * if exists add night-theme class to body
+   */
+  localforage.getItem('wt-enable-dark-theme').then(function(theme) {
+    if (theme === 'dark') goDarkTheme();
+    else goLightTheme();
+  });
+
+  /**
+   * When theme switcher was clicked
+   * add to localstorage when select dark mode
+   * or remove it when select day mode
+   */
+  jQuery('.theme-switch-block a').on('click', function(e) {
+    e.preventDefault();
+    if (jQuery(this).attr('id') === 'night_time') {
+      localforage.setItem('wt-enable-dark-theme', 'dark').then(function(theme) {
+        goDarkTheme();
+      });
+    } else {
+      localforage.removeItem('wt-enable-dark-theme').then(function() {
+        goLightTheme();
+      });
+    }
+  });
+
   /**
    * ADD ARROW TO PARENT CATE
    * VERSION 1.0
@@ -102,17 +142,17 @@ jQuery(document).ready(function() {
    */
   if (jQuery('iframe').length > 0) {
     jQuery('iframe').each(function() {
-      jQuery(this).wrap('<div class=\'responsive-unit\'></div>');
+      jQuery(this).wrap("<div class='responsive-unit'></div>");
     });
   }
   console.log(
     '%cDeveloped and Maintained by JindaTheme :)',
     'font-size:14px; color: #e7a12e; font-weight: bold; font-family: Century Gothic, sans-serif;'
   ),
-  console.log(
-    '%cvisit us on http://www.jindatheme.com',
-    'font-size:12px; color: #888888; font-family: Century Gothic, sans-serif;'
-  );
+    console.log(
+      '%cvisit us on http://www.jindatheme.com',
+      'font-size:12px; color: #888888; font-family: Century Gothic, sans-serif;'
+    );
 });
 jQuery(window).load(function() {
   /**

@@ -16,6 +16,13 @@
 	@media #{$md} {
 		font-size: 24px;
 	}
+	a {
+		color: $black;
+		&:hover {
+			text-decoration: none;
+			color: $link;
+		}
+	}
 }
 
 .site-tagline {
@@ -163,13 +170,14 @@
 					> a {
 						padding: 10px;
 						color: $coal;
-						white-space: nowrap;
+						white-space: normal;
 						display: block;
 						letter-spacing: 0.5px;
 						text-transform: uppercase;
 						font-size: 10px;
 						font-weight: bold;
 						@media #{$sm} {
+							white-space: nowrap;
 							font-size: 12px;
 							padding: 5px 0;
 						}

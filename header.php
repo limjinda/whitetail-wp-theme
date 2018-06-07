@@ -39,10 +39,10 @@
     <!-- theme switch -->
     <div class="theme-switch-block">
       <a href="javascript:void(0)" id="day_time">
-        <img src="<?php echo get_template_directory_uri() ?>/img/day.png" alt="Day time" />
+        <img src="<?php echo get_template_directory_uri() ?>/img/day.png" alt="Light mode" />
       </a>
       <a href="javascript:void(0)" id="night_time">
-        <img src="<?php echo get_template_directory_uri() ?>/img/night.png" alt="Day time" />
+        <img src="<?php echo get_template_directory_uri() ?>/img/night.png" alt="Dark mode" />
       </a>
     </div>
     <!-- theme switch -->
@@ -51,7 +51,7 @@
 			<div class="container">
 				<div class="clearfix mxn2 px2">
 					<div class="sm-col sm-col-5 lg-col-4">
-						<?php echo is_home() ? "<h1 class='site-title'>".get_bloginfo('name')."</h1>" : "<h2 class='site-title'>".get_bloginfo('name')."</h2>" ?>
+						<?php echo is_home() ? "<h1 class='site-title'><a href='".get_bloginfo('url')."'>".get_bloginfo('name')."</a></h1>" : "<h2 class='site-title'><a href='".get_bloginfo('url')."'>".get_bloginfo('name')."</a></h2>" ?>
 						<h2 class="site-tagline"><?php echo bloginfo('description'); ?></h2>
 					</div>
 					<div class="sm-col sm-col-7 lg-col-8">

@@ -1,18 +1,33 @@
 body.night-theme {
 	background-color: $dark-bg;
 	.site-navigation > ul,
-	.single-pagination .pagination-content-block {
+	.single-pagination .pagination-content-block,
+	.site-navigation>ul>li>ul {
 		background-color: $dark-bg;
+	}
+	.site-navigation>ul>li>ul {
+		border: 1px solid transparent;
+		> li > a {
+			color: $white;
+			white-space: normal;
+			@media #{$sm} {
+				white-space: nowrap;
+			}
+		}
 	}
 	.site-navigation>ul>li.current_page_item {
 		border: 1px solid $white;
 	}
-	.site-title,
+	.site-title > a,
 	.site-navigation>ul>li>a,
 	.comments-area .comment-reply-title,
 	.comments-area .comments-title,
 	.w-label {
 		color: $white;
+		&:hover {
+			text-decoration: none;
+			color: $light;
+		}
 	}
 	.site-tagline {
 		color: $light;
@@ -34,12 +49,25 @@ body.night-theme {
 			}
 		}
 	}
-	.entry-wrapper,
-	.list-item-block .list-wrapper {
+	.entry-wrapper {
 		box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
 	}
 	.list-item-block .list-wrapper {
-		border: 0;
+		border: 1px solid transparent;
+		@media #{$sm} {
+			background-color: transparent;
+			box-shadow: none;
+		}
+		.list-item-content {
+			._title {
+				a {
+					color: $white;
+				}
+			}
+			._text {
+				color: $light;
+			}
+		}
 	}
 	ol.comment-list li.bypostauthor {
 		border: 2px solid transparent;
