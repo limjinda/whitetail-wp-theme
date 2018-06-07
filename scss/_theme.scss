@@ -80,4 +80,19 @@ body.night-theme {
 			}
 		}
 	}
+	.page-pagination-block a {
+		color: $white;
+		&:hover {
+			color: $light;
+		}
+	}
+	.footer-text {
+		color: $light;
+		a {
+			color: $white;
+			&:hover {
+				color: $light;
+			}
+		}
+	}
 }
