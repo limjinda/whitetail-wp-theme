@@ -114,16 +114,17 @@ body {
 .theme-switch-block {
 	position: fixed;
 	top: 60px;
-	// top: 40px;
 	right: 0;
 	z-index: 1;
 	a {
 		padding: 12px 8px 6px;
-		// padding: 16px 12px 10px;
 		display: block;
 		font-family: 'prompt', arial;
 		font-weight: bold;
 		font-size: 14px;
+		@media #{$md} {
+			padding: 16px 12px 10px;
+		}
 		&:hover {
 			text-decoration: none;
 		}
@@ -131,11 +132,13 @@ body {
 			display: inline-block;
 			width: 24px;
 			height: 24px;
-			// width: 32px;
-			// height: 32px;
 			vertical-align: middle;
 			position: relative;
 			top: -4px;
+			@media #{$md} {
+				width: 32px;
+				height: 32px;
+			}
 		}
 		&#day_time{
 			background-color: #f8ecc9;
