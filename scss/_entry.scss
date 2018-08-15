@@ -323,13 +323,16 @@
 		}
 	}
 	code {
-		padding: 2px 4px;
-		background-color: #fbf9f9;
-		border-radius: 2px;
-		border: 1px solid darken(#fbf9f9, 5%);
-		border-bottom-width: 2px;
+		padding: 2px 6px;
+		background-color: #e5f2ff;
+		border-radius: 0;
+		font-weight: bold;
+		line-height: 1;
 		@media #{$md} {
-			padding: 4px 6px;
+			font-size: 14px;
+			padding: 3px 8px;
+			position: relative;
+			top: -1px;
 		}
 	}
 	pre {
