@@ -81,7 +81,6 @@
 			font-size: 14px;
 			color: $black;
 			line-height: 1.6;
-			font-family: 'droid_sans', arial;
 			@media #{$sm} {
 				margin: 0 0 5px;
 			}
@@ -95,7 +94,6 @@
 				background-color: transparent;
 				color: $link;
 				padding: 0;
-				font-family: 'droid_sans', arial;
 				display: inline-block;
 				font-size: 12px;
 			}
@@ -105,9 +103,6 @@
 				color: $white;
 				font-size: 16px;
 			}
-			// @media #{$lg} {
-			// 	font-size: 16px;
-			// }
 		}
 	}
 }

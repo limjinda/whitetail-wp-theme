@@ -147,7 +147,7 @@
 		letter-spacing: 0.3px;
 		word-wrap: break-word;
 		@media #{$sm} {
-			font-size: 20px;
+			font-size: 18px;
 			line-height: 1.7;
 		}
 	}
@@ -261,7 +261,7 @@
 			line-height: 1.5;
 			margin-bottom: 5px;
 			@media #{$sm} {
-				font-size: 20px;
+				font-size: 18px;
 			}
 			> ul,
 			ol {
