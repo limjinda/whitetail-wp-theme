@@ -146,7 +146,6 @@
 		line-height: 1.6;
 		letter-spacing: 0.3px;
 		word-wrap: break-word;
-		font-family: 'droid_sans', arial;
 		@media #{$sm} {
 			font-size: 20px;
 			line-height: 1.7;
@@ -158,7 +157,6 @@
 		background-color: darken($soft-white, 5%);
 		p {
 			font-weight: bold;
-			font-family: 'droid_sans', arial;
 			margin-bottom: 0;
 		}
 	}
@@ -236,7 +234,6 @@
 		}
 	}
 	figcaption {
-		font-family: 'droid_sans', arial;
 		border-left: 3px solid $light;
 		padding: 3px 5px 3px 10px;
 		font-size: 12px;
@@ -263,7 +260,6 @@
 			font-size: 14px;
 			line-height: 1.5;
 			margin-bottom: 5px;
-			font-family: 'droid_sans', arial;
 			@media #{$sm} {
 				font-size: 20px;
 			}
@@ -376,7 +372,6 @@
 }
 
 .entry-meta {
-	font-family: 'droid_sans', arial;
 	font-size: 10px;
 	line-height: 1.6;
 	text-align: center;
