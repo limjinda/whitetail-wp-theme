@@ -27,7 +27,9 @@
   <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri()?>/img/favicons/favicon-16x16.png" sizes="16x16">
   <link rel="manifest" href="<?php echo get_template_directory_uri()?>/img/favicons/manifest.json">
   <link rel="mask-icon" href="<?php echo get_template_directory_uri()?>/img/favicons/safari-pinned-tab.svg">
-  <?php is_single() ? echo "<link rel='prefetch' href='<?php echo blog_info('url') ?>'>" : null; ?>
+  <?php if ( is_single() ) { ?>
+    <link rel="prefetch" href="<?php echo blog_info('url'); ?>">
+  <?php } ?>
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri()?>/img/favicons/mstile-144x144.png">
   <meta name="theme-color" content="#ffffff">
