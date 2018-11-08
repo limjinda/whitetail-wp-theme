@@ -28,7 +28,7 @@
   <link rel="manifest" href="<?php echo get_template_directory_uri()?>/img/favicons/manifest.json">
   <link rel="mask-icon" href="<?php echo get_template_directory_uri()?>/img/favicons/safari-pinned-tab.svg">
   <?php if ( is_single() ) { ?>
-    <link rel="prefetch" href="<?php echo blog_info('url'); ?>">
+    <link rel="prefetch" href="<?php echo bloginfo('url'); ?>">
   <?php } ?>
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri()?>/img/favicons/mstile-144x144.png">
