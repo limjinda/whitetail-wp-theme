@@ -21,7 +21,7 @@
 		"gulp-concat-css": "^2.3.0",
 		"gulp-header": "^1.8.9",
 		"gulp-imagemin": "^4.1.0",
-		"gulp-livereload": "^3.8.1",
+		"gulp-livereload": "^4.0.2",
 		"gulp-plumber": "^1.2.0",
 		"gulp-purifycss": "^0.2.0",
 		"gulp-rename": "^1.2.2",
